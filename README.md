@@ -79,6 +79,14 @@ quarto preview
 
 ---
 
+## Social Card and QR Code
+
+| Social card | QR |
+|-------------|----|
+| <img src="social-card.png" style="width:100%;"> | <img src="qr.png" style="width:70%;"> |
+
+---
+
 ## Social Metadata
 
 The canonical deployment at `https://antiint.vercel.app/` includes the following Open Graph and Twitter Card metadata:
