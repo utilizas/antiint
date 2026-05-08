@@ -1,14 +1,14 @@
 # Brains as Brand
 
-### The Cultural Economy of Intellect under Competitive Authoritarianism
+> ## The Cultural Economy of Intellect under Competitive Authoritarianism
+> *Miguel Moreno* · University of Granada · Published: May 8, 2026
 
-> *Miguel Moreno* · University of Granada · May 8, 2026
 
-[![CC BY-NC-SA 4.0](https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Deploy – Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://antiint.vercel.app/)
 [![Deploy – Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify&logoColor=white)](https://antiint.netlify.app/)
 [![Deploy – Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://antiint.pages.dev/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-blue?logo=github)](https://utilizas.github.io/antiint/)
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 
