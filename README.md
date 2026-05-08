@@ -60,13 +60,6 @@ The monograph is available at the following URLs:
 https://github.com/utilizas/antiint.git
 ```
 
-Clone with:
-
-```bash
-git clone https://github.com/utilizas/antiint.git
-cd antiint
-```
-
 ---
 
 ## Build & Render
