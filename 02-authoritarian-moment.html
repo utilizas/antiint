@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; The Competitive-Authoritarian Moment – Brains as Brand</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./03-attention-economy.html" rel="next">
+<link href="./01-genealogy.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-aeb32cb3453d7d606b6c0a50f15f0871.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d7bb2a7abcc71ede1f4a44f14a5ae606.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+  /* Iconos CC inline: heredan color del texto, sin filter trick */
+  .cc-license-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+  .cc-license-link svg {
+    height: 1.2em;
+    width: 1.2em;
+    fill: currentColor;
+  }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+// Solo en la página principal del libro
+const path = window.location.pathname;
+const isIndex = path.endsWith("/") || 
+        path.endsWith("/index.html") || 
+        path === "/index.html";
+        if (!isIndex) return;
+        
+const meta = document.querySelector(".quarto-title-meta");
+if (!meta) return;
+
+  // ---------- 1. Bloque de autores en dos columnas ----------
+  const authors = document.querySelectorAll(".quarto-title-author");
+  if (authors.length > 0) {
+    const dateEl = document.querySelector(".quarto-title-date");
+    const dateText = dateEl ? dateEl.textContent.trim() : "";
+
+    const block = document.createElement("div");
+    block.className = "author-block";
+    const left  = document.createElement("div"); left.className  = "author-col";
+    const right = document.createElement("div"); right.className = "author-col";
+
+    authors.forEach((author, i) => {
+      const col   = (i % 2 === 0) ? left : right;
+      const entry = document.createElement("div");
+      entry.className = "author-entry";
+
+      const name = document.createElement("div");
+      name.className = "author-name";
+      name.textContent = author.textContent.trim();
+      entry.appendChild(name);
+
+      ["role", "affiliation", "note"].forEach(attr => {
+        const value = author.getAttribute("data-author-" + attr);
+        if (value) {
+          const div = document.createElement("div");
+          div.className = "author-" + attr;
+          div.textContent = value;
+          entry.appendChild(div);
+        }
+      });
+
+      if (dateText) {
+        const dateDiv = document.createElement("div");
+        dateDiv.className = "author-date";
+        dateDiv.textContent = dateText;
+        entry.appendChild(dateDiv);
+      }
+
+      col.appendChild(entry);
+    });
+
+    block.appendChild(left);
+    block.appendChild(right);
+    meta.appendChild(block);
+  }
+
+  // ---------- 2. Entrada de licencia con SVG inline ----------
+  // SVG inline con fill=currentColor → adapta a tema claro/oscuro
+  // sin filter hack y sin dependencias externas.
+  const licenseEntry = document.createElement("div");
+  licenseEntry.innerHTML = `
+    <div class="quarto-title-meta-heading">License</div>
+    <div class="quarto-title-meta-contents">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+         target="_blank" rel="license noopener"
+         class="cc-license-link"
+         aria-label="CC BY-NC-SA 4.0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">CC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">BY</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">NC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">SA</text></svg>
+        <span style="margin-left:0.2em;">4.0</span>
+      </a>
+    </div>
+  `;
+  meta.appendChild(licenseEntry);
+});
+</script>
+
+
+</head>
+
+<body class="nav-sidebar floating slimcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-genealogy.html">Part I — The Political Crisis of Public Reason</a></li><li class="breadcrumb-item"><a href="./02-authoritarian-moment.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Brains as Brand</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: The Mausoleum of the Mind</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I — The Political Crisis of Public Reason</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-genealogy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-authoritarian-moment.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-attention-economy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II — The Cultural Recoding of Intellect</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-performative-intellectualism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Performative Intellectualism: From BookTok to the Bottega Catwalk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-cultural-capital-gender.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cultural Capital, Gender and the Marketisation of Intellect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-ai-cognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III — Reconstruction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-education-battleground.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Education as Battleground: Universities, Schools, and the Politics of Curiosity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion: Leaving the Mausoleum</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A-methodology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Methodological Note</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./B-corpus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Corpus of Cultural Artefacts Examined</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C-chronology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Chronology of Principal Events, 2016–2026</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-competitive-authoritarianism" id="toc-what-is-competitive-authoritarianism" class="nav-link active" data-scroll-target="#what-is-competitive-authoritarianism"><span class="header-section-number">2.0.1</span> What is competitive authoritarianism?</a></li>
+  <li><a href="#the-assault-on-the-university-a-sequence" id="toc-the-assault-on-the-university-a-sequence" class="nav-link" data-scroll-target="#the-assault-on-the-university-a-sequence"><span class="header-section-number">2.0.2</span> The assault on the university: a sequence</a></li>
+  <li><a href="#the-transnational-pattern-applebaums-autocracy-inc.-and-its-discontents" id="toc-the-transnational-pattern-applebaums-autocracy-inc.-and-its-discontents" class="nav-link" data-scroll-target="#the-transnational-pattern-applebaums-autocracy-inc.-and-its-discontents"><span class="header-section-number">2.0.3</span> The transnational pattern: Applebaum’s <em>Autocracy, Inc.</em> and its discontents</a></li>
+  <li><a href="#why-universities-an-institutional-political-answer" id="toc-why-universities-an-institutional-political-answer" class="nav-link" data-scroll-target="#why-universities-an-institutional-political-answer"><span class="header-section-number">2.0.4</span> Why universities? An institutional-political answer</a></li>
+  <li><a href="#an-authoritarian-moment-not-an-authoritarian-outcome" id="toc-an-authoritarian-moment-not-an-authoritarian-outcome" class="nav-link" data-scroll-target="#an-authoritarian-moment-not-an-authoritarian-outcome"><span class="header-section-number">2.0.5</span> An authoritarian moment, not an authoritarian outcome</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-genealogy.html">Part I — The Political Crisis of Public Reason</a></li><li class="breadcrumb-item"><a href="./02-authoritarian-moment.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-authoritarian-moment" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The assault on universities and on the institutions of public reason that has unfolded between January 2025 and the spring of 2026 is not a contingent excess of an unusually disorderly administration but a <strong>structural feature</strong> of competitive authoritarianism in its anglophone instantiation. The assault is, in the precise sense of Levitsky, Way and Ziblatt <span class="citation" data-cites="levitsky-way2010 levitsky-way2025 levitsky-way2025">(<a href="references.html#ref-levitsky-way2010" role="doc-biblioref">Levitsky and Way, 2010</a>, <a href="references.html#ref-levitsky-way2025" role="doc-biblioref">2025</a>, <a href="references.html#ref-levitsky-way2025" role="doc-biblioref">2025</a>)</span>, an attack on the <em>soft guardrails</em> of democracy: the unwritten norms of mutual toleration and institutional forbearance whose erosion is the proximate cause of democratic death-by-stages.</p>
+<p>Two corollaries follow, and they have to be held together. The first is that the United States in 2025–2026 is <em>already</em> an authoritarian polity in the sociological sense in which that term has a settled comparative referent. The second is that this authoritarianism is <em>non-consolidated</em> — that elections are still contested, the judiciary still rules against the executive often enough to matter, federalism still generates rival centres of authority, and the November 2025 off-year elections demonstrated that the opposition can win <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>)</span>. The analytic stance that follows is therefore neither alarmism nor reassurance, but the <em>double vision</em> that competitive authoritarianism specifically demands: the threat is real, and the contest remains open.</p>
+<section id="what-is-competitive-authoritarianism" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="what-is-competitive-authoritarianism"><span class="header-section-number">2.0.1</span> What is competitive authoritarianism?</h3>
+<p>Following the framework consolidated by Levitsky and Way and extended in 2025 to the United States <span class="citation" data-cites="levitsky-way2010 levitsky-way2025">(<a href="references.html#ref-levitsky-way2010" role="doc-biblioref">Levitsky and Way, 2010</a>, <a href="references.html#ref-levitsky-way2025" role="doc-biblioref">2025</a>)</span>, a competitive-authoritarian regime is one in which elections are competitive but the playing field is tilted; in which incumbents weaponise state institutions to punish critics and constrain rivals; in which private associations — universities, foundations, corporations, law firms — are subjected to coercive bargains; and in which the formal architecture of liberal democracy persists but its substantive practice is hollowed. The diagnostic question is neither whether elections occur nor whether courts function. It is whether the costs of opposition have been raised, by official action, to a level inconsistent with fair political contestation.</p>
+<p>The 2025 <em>Foreign Affairs</em> article by Levitsky, Way and Ziblatt <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>)</span> frames the United States as having entered this regime type during 2025; their December 2025 follow-up <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span> catalogues its first twelve months in detail. The empirical record they assemble in <em>The Price of American Authoritarianism</em> is dense, and three of its features bear directly on what follows.</p>
+<p>The first is the <strong>breadth of the weaponisation of the state</strong>. The Department of Justice was purged of professional civil servants and repacked with loyalists, several lacking relevant experience. Prosecutions and investigations were opened against political figures (Letitia James, Adam Schiff, Jack Smith), former officials turned critics (John Bolton, James Comey, Christopher Krebs), the philanthropist George Soros, the watchdog Media Matters and Federal Reserve governor Lisa Cook — the latter on a charge of mortgage fraud, the canonical petty infraction of selectively enforced rules <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>, sec.&nbsp;“Operation Warp Speed”)</span>. The Federal Communications Commission opened proceedings against ABC, CBS, PBS, NPR and Comcast; the Skydance acquisition of Paramount, waved through by an FCC that had previously disfavoured large media mergers, placed CBS in pro-administration hands. The Internal Revenue Service was instructed to scrutinise Democratic donors. Major Washington law firms withdrew from the field of contestation: where large top-tier firms had represented roughly seventy-five per cent of plaintiffs in lawsuits against the first administration, the figure had dropped to fifteen per cent by 2025 <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span>. Philanthropies audited their grants for politically vulnerable language; the largest Democratic individual donor, Reid Hoffman, publicly scaled back his contributions, citing fear of retribution.</p>
+<p>The second is <strong>speed</strong>. The pattern is recognisable from comparative cases, but the rate of the US transition exceeded the first-year trajectories of Chávez’s Venezuela, Erdoğan’s Turkey, Orbán’s Hungary and Modi’s India <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span>. The institutional cushion that established democracies are supposed to provide proved, in this respect, to be a deceleration that did not materialise.</p>
+<p>The third is the <strong>moral register of the legitimating discourse</strong>. A point underdeveloped in Levitsky, Way and Ziblatt’s account, and worth adding here, is the disposition of the receiving public. Trujillo and Trujillo, working with original survey data collected in early 2026, find that the recent decline in trust in scientists and politicians is driven principally by perceptions of <em>moral wrongdoing</em>, not by perceptions of incompetence <span class="citation" data-cites="trujillo-trujillo2026">(<a href="references.html#ref-trujillo-trujillo2026" role="doc-biblioref">Trujillo and Trujillo, 2026</a>)</span>. This is a finer-grained finding than the usual lament about declining institutional trust, and it matters analytically. A polity whose distrust of expertise is grounded in the conviction that experts are <em>bad people</em> — corrupt, complicit, hypocritical — is one in which the rhetorical framing of the assault on universities is prefabricated. It is also one in which the standard public-relations remedies — more communication, more transparency, more outreach — will not move the needle, because the deficit is not informational but moral. This is one reason why the conventional academic defence — <em>we are competent, we follow procedure, we publish our data</em> — has so spectacularly failed to land.</p>
+</section>
+<section id="the-assault-on-the-university-a-sequence" class="level3 page-columns page-full" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="the-assault-on-the-university-a-sequence"><span class="header-section-number">2.0.2</span> The assault on the university: a sequence</h3>
+<p>The chapter reconstructs the 2025–early-2026 sequence in close detail because the speed of events has tended to outpace academic analysis, and because the cumulative pattern is more revealing than any single episode.</p>
+<p><strong>Q1 2025 — opening salvos.</strong> Title VI investigations against Columbia (March), Penn, Brown and Cornell open in rapid succession, joined within days by an additional fifty-one investigations targeting race-based scholarship and DEI programmes <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. The Department of Education’s anti-DEI guidance of February 2025 — subsequently struck down in federal court in August — provides the rhetorical cover. Demand letters carry extraordinary scope: external receivership of academic departments, prohibition of mask-wearing in protest, viewpoint-diversity quotas in faculty hiring. By the end of the first quarter, the administration has opened or cited more than 150 investigations into US colleges and universities <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>.</p>
+<p><strong>Q2 2025 — escalation.</strong> Announcement of the <em>Catch and Revoke</em> programme, deploying machine-learning systems against international students’ social media <span class="citation" data-cites="bulletin2025">(<a href="references.html#ref-bulletin2025" role="doc-biblioref">Bulletin of the Atomic Scientists, 2025</a>)</span>. Threatened cap on indirect research-cost reimbursement at fifteen per cent — pursued in nearly identical form by NIH, NSF, the Department of Energy and the Department of Defense, and subsequently blocked by federal courts in all four cases <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. The administration’s fiscal-year 2026 budget request proposes a twenty-one per cent cut to federal scientific research, with NSF reduced by more than half and NIH by nearly forty per cent <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>; congressional appropriators reject the proposal and pass bipartisan alternatives. Harvard sues the administration; lower courts begin to rule against its procedural unlawfulness, including the attempt to revoke the university’s authorisation to enrol international students. In June, the President addresses uniformed soldiers at Fort Bragg and goads them to jeer at elected Democratic officials <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>)</span> — a small breach in the firewall between the armed forces and partisan politics whose significance is that it was attempted at all.</p>
+<p><strong>Q3 2025 — institutional sorting and political shock.</strong> Columbia capitulates under sustained financial duress and accepts a sweeping settlement: a payment of $221 million, the largest of any agreement to date, together with extensive policy concessions including reporting of admissions data to the federal government, mandatory ‘socialisation’ training for students and an independent monitor overseeing compliance <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. Other private universities — MIT, Brown, USC, Penn, UVA, Dartmouth — initially reject the proposed <em>Compact for Academic Excellence</em> in October. In September, the right-wing commentator Charlie Kirk is shot and killed; in the days that follow, dozens of teachers, university faculty and journalists are suspended or dismissed for social-media commentary, including, as Levitsky, Way and Ziblatt note, those whose only offence was to criticise Kirk’s published positions <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>)</span>. Later that month, the President instructs senior military commanders to prepare for deployment in US cities against an ‘enemy from within’ — a register, the same authors note, of the language used by the South American military juntas of the 1970s.</p>
+
+<div class="no-row-height column-margin column-container"><div class="" data-appearance="simple">
+<p><strong>Genealogy of the ‘enemy from within’:</strong></p>
+<p>The rhetorical infrastructure for this register was laid in June 2020, when the administration characterised protesters as ‘terrorists’ and prepared the use of active-duty troops in US cities under the Insurrection Act <span class="citation" data-cites="TheHill2020FederalForces">(<a href="references.html#ref-TheHill2020FederalForces" role="doc-biblioref">Hill, 2020</a>)</span>. The structural homology with the <em>doctrina del enemigo interno</em> — the internal-enemy doctrine through which Southern Cone juntas in the 1970s justified the criminalisation of domestic dissent and the granting of broad impunity to security forces — became explicit five years later, when the federal deployment in Los Angeles in June 2025 was identified by human-rights observers with regional expertise as reproducing precisely that doctrine <span class="citation" data-cites="WOLA2025LosAngeles">(<a href="references.html#ref-WOLA2025LosAngeles" role="doc-biblioref">Washington Office on Latin America, 2025</a>)</span>. The September 2025 escalation, with its ‘enemy from within’ formulation, is therefore neither rhetorically novel nor operationally improvised: it is the doctrinal completion of a sequence whose first articulation is half a decade old.</p>
+</div></div><p><strong>Q4 2025 — settlements, litigation, and electoral correction.</strong> By year’s end, six universities have brokered public settlements with the administration: Brown, Columbia, Cornell, Northwestern (at $75 million in late November), Penn and the University of Virginia <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. Most paid hundreds of millions in combined settlement and reform costs to recover frozen federal research funding; UVA, whose funding remained intact, traded investigatory closure for a written commitment to terminate DEI through 2028. Harvard, Princeton and Cornell continue litigating the broader pattern, and a federal judge in Massachusetts strikes down the administration’s $2.2 billion funding freeze against Harvard <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. In the November off-year elections, the Democratic Party wins decisively, demonstrating that elections in the United States remain — in the technical sense the competitive-authoritarianism literature requires — competitive <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>)</span>.</p>
+<p><strong>Q1–Q2 2026 — paramilitarisation and corporate fracture.</strong> In January 2026, the conversion of Immigration and Customs Enforcement into what observers and former officials have called a ‘poorly regulated paramilitary force’ produces civil unrest in Minnesota and triggers a letter from roughly 2,500 Silicon Valley employees demanding their employers sever contracts with the agency <span class="citation" data-cites="eldiario2026">(<a href="references.html#ref-eldiario2026" role="doc-biblioref">elDiario.es, 2026</a>)</span>. In April, the federal appeals court permanently blocks NIH’s indirect-cost cap <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. In the same window, the Compact for Academic Excellence is variously revived, modified and contested across institutional negotiations. The full fiscal-year-2026 budget remains unresolved past the late-January stopgap.</p>
+<p>The chapter’s analytical claim about this sequence: the assault is <strong>institutionally targeted</strong>, <strong>financially leveraged</strong> and <strong>rhetorically masked</strong>. It is targeted because universities are not collateral damage but a designated front. It is financially leveraged because the operative coercion is the freezing of already-appropriated federal research funding, not the prohibition of any specific activity — a tactic precisely chosen to compel settlement before legal review can run its course. And it is rhetorically masked because the language of antisemitism, viewpoint diversity and DEI is instrumentalised to displace legal-procedural constraints: the substantive assault is procedural and financial; the public justification is moral and cultural. The asymmetry between the <em>operative</em> and the <em>justificatory</em> registers is the precise diagnostic of the regime type.</p>
+</section>
+<section id="the-transnational-pattern-applebaums-autocracy-inc.-and-its-discontents" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="the-transnational-pattern-applebaums-autocracy-inc.-and-its-discontents"><span class="header-section-number">2.0.3</span> The transnational pattern: Applebaum’s <em>Autocracy, Inc.</em> and its discontents</h3>
+<p>The analysis then steps outward. Applebaum’s <em>Autocracy, Inc.</em> <span class="citation" data-cites="applebaum2024">(<a href="references.html#ref-applebaum2024" role="doc-biblioref">Applebaum, 2024</a>)</span> argues that contemporary autocrats constitute not a bloc but a network — bound not by ideology but by mutual interest in the suppression of independent civil society, the protection of kleptocratic wealth and the propagation of disinformation. Three features of her account matter here.</p>
+<p>The first is <strong>the post-ideological character of the network</strong>. Russia, China, Iran, Venezuela, Hungary, El Salvador and others share neither communism nor any other unifying doctrine; what they share is a <em>method</em>. The American case fits this template uneasily, because it carries the additional weight of an ideological tradition — libertarian-conservative, evangelical-nationalist — that none of the other regimes possess in comparable form. But the <em>method</em> is recognisable: capture of the regulatory state, weaponisation of tax and legal authority against opponents, financial leverage over civil society, and a pliable supportive media ecosystem.</p>
+<p>The second is <strong>the structural complicity of Western financial and professional infrastructure</strong>. The City of London, Wall Street, Sussex real-estate agents, Sioux Falls bankers — Applebaum’s catalogue of enabling infrastructures is precise, and it is here that Slobodian’s work on the cross-fertilisation of US conservative intellectual networks with international authoritarian capital adds analytical depth <span class="citation" data-cites="slobodian2025">(<a href="references.html#ref-slobodian2025" role="doc-biblioref">Slobodian, 2025</a>)</span>. The argument here — and developed further in §2.5 — is that the United States has, between 2024 and 2026, moved from being one of the principal <em>targets</em> of <em>Autocracy, Inc.</em> to being a <em>partial participant</em> in it: an inversion that is constitutively related to the central claim about the assault on universities, because universities are precisely the institutional sites at which independent expertise about kleptocratic finance, climate science and election integrity is produced.</p>
+<p>The third is <strong>the role of disinformation as a mode of governance</strong>. Modern autocratic propaganda does not seek to persuade but to <em>disorient</em> — to overwhelm citizens with mutually inconsistent claims until they retreat into private cynicism <span class="citation" data-cites="harsin2024 applebaum2024">(<a href="references.html#ref-applebaum2024" role="doc-biblioref">Applebaum, 2024</a>; <a href="references.html#ref-harsin2024" role="doc-biblioref">Harsin, 2024</a>)</span>. The American variant has a particular texture, captured well by Trujillo and Trujillo’s finding that distrust of experts is morally rather than competence-driven <span class="citation" data-cites="trujillo-trujillo2026">(<a href="references.html#ref-trujillo-trujillo2026" role="doc-biblioref">Trujillo and Trujillo, 2026</a>)</span>: it is not enough that experts be wrong; they must be <em>bad</em>. This is the rhetorical condition that allows a freeze of $2.2 billion in research funding to be presented as a moral act.</p>
+<p>A complication that Applebaum’s frame cannot, on its own, hold, must be registered here. The American technology sector is neither a unitary participant in the authoritarian project nor a coherent opposition to it; it is fractured along precisely the lines the project requires for its operation. The fracture has a paradoxical shape that bears emphasising: the corporations whose competitive advantage rests on cognitive infrastructure — on the recruitment of the most highly trained scientific and engineering personnel available, the great majority of whom were formed in the very research universities now under coercive financial pressure — have, at the level of executive decision, sided with the administration that is dismantling the conditions of their own technical reproduction. The clearest illustration is the early-2026 confrontation between Anthropic, Palantir and internal dissenters at Google <span class="citation" data-cites="eldiario2026">(<a href="references.html#ref-eldiario2026" role="doc-biblioref">elDiario.es, 2026</a>)</span>. Anthropic refused contracts with the Pentagon for what it identified as two red lines — autonomous lethal weapons and mass surveillance — and was placed by the administration on a ‘supply-chain risk’ blacklist; the punishment failed when a new Anthropic model proved strategically indispensable to US cyber-security, forcing the White House to reverse course <span class="citation" data-cites="eldiario2026">(<a href="references.html#ref-eldiario2026" role="doc-biblioref">elDiario.es, 2026</a>)</span>. Palantir, by contrast, published a twenty-two-point manifesto demanding the dissolution of any ethical limit on military AI, framing the contest in explicitly civilisational terms <span class="citation" data-cites="KarpZamiska2025Tech DownBooth2026Palantir">(<a href="references.html#ref-DownBooth2026Palantir" role="doc-biblioref">Down and Booth, 2026</a>; <a href="references.html#ref-KarpZamiska2025Tech" role="doc-biblioref">Karp and Zamiska, 2025</a>)</span>. More than 560 Google employees, including some twenty vice-presidents, signed a letter to Sundar Pichai demanding the company decline a new Pentagon contract; the contract was signed regardless <span class="citation" data-cites="eldiario2026">(<a href="references.html#ref-eldiario2026" role="doc-biblioref">elDiario.es, 2026</a>)</span>.</p>
+<p>The argument is not, to be clear, that Silicon Valley redeems itself: the contracts were signed, ICE was paramilitarised, and the surveillance infrastructure remains in place. The argument is that the alliance between corporate AI leadership and an administration committed to dismantling the institutions of independent research is <em>self-undermining</em>: it sacrifices, for short-term contractual advantage and protection from regulatory hostility, the long-term institutional conditions on which the sector’s technical superiority depends. That this self-undermining quality is internally legible to a meaningful share of the technical workforce — including senior managers — is itself a political resource of the kind the competitive-authoritarianism literature treats as a constitutive feature of the regime type <span class="citation" data-cites="levitsky-way2010">(<a href="references.html#ref-levitsky-way2010" role="doc-biblioref">Levitsky and Way, 2010</a>)</span>.</p>
+<p>The self-undermining quality of this alliance is structural, not incidental, and bears specifying. The competitive advantage of US technology firms in the global market for advanced AI rests on three institutional preconditions, none of which is a market output: the freedom of scientific inquiry, the unrestricted flow of ideas and personnel across institutional and national borders, and a regulatory environment of civil-rights guarantees that makes the United States more attractive to top-tier researchers than its principal geopolitical competitors. The recruitment advantage that US firms enjoy over Chinese and Russian counterparts — high salaries, intellectually demanding environments, freedom to publish and to associate — is not incidental to that ecosystem; it <em>is</em> that ecosystem. An administration that defunds federal research, revokes the visas of international students for political speech, weaponises Title VI investigations against the leading research universities, and deploys ICE against immigrant academics and engineers is, by the same operations, eroding the institutional substrate on which the sector’s global preeminence is built <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>.</p>
+<p>What makes the Palantir position particularly revealing is that it articulates the contradiction as a programme rather than a silence. <em>The Technological Republic</em> <span class="citation" data-cites="KarpZamiska2025Tech">(<a href="references.html#ref-KarpZamiska2025Tech" role="doc-biblioref">Karp and Zamiska, 2025</a>)</span>, whose twenty-two-point manifesto <span class="citation" data-cites="DownBooth2026Palantir">(<a href="references.html#ref-DownBooth2026Palantir" role="doc-biblioref">Down and Booth, 2026</a>)</span> crystallises the corporate stance, frames elite research universities as a source of the problem rather than the source of the technical capital on which the sector depends. They cultivate, on this account, a generation of ‘technological agnostics’ insufficiently committed to the national project; their hold on the formation of the engineering elite is a liability rather than an asset. The argument has internal consistency; it also has the demerit of mistaking the conditions of one’s own existence for the obstacles to it.</p>
+<p>The conditions in question are not abstract. The elite universities Karp and Zamiska arraign are the institutions that trained Karp himself, that supply Palantir its engineers, and whose graduate research traditions in machine learning, optimisation and applied statistics are the precondition of the company’s products. To call for the political subordination of those institutions while continuing to depend on their output is not a coherent strategy; it is a wager that the institutional capital accumulated over a century will outlast the political project designed to dismantle it.</p>
+</section>
+<section id="why-universities-an-institutional-political-answer" class="level3 page-columns page-full" data-number="2.0.4">
+<h3 data-number="2.0.4" class="anchored" data-anchor-id="why-universities-an-institutional-political-answer"><span class="header-section-number">2.0.4</span> Why universities? An institutional-political answer</h3>
+<p>A closing analytical section asks why universities, specifically, have been the front. The standard reasons converge with two that the literature has been slower to articulate.</p>
+<p><strong>Universities are concentrations of organised counter-power.</strong> They are wealthy, durable, and host professional norms — peer review, academic freedom, tenure — that are constitutively resistant to political capture. Of all the soft-guardrail institutions Levitsky and Ziblatt identify, universities have the longest institutional memory and the deepest reserves of legitimacy. The United States hosts more than 1,700 private institutions of higher education <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>)</span>; their aggregate financial, organisational and reputational capital exceeds anything available to oppositions in Hungary, India or Turkey, let alone Venezuela or Russia. They are, in this sense, an unusually well-armed civic defence.</p>
+<p><strong>They are sites of the production of legitimating expertise.</strong> Climate science, public-health expertise, historical scholarship, legal scholarship: all originate in universities and constrain the rhetorical space available to authoritarian governance. The agenda articulated by McKee and colleagues for public-health diplomacy in the populist age makes the point with unusual clarity: when populist governance requires the suppression of inconvenient evidence, the institutional sources of that evidence must be either captured, defunded or de-legitimated <span class="citation" data-cites="mckee-figueras2025">(<a href="references.html#ref-mckee-figueras2025" role="doc-biblioref">McKee et al., 2025</a>)</span>. The proposal to cut federal scientific research by twenty-one per cent <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span> is not a budgetary measure independent of the political project; it is the budgetary expression of the political project.</p>
+<p><strong>They are emotionally salient targets.</strong> The cultural symbolism of ‘elite universities’ lends itself to populist mobilisation in a way that, say, central banks or constitutional courts do not. Their <em>visibility</em> is a political asset for those who attack them. The trope of the intellectually corrupt, financially over-endowed, and ideologically homogeneous university operates at the level of public imagination with such fluency that even the recoil from the specific tactics — funding freezes, ideological compacts, visa revocations — has not unmade it.</p>
+<p>To these familiar reasons, two further considerations must be added. The first is the <em>epistemic</em> dimension recently developed by Heumann’s analysis of rural consciousness in Switzerland, which is generalisable to the comparative literature <span class="citation" data-cites="heumann2026">(<a href="references.html#ref-heumann2026" role="doc-biblioref">Heumann, 2026</a>)</span>. Heumann argues that what the literature has read as an <em>affective</em> divide between rural and urban populations is more accurately read as an <em>epistemic</em> divide: rival frameworks of knowledge — proximity, hands-on practical work, common sense — that <em>disqualify</em> expert, abstract, academic knowledge rather than merely distrusting it. This is more fine-grained than the conventional rural-resentment account, and it has a sharp implication for the argument here: the rhetorical attack on universities lands on a population already predisposed to read expert knowledge as a category mistake about where authoritative knowledge comes from. Merkley’s earlier work on anti-intellectualism and motivated resistance to expert consensus <span class="citation" data-cites="merkley2020">(<a href="references.html#ref-merkley2020" role="doc-biblioref">Merkley, 2020</a>)</span> anticipates the same finding from a different angle. Berg, working on anti-COVID protest, adds a further refinement: such protesters do not, on closer inspection, <em>reject</em> science but <em>invoke</em> it, deploying the rhetoric of evidence and citation against the institutional carriers of expert authority <span class="citation" data-cites="berg2025">(<a href="references.html#ref-berg2025" role="doc-biblioref">Berg, 2025</a>)</span>. This is not anti-science as the simple mirror of science; it is anti-science as a re-coding of the same rhetorical resources.</p>
+<p>The second consideration sharpens the picture by complicating the defensive register the chapter has thus far adopted. Universities are not innocent. The internal anti-intellectualism that managerial discourse has installed in the academy over the past four decades is structural, not merely rhetorical. Three strands of analysis converge on the same diagnosis from different angles. Ginsberg’s account <span class="citation" data-cites="Ginsberg2011Fall">(<a href="references.html#ref-Ginsberg2011Fall" role="doc-biblioref">Ginsberg, 2011</a>)</span> tracks the demographic mutation of the modern university into what he calls the ‘all-administrative’ institution: an organisational form in which the growth of administrative personnel has exceeded that of faculty by a wide margin and in which faculty governance has been progressively displaced. Newfield’s <span class="citation" data-cites="Newfield2016Great">(<a href="references.html#ref-Newfield2016Great" role="doc-biblioref">Newfield, 2016</a>)</span> political-economic account documents the parallel privatisation of the US public university — declining state appropriations absorbed through tuition increases, dependence on private and corporate funding, adoption of the rhetorical and managerial apparatus of the for-profit firm — as a four-decade self-inflicted wound on the institutional segment that historically anchored American mass higher education. Diaz’s glossary <span class="citation" data-cites="diaz2021">(<a href="references.html#ref-diaz2021" role="doc-biblioref">Diaz, 2021</a>)</span>, drawing on Adorno’s <em>Halbbildung</em>, catalogues the linguistic surface of the same process: the rhetoric of ‘excellence’, ‘leadership’, ‘efficiency’, ‘human capital’ and ‘impact’ through which the academy has internalised the vocabulary of the firm.</p>
+<p>The point is not to flatten the asymmetry between an external coercive assault and internal deformations — the asymmetry is real, and the chapter does not equivocate on it — but to note that the assault has succeeded in part because the institutional self-confidence required to withstand it had already been hollowed out by four decades of managerial reform. A further consequence worth flagging: the 2025 assault has been politically possible on the <em>private</em> segment of US higher education in part because the <em>public</em> segment had already been weakened by the long privatisation that Newfield documents <span class="citation" data-cites="Newfield2016Great">(<a href="references.html#ref-Newfield2016Great" role="doc-biblioref">Newfield, 2016</a>)</span>, leaving the federal government with a smaller field of public resistance than the mythology of American higher education suggests.</p>
+
+<div class="no-row-height column-margin column-container"><div class="" data-appearance="simple">
+<p>The further argument that intellectualism itself, in its perfectionist and self-isolating registers, can function as a barrier to academic freedom is taken up in Chapter <a href="07-education-battleground.html" class="quarto-xref"><span>Chapter 7</span></a>. Cf. <span class="citation" data-cites="holt2025">Holt (<a href="references.html#ref-holt2025" role="doc-biblioref">2025</a>)</span>.</p>
+</div></div><p>A related caveat is owed to the rhetorical instrumentalisation of ‘viewpoint diversity’. McDonald has argued, persuasively, that the actually existing American research university already exhibits substantial viewpoint diversity at the level that matters — the disciplinary level, where economists, comparative literature scholars, philosophers of mind and historians of medicine do not in fact share a worldview, much less a hegemonic ideology <span class="citation" data-cites="mcdonald2026">(<a href="references.html#ref-mcdonald2026" role="doc-biblioref">McDonald, 2026</a>)</span>. Federal and state programmes purporting to <em>introduce</em> viewpoint diversity into universities are therefore not addressed to a real condition; they address a phantom and impose political constraints under cover of doing so. The point is analytically important because it specifies what the assault is <em>not</em>: it is not a corrective response to an ideological capture of the academy, because that capture has not, at the disciplinary level, occurred.</p>
+<p>The chapter’s analytical pay-off, then, is this: the present assault on universities is not aberrant or anti-intellectual <em>in passing</em> — it is the precise operational expression of competitive authoritarianism’s logic in contexts where universities are still institutionally autonomous enough to matter, addressed to a population whose epistemic dispositions have been pre-formed to receive the rhetoric, and finding its targets already weakened by four decades of internal managerialism. None of these factors alone would be sufficient. Together they constitute the political condition that the rest of the book interrogates.</p>
+</section>
+<section id="an-authoritarian-moment-not-an-authoritarian-outcome" class="level3" data-number="2.0.5">
+<h3 data-number="2.0.5" class="anchored" data-anchor-id="an-authoritarian-moment-not-an-authoritarian-outcome"><span class="header-section-number">2.0.5</span> An authoritarian moment, not an authoritarian outcome</h3>
+<p>The argument so far would invite, if left unguarded, a counsel of despair. The book argues against that counsel and the chapter closes by saying why.</p>
+<p>Two observations are decisive. First, on the comparative record, competitive-authoritarian regimes have repeatedly been reversed through the very institutional channels they had ostensibly closed <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>)</span>. India’s Janata Party defeated Indira Gandhi at the polls in 1977 with much of its leadership still in prison. Malaysia’s Barisan Nasional, after more than half a century of authoritarian rule, lost its parliamentary majority in 2018. Poland’s Law and Justice government, having packed the courts and electoral commissions, lost the 2023 election to a broad-coalition opposition. Slobodan Milošević’s electoral fraud in Serbia in 2000, and Viktor Yanukovych’s in Ukraine in 2004, were both undone by sustained mass mobilisation. The regime type, by its own constitutive logic, leaves the door of contestation open; the question is whether the opposition continues to walk through it. Second, and concretely, the November 2025 off-year elections delivered an unambiguous Democratic victory across the contests that took place — confirming that, however tilted, the field has not yet been pitched at the angle that prevents play.</p>
+<p>The double vision the chapter has urged throughout is therefore not a rhetorical flourish but a methodological imperative for the remainder of the book. <em>Brains as Brand</em> is not an obituary for democracy; it is an analysis of the political-economic conditions under which the cultural economy of intellect has been restructured, and a brief for what could repair it. To overstate the closure of the political moment is to misread the regime type; it is also, as Levitsky, Way and Ziblatt observe with characteristic sharpness, to risk precisely the demobilisation that authoritarian incumbents most reliably exploit <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>)</span>. The greater danger to American democracy in 2026 is not repression but resignation.</p>
+<hr>
+<p>What makes the assault possible — what makes its rhetorical mobilisation effective — is the platform-mediated transformation of the public sphere examined in the next chapter (<a href="03-attention-economy.html" class="quarto-xref"><span>Chapter 3</span></a>). The <em>political</em> condition this chapter has described requires a <em>technical</em> substrate without which its rhetorical operations would not propagate at the speed and scale they do. The framing of academic research as morally suspect, the diffusion of the imagined unitary ‘elite university’, the rapid recycling of attacks on named academics across half a dozen platforms within hours: none of these are independent of the architecture of the platforms on which they travel. The next chapter takes up that architecture directly. The assault is political; its preconditions are technical-economic; together they produce the cultural economy whose effects on the production, circulation and reception of intellect are the subject of the book as a whole.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-applebaum2024" class="csl-entry" role="listitem">
+Applebaum, A. (2024). <em>Autocracy, inc.: The dictators who want to run the world</em>. Doubleday.
+</div>
+<div id="ref-berg2025" class="csl-entry" role="listitem">
+Berg, A. (2025). Anti-<span>COVID</span> = anti-science? <span>H</span>ow protesters against <span>COVID-19</span> measures appropriate science to navigate the information environment. <em>New Media &amp; Society</em>, <em>27</em>(2), 1093–1109. <a href="https://doi.org/10.1177/14614448231189262">https://doi.org/10.1177/14614448231189262</a>
+</div>
+<div id="ref-bulletin2025" class="csl-entry" role="listitem">
+Bulletin of the Atomic Scientists. (2025). How AI and surveillance capitalism are undermining democracy. <em>Bulletin of the Atomic Scientists</em>.
+</div>
+<div id="ref-diaz2021" class="csl-entry" role="listitem">
+Diaz, W. (2021). On a small glossary of academic anti-intellectualism. <em>CLCWeb: Comparative Literature and Culture</em>, <em>23</em>(2). <a href="https://fileserver-az.core.ac.uk/download/511342897.pdf">https://fileserver-az.core.ac.uk/download/511342897.pdf</a>
+</div>
+<div id="ref-DownBooth2026Palantir" class="csl-entry" role="listitem">
+Down, A., and Booth, R. (2026). Palantir manifesto described as <span>“ramblings of a supervillain”</span> amid UK contract fears. <em>The Guardian</em>. <a href="https://www.theguardian.com/technology/2026/apr/21/palantir-manifesto-uk-contract-fears-mps">https://www.theguardian.com/technology/2026/apr/21/palantir-manifesto-uk-contract-fears-mps</a>
+</div>
+<div id="ref-eldiario2026" class="csl-entry" role="listitem">
+elDiario.es. (2026). <em><span class="nocase">¿Guerra civil en Silicon Valley?</span> <span>Anthropic</span>, <span>Palantir</span> y ejecutivos de <span>Google</span> chocan por los límites de la <span>IA</span> militar</em>. <span>elDiario.es</span>. <a href="https://www.eldiario.es/tecnologia/guerra-civil-silicon-valley-anthropic-palantir-ejecutivos-google-chocan-limites-ia-militar_1_13181195.html">https://www.eldiario.es/tecnologia/guerra-civil-silicon-valley-anthropic-palantir-ejecutivos-google-chocan-limites-ia-militar_1_13181195.html</a>
+</div>
+<div id="ref-Ginsberg2011Fall" class="csl-entry" role="listitem">
+Ginsberg, B. (2011). <em>The fall of the faculty: The rise of the all-administrative university and why it matters</em>. Oxford University Press. <a href="https://doi.org/10.1093/oso/9780199782444.001.0001">https://doi.org/10.1093/oso/9780199782444.001.0001</a>
+</div>
+<div id="ref-harsin2024" class="csl-entry" role="listitem">
+Harsin, J. (2024). Post-truth politics and epistemic populism. In <em>The palgrave handbook of communication and populism</em>. Palgrave Macmillan.
+</div>
+<div id="ref-heumann2026" class="csl-entry" role="listitem">
+Heumann, [autor. a. verificar]. (2026). <em><span>‘</span>They don<span>’</span>t know what they<span>’</span>re doing<span>’</span></em>.
+</div>
+<div id="ref-TheHill2020FederalForces" class="csl-entry" role="listitem">
+Hill, T. (2020). Trump says he will deploy military if states don’t stop violent protests. <em>The Hill</em>. <a href="https://thehill.com/homenews/administration/500606-trump-says-he-will-deploy-military-if-states-dont-stop-violent/">https://thehill.com/homenews/administration/500606-trump-says-he-will-deploy-military-if-states-dont-stop-violent/</a>
+</div>
+<div id="ref-holt2025" class="csl-entry" role="listitem">
+Holt, B. J. (2025). Intellectualism and anti-intellectualism act as barriers to academic freedom. <em>International Journal of Technology and Inclusive Education</em>, <em>14</em>(2), 2099–2108. <a href="https://doi.org/10.20533/ijtie.2047.0533.2025.0261">https://doi.org/10.20533/ijtie.2047.0533.2025.0261</a>
+</div>
+<div id="ref-KarpZamiska2025Tech" class="csl-entry" role="listitem">
+Karp, A., and Zamiska, N. W. (2025). <em>The technological republic: Hard power, soft belief, and the future of the west</em> (First edition). Crown Currency.
+</div>
+<div id="ref-levitsky-way2010" class="csl-entry" role="listitem">
+Levitsky, S., and Way, L. A. (2010). <em>Competitive authoritarianism: Hybrid regimes after the cold war</em>. Cambridge University Press.
+</div>
+<div id="ref-levitsky-way2025" class="csl-entry" role="listitem">
+Levitsky, S., and Way, L. A. (2025). The path to american authoritarianism: <span>What</span> comes after democratic breakdown. <em>Foreign Affairs</em>, <em>104</em>(2). <a href="https://www.foreignaffairs.com/united-states/path-american-authoritarianism-trump">https://www.foreignaffairs.com/united-states/path-american-authoritarianism-trump</a>
+</div>
+<div id="ref-levitsky-way-ziblatt2025-price" class="csl-entry" role="listitem">
+Levitsky, S., Way, L. A., and Ziblatt, D. (2025). The price of american authoritarianism: <span>What</span> can reverse democratic decline? <em>Foreign Affairs</em>. <a href="https://www.foreignaffairs.com/united-states/price-american-authoritarianism">https://www.foreignaffairs.com/united-states/price-american-authoritarianism</a>
+</div>
+<div id="ref-mcdonald2026" class="csl-entry" role="listitem">
+McDonald, T. J. (2026). <em>Viewpoint diversity: <span class="nocase">It’s</span> the disciplines, stupid!</em> [Opinion]. <span>Inside Higher Ed</span>. <a href="https://www.insidehighered.com/opinion/views/2026/04/30/viewpoint-diversity-its-disciplines-stupid-opinion">https://www.insidehighered.com/opinion/views/2026/04/30/viewpoint-diversity-its-disciplines-stupid-opinion</a>
+</div>
+<div id="ref-mckee-figueras2025" class="csl-entry" role="listitem">
+McKee, M., Figueras, J., Kalediene, R., Joshi, A., El-Mohandes, A., Otok, R., Magaña, L., Marchandise, C., and Barros, H. (2025). An agenda for public health diplomacy in an age of populism. <em>Public Health Reviews</em>, <em>46</em>, 1609089. <a href="https://doi.org/10.3389/phrs.2025.1609089">https://doi.org/10.3389/phrs.2025.1609089</a>
+</div>
+<div id="ref-merkley2020" class="csl-entry" role="listitem">
+Merkley, E. (2020). Anti-intellectualism, populism, and motivated resistance to expert consensus. <em>Public Opinion Quarterly</em>, <em>84</em>(1), 24–48. <a href="https://doi.org/10.1093/poq/nfz053">https://doi.org/10.1093/poq/nfz053</a>
+</div>
+<div id="ref-Newfield2016Great" class="csl-entry" role="listitem">
+Newfield, C. (2016). <em>The great mistake: How we wrecked public universities and how we can fix them</em>. Johns Hopkins University Press.
+</div>
+<div id="ref-slobodian2025" class="csl-entry" role="listitem">
+Slobodian, Q. (2025). <em>Hayek’s bastards: Race, gold, IQ, and the capitalism of the far right</em>. Zone Books.
+</div>
+<div id="ref-spitalniak2026" class="csl-entry" role="listitem">
+Spitalniak, L. (2026). <em>Trump 2.0’s impact on higher ed: The first year in 8 numbers</em>. <span>Higher Ed Dive</span>. <a href="https://www.highereddive.com/news/trump-20s-impact-on-higher-ed-the-first-year-in-8-numbers/809909/">https://www.highereddive.com/news/trump-20s-impact-on-higher-ed-the-first-year-in-8-numbers/809909/</a>
+</div>
+<div id="ref-trujillo-trujillo2026" class="csl-entry" role="listitem">
+Trujillo, K. L., and Trujillo, M. (2026). What drives a contemporary lack of trust in government and science in the <span>U</span>nited <span>S</span>tates? <em>American Politics Research</em>. <a href="https://doi.org/10.1177/1532673X261443521">https://doi.org/10.1177/1532673X261443521</a>
+</div>
+<div id="ref-WOLA2025LosAngeles" class="csl-entry" role="listitem">
+Washington Office on Latin America. (2025, June 12). <em>The <span>Trump</span> administration’s unprecedented military deployment in <span>Los Angeles</span> echoes the overreach we’ve long opposed in <span>Latin America</span></em>. <a href="https://www.wola.org/analysis/military-los-angeles-protests/">https://www.wola.org/analysis/military-los-angeles-protests/</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./01-genealogy.html" class="pagination-link" aria-label="A Short Genealogy of Anti-Intellectualism">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./03-attention-economy.html" class="pagination-link" aria-label="The Attention Economy and the Displacement of Public Reason">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

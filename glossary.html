@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Appendix D — Glossary – Brains as Brand</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C-chronology.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-aeb32cb3453d7d606b6c0a50f15f0871.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d7bb2a7abcc71ede1f4a44f14a5ae606.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+  /* Iconos CC inline: heredan color del texto, sin filter trick */
+  .cc-license-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+  .cc-license-link svg {
+    height: 1.2em;
+    width: 1.2em;
+    fill: currentColor;
+  }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+// Solo en la página principal del libro
+const path = window.location.pathname;
+const isIndex = path.endsWith("/") || 
+        path.endsWith("/index.html") || 
+        path === "/index.html";
+        if (!isIndex) return;
+        
+const meta = document.querySelector(".quarto-title-meta");
+if (!meta) return;
+
+  // ---------- 1. Bloque de autores en dos columnas ----------
+  const authors = document.querySelectorAll(".quarto-title-author");
+  if (authors.length > 0) {
+    const dateEl = document.querySelector(".quarto-title-date");
+    const dateText = dateEl ? dateEl.textContent.trim() : "";
+
+    const block = document.createElement("div");
+    block.className = "author-block";
+    const left  = document.createElement("div"); left.className  = "author-col";
+    const right = document.createElement("div"); right.className = "author-col";
+
+    authors.forEach((author, i) => {
+      const col   = (i % 2 === 0) ? left : right;
+      const entry = document.createElement("div");
+      entry.className = "author-entry";
+
+      const name = document.createElement("div");
+      name.className = "author-name";
+      name.textContent = author.textContent.trim();
+      entry.appendChild(name);
+
+      ["role", "affiliation", "note"].forEach(attr => {
+        const value = author.getAttribute("data-author-" + attr);
+        if (value) {
+          const div = document.createElement("div");
+          div.className = "author-" + attr;
+          div.textContent = value;
+          entry.appendChild(div);
+        }
+      });
+
+      if (dateText) {
+        const dateDiv = document.createElement("div");
+        dateDiv.className = "author-date";
+        dateDiv.textContent = dateText;
+        entry.appendChild(dateDiv);
+      }
+
+      col.appendChild(entry);
+    });
+
+    block.appendChild(left);
+    block.appendChild(right);
+    meta.appendChild(block);
+  }
+
+  // ---------- 2. Entrada de licencia con SVG inline ----------
+  // SVG inline con fill=currentColor → adapta a tema claro/oscuro
+  // sin filter hack y sin dependencias externas.
+  const licenseEntry = document.createElement("div");
+  licenseEntry.innerHTML = `
+    <div class="quarto-title-meta-heading">License</div>
+    <div class="quarto-title-meta-contents">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+         target="_blank" rel="license noopener"
+         class="cc-license-link"
+         aria-label="CC BY-NC-SA 4.0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">CC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">BY</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">NC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">SA</text></svg>
+        <span style="margin-left:0.2em;">4.0</span>
+      </a>
+    </div>
+  `;
+  meta.appendChild(licenseEntry);
+});
+</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A-methodology.html">Appendices</a></li><li class="breadcrumb-item"><a href="./glossary.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Glossary</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Brains as Brand</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: The Mausoleum of the Mind</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I — The Political Crisis of Public Reason</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-genealogy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-authoritarian-moment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-attention-economy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II — The Cultural Recoding of Intellect</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-performative-intellectualism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Performative Intellectualism: From BookTok to the Bottega Catwalk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-cultural-capital-gender.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cultural Capital, Gender and the Marketisation of Intellect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-ai-cognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III — Reconstruction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-education-battleground.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Education as Battleground: Universities, Schools, and the Politics of Curiosity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion: Leaving the Mausoleum</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A-methodology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Methodological Note</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./B-corpus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Corpus of Cultural Artefacts Examined</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C-chronology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Chronology of Principal Events, 2016–2026</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A-methodology.html">Appendices</a></li><li class="breadcrumb-item"><a href="./glossary.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Glossary</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-glossary" class="quarto-section-identifier">Appendix D — Glossary</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This glossary defines the principal technical terms used in the book, in the senses in which the book uses them. Where contested, the contestation is noted briefly; the body of the book provides fuller discussion.</p>
+<dl>
+<dt>Anti-intellectualism</dt>
+<dd>
+<p>Following Hofstadter (1963), ‘resentment and suspicion of the life of the mind, and of those who are considered to represent it’. The book distinguishes four historical phases — populist, reactive, market and platform-authoritarian — and treats the present (Phase IV, post-2016) as qualitatively novel. See <a href="01-genealogy.html" class="quarto-xref"><span>Chapter 1</span></a>.</p>
+</dd>
+<dt>Aesthetic mode of knowing</dt>
+<dd>
+<p>Inbar, Jablonka, Ginsburg and Zeligowski’s term (2025) for a legitimate mode of cognition distinct from but complementary to the scientific image, irreducible to mere ornament. The book uses the concept to locate the analytical bite of the <em>mausoleum</em> critique: the problem is not the aesthetic mode itself but its commodification under platform conditions. See <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a>.</p>
+</dd>
+<dt>Anti-mausoleum</dt>
+<dd>
+<p>This book’s complementary term to <em>mausoleum culture</em>: a space in which the artefacts of intellectual life are not preserved as luxury signs but circulated as conditions of ordinary practice; in which access is distributed rather than priced; in which the reader is a citizen rather than a brand. The contemporary public library, in its institutionally serious form, is the paradigm case. See <a href="08-conclusion.html" class="quarto-xref"><span>Chapter 8</span></a>.</p>
+</dd>
+<dt>Aspirational consumption</dt>
+<dd>
+<p>Hasell and Chinn’s diagnostic category (2023): social-media consumption oriented towards lifestyle emulation, empirically associated with anti-intellectual attitudes and inaccurate beliefs even when content is non-political. Provides the empirical hinge for the book’s argument that performative intellectualism is, structurally, one form of anti-intellectualism rather than its opposite. See <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a>.</p>
+</dd>
+<dt>Attention economy</dt>
+<dd>
+<p>The political-economic order in which user attention is the principal commodity extracted by digital platforms, and the imperatives of attention extraction (engagement, virality, affective intensity) structure the prevailing information ecology. See <a href="03-attention-economy.html" class="quarto-xref"><span>Chapter 3</span></a>; cf.&nbsp;Citton (2017), Williams (2018), Wu (2016).</p>
+</dd>
+<dt>Autocracy, Inc.</dt>
+<dd>
+<p>Anne Applebaum’s term (2024) for the transnational network of contemporary authoritarian states bound not by shared ideology but by mutual interest in suppressing independent civil society, protecting kleptocratic wealth and propagating disinformation. See <a href="02-authoritarian-moment.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
+</dd>
+<dt>Brutalisation / aestheticisation</dt>
+<dd>
+<p>The book’s inversion of Benjamin’s classic diagnosis: under contemporary conditions, politics has been brutalised while intellect has been aestheticised. The pairing names a single transformation, not two parallel ones. See <a href="05-cultural-capital-gender.html" class="quarto-xref"><span>Chapter 5</span></a>.</p>
+</dd>
+<dt>Cognitive debt</dt>
+<dd>
+<p>Kosmyna et al.’s term (2025) for the accumulating cost incurred when AI assistance substitutes for, rather than supplements, the cognitive operations it accelerates. Distinguished from <em>cognitive offloading</em> by its emphasis on the deferred and cumulative character of the loss. See <a href="06-ai-cognition.html" class="quarto-xref"><span>Chapter 6</span></a>.</p>
+</dd>
+<dt>Cognitive offloading</dt>
+<dd>
+<p>The delegation of cognitive tasks to external systems, with measurable consequences for memory, comprehension and problem-solving when the systems in question are AI-based rather than note-based or organisational. See <a href="06-ai-cognition.html" class="quarto-xref"><span>Chapter 6</span></a>.</p>
+</dd>
+<dt>Commodified cultural capital</dt>
+<dd>
+<p>A fourth form proposed by this book to extend Bourdieu’s typology (embodied, objectified, institutionalised): cultural capital that has been detached from its institutional bearer, made circulable as content, and priced. Characteristic of the platform period. See <a href="05-cultural-capital-gender.html" class="quarto-xref"><span>Chapter 5</span></a>.</p>
+</dd>
+<dt>Competitive authoritarianism</dt>
+<dd>
+<p>Levitsky and Way’s category (2010, extended in 2025) for regimes that retain formal electoral competition but in which incumbents weaponise state institutions to tilt the playing field. The 2025 <em>Foreign Affairs</em> article (Levitsky, Way, Ziblatt) classifies the United States in 2025 as having entered this regime type. See <a href="02-authoritarian-moment.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
+</dd>
+<dt>Cultural capital</dt>
+<dd>
+<p>Following Bourdieu (1984), the symbolic resources — knowledge, taste, credentials, embodied dispositions — that confer social position and are distributed unequally across classes. The book extends Bourdieu’s typology to a fourth form (commodified cultural capital). See <a href="05-cultural-capital-gender.html" class="quarto-xref"><span>Chapter 5</span></a>.</p>
+</dd>
+<dt>Cultural surface</dt>
+<dd>
+<p>Used in this book in a semiotic register, not a moral one: the dimension of the sign detached from its referent — opposed not to “depth” in the moralising sense but to <em>practice</em>. The recoding of intellect as cultural surface is the operation of which <em>mausoleum culture</em> is the result. See terminological note in front matter; <a href="05-cultural-capital-gender.html" class="quarto-xref"><span>Chapter 5</span></a>.</p>
+</dd>
+<dt>Democratic backsliding</dt>
+<dd>
+<p>The gradual erosion of democratic institutions, norms and practices by elected leaders, characteristic of the post-2016 period. See Levitsky and Ziblatt (2018, 2023); Bermeo (2016); Haggard and Kaufman (2021).</p>
+</dd>
+<dt>Democratic competence</dt>
+<dd>
+<p>Robert Post’s term (2012): the standing capacity of public opinion to be informed by reliable expert knowledge, without which democratic legitimation empties out. Distinct from, and supervening on, the elementary epistemic competences of individual citizens. See <a href="08-conclusion.html" class="quarto-xref"><span>Chapter 8</span></a>.</p>
+</dd>
+<dt>Democratic legitimation</dt>
+<dd>
+<p>Post’s complementary concept (2012): the responsiveness of democratic decision-making to public opinion. Forms, with <em>democratic competence</em>, the irreducible double criterion of legitimate self-governance. See <a href="08-conclusion.html" class="quarto-xref"><span>Chapter 8</span></a>.</p>
+</dd>
+<dt>Epistemic disorientation</dt>
+<dd>
+<p>The cognitive condition under platform-mediated information environments in which citizens are not so much ignorant as incapable of coordinating justified belief across the politically relevant population. See Harsin (2024); Hadarics (2025); <a href="03-attention-economy.html" class="quarto-xref"><span>Chapter 3</span></a>.</p>
+</dd>
+<dt><em>Halbbildung</em> (pseudo-culture)</dt>
+<dd>
+<p>Adorno’s term, recovered by Díaz (2021) and Han (2018) for contemporary purposes: the dominant form of contemporary consciousness, in which Enlightenment and the spread of information do not produce, but on the contrary stabilise, the conditions of anti-intellectualism. See <a href="01-genealogy.html" class="quarto-xref"><span>Chapter 1</span></a>.</p>
+</dd>
+<dt>Inconspicuous consumption</dt>
+<dd>
+<p>Zhang’s reconstruction (2021) of Cultural Revolution consumer culture: the ostentation of poverty rather than wealth as a politically reactive aesthetic strategy. Provides the historical analogy through which the book reads contemporary inverted cultural-capital flows. See <a href="05-cultural-capital-gender.html" class="quarto-xref"><span>Chapter 5</span></a>.</p>
+</dd>
+<dt>Inhabitation</dt>
+<dd>
+<p>Used in this book as a verb of practice opposed to <em>consumption</em>: intellectual life is reproduced through becoming the kind of person, in the kind of community, under the kind of conditions, in which it is constitutive of ordinary life. The luxury sign of intellectual seriousness is, on the present account, not a route into inhabitation but its substitute. See Thesis 1, <a href="08-conclusion.html" class="quarto-xref"><span>Chapter 8</span></a>.</p>
+</dd>
+<dt>Mausoleum culture</dt>
+<dd>
+<p>This book’s term for the contemporary cultural formation in which the artefacts and surfaces of intellectual life are aesthetically preserved as luxury signs precisely because the substantive practice of intellectual life is being defunded, attacked or unattended. See <a href="#intro-anchor">Introduction</a>; <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a>.</p>
+</dd>
+<dt>Mausoleum-adjacent metaphors</dt>
+<dd>
+<p>The book occasionally deploys complementary figures to locate distinct facets of the phenomenon named by <em>mausoleum culture</em>: <em>showroom intellectualism</em> (curated brand-adjacent display cut off from the workshop in which the goods were made); <em>vitrine</em> or <em>display-case culture</em> (the distance between the cultural object and the practice of using it); <em>theatre of erudition</em> (the performative grammar of staged thinking); <em>cargo-cult intellectualism</em> (the faithful reproduction of visible forms in the absence of the conditions that gave them their function); <em>taxidermy intellectualism</em> (the careful preservation of postures with nothing inside them moving); <em>Potemkin library</em> (a frontage convincing enough to be photographed, with very little behind it). These are not interchangeable; each highlights a different facet. See <a href="08-conclusion.html" class="quarto-xref"><span>Chapter 8</span></a>.</p>
+</dd>
+<dt>Performative intellectualism / performative reading</dt>
+<dd>
+<p>The cultural formation in which the practice of reading and thinking is rendered visible, social and monetisable through platform-mediated display (BookTok, Substack, the literary turn in fashion). The book treats the phenomenon as real (not falsifying the reading it makes visible) but structurally aligned with the marketisation of public reason. See <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a>; cf.&nbsp;Driscoll and Rehberg Sedo (2019); Jerasa (2025); Steiner (2024).</p>
+</dd>
+<dt>Platform capitalism</dt>
+<dd>
+<p>A political-economic order in which a small number of digital platforms hold infrastructural positions of market and information-flow control, monetised primarily through attention extraction and behavioural-data appropriation. See Srnicek (2017); Zuboff (2019); Dean (2024). The book treats it as the technical infrastructure of competitive authoritarianism in its current phase.</p>
+</dd>
+<dt>Post-truth</dt>
+<dd>
+<p>A regime of public discourse in which assertions are made and circulated without primary regard for their truth-value, typically engineered for affective effect. The book follows Harsin (2024) in treating post-truth as a <em>regime of attention</em> rather than a regime of <em>truth</em>: the failure is in the conditions of coordination of justified belief, not (only) in the propositional content circulated.</p>
+</dd>
+<dt>Public reason</dt>
+<dd>
+<p>Used in this book in a register modelled on Habermas (1962, 2023) and Rawls but corrected by Fraser, Mouffe and Honneth: the institutionally mediated practice of mutual contestation, peer review and warranted-belief coordination through which deliberative liberal democracy reproduces itself. See <a href="03-attention-economy.html" class="quarto-xref"><span>Chapter 3</span></a>.</p>
+</dd>
+<dt>Recoded</dt>
+<dd>
+<p>Used in this book in a semiotic sense, not a moral one: the substitution of a sign-relation, in which intellectual practice is replaced by its visible markers, rather than the trivialisation of substance. The recoding is <em>direction-bearing</em> — from practice to surface — and is the structural operation that the book analyses. See terminological note in front matter; <a href="05-cultural-capital-gender.html" class="quarto-xref"><span>Chapter 5</span></a>.</p>
+</dd>
+<dt>Soft guardrails (of democracy)</dt>
+<dd>
+<p>Levitsky and Ziblatt’s term (2018) for the unwritten norms — particularly <em>mutual toleration</em> and <em>institutional forbearance</em> — that prevent democratic competition from degenerating into no-holds-barred conflict. Their erosion is the proximate cause of the democratic backsliding that the book analyses. See <a href="02-authoritarian-moment.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
+</dd>
+<dt>Surveillance capitalism</dt>
+<dd>
+<p>Zuboff’s term (2019) for the political-economic order in which behavioural data are extracted from users without compensation and converted into predictive products sold in behavioural-futures markets. Adjacent to but distinct from <em>platform capitalism</em> and <em>attention economy</em>: the three are connected but analytically separable. See <a href="03-attention-economy.html" class="quarto-xref"><span>Chapter 3</span></a>.</p>
+</dd>
+</dl>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C-chronology.html" class="pagination-link" aria-label="Chronology of Principal Events, 2016–2026">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Chronology of Principal Events, 2016–2026</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

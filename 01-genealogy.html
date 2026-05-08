@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; A Short Genealogy of Anti-Intellectualism – Brains as Brand</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./02-authoritarian-moment.html" rel="next">
+<link href="./00-introduction.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-aeb32cb3453d7d606b6c0a50f15f0871.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d7bb2a7abcc71ede1f4a44f14a5ae606.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+  /* Iconos CC inline: heredan color del texto, sin filter trick */
+  .cc-license-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+  .cc-license-link svg {
+    height: 1.2em;
+    width: 1.2em;
+    fill: currentColor;
+  }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+// Solo en la página principal del libro
+const path = window.location.pathname;
+const isIndex = path.endsWith("/") || 
+        path.endsWith("/index.html") || 
+        path === "/index.html";
+        if (!isIndex) return;
+        
+const meta = document.querySelector(".quarto-title-meta");
+if (!meta) return;
+
+  // ---------- 1. Bloque de autores en dos columnas ----------
+  const authors = document.querySelectorAll(".quarto-title-author");
+  if (authors.length > 0) {
+    const dateEl = document.querySelector(".quarto-title-date");
+    const dateText = dateEl ? dateEl.textContent.trim() : "";
+
+    const block = document.createElement("div");
+    block.className = "author-block";
+    const left  = document.createElement("div"); left.className  = "author-col";
+    const right = document.createElement("div"); right.className = "author-col";
+
+    authors.forEach((author, i) => {
+      const col   = (i % 2 === 0) ? left : right;
+      const entry = document.createElement("div");
+      entry.className = "author-entry";
+
+      const name = document.createElement("div");
+      name.className = "author-name";
+      name.textContent = author.textContent.trim();
+      entry.appendChild(name);
+
+      ["role", "affiliation", "note"].forEach(attr => {
+        const value = author.getAttribute("data-author-" + attr);
+        if (value) {
+          const div = document.createElement("div");
+          div.className = "author-" + attr;
+          div.textContent = value;
+          entry.appendChild(div);
+        }
+      });
+
+      if (dateText) {
+        const dateDiv = document.createElement("div");
+        dateDiv.className = "author-date";
+        dateDiv.textContent = dateText;
+        entry.appendChild(dateDiv);
+      }
+
+      col.appendChild(entry);
+    });
+
+    block.appendChild(left);
+    block.appendChild(right);
+    meta.appendChild(block);
+  }
+
+  // ---------- 2. Entrada de licencia con SVG inline ----------
+  // SVG inline con fill=currentColor → adapta a tema claro/oscuro
+  // sin filter hack y sin dependencias externas.
+  const licenseEntry = document.createElement("div");
+  licenseEntry.innerHTML = `
+    <div class="quarto-title-meta-heading">License</div>
+    <div class="quarto-title-meta-contents">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+         target="_blank" rel="license noopener"
+         class="cc-license-link"
+         aria-label="CC BY-NC-SA 4.0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">CC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">BY</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">NC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">SA</text></svg>
+        <span style="margin-left:0.2em;">4.0</span>
+      </a>
+    </div>
+  `;
+  meta.appendChild(licenseEntry);
+});
+</script>
+
+
+</head>
+
+<body class="nav-sidebar floating slimcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-genealogy.html">Part I — The Political Crisis of Public Reason</a></li><li class="breadcrumb-item"><a href="./01-genealogy.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Brains as Brand</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: The Mausoleum of the Mind</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I — The Political Crisis of Public Reason</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-genealogy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-authoritarian-moment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-attention-economy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II — The Cultural Recoding of Intellect</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-performative-intellectualism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Performative Intellectualism: From BookTok to the Bottega Catwalk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-cultural-capital-gender.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cultural Capital, Gender and the Marketisation of Intellect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-ai-cognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III — Reconstruction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-education-battleground.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Education as Battleground: Universities, Schools, and the Politics of Curiosity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion: Leaving the Mausoleum</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A-methodology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Methodological Note</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./B-corpus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Corpus of Cultural Artefacts Examined</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C-chronology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Chronology of Principal Events, 2016–2026</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#hofstadters-diagnosis-and-its-limits" id="toc-hofstadters-diagnosis-and-its-limits" class="nav-link active" data-scroll-target="#hofstadters-diagnosis-and-its-limits">1.1 Hofstadter’s diagnosis and its limits</a></li>
+  <li><a href="#four-phases" id="toc-four-phases" class="nav-link" data-scroll-target="#four-phases">1.2 Four phases</a>
+  <ul class="collapse">
+  <li><a href="#phase-i-populist-1880s-to-1930s" id="toc-phase-i-populist-1880s-to-1930s" class="nav-link" data-scroll-target="#phase-i-populist-1880s-to-1930s">Phase I — Populist (1880s to 1930s)</a></li>
+  <li><a href="#phase-ii-reactive-1940s-to-1960s" id="toc-phase-ii-reactive-1940s-to-1960s" class="nav-link" data-scroll-target="#phase-ii-reactive-1940s-to-1960s">Phase II — Reactive (1940s to 1960s)</a></li>
+  <li><a href="#phase-iii-market-1980s-to-2000s" id="toc-phase-iii-market-1980s-to-2000s" class="nav-link" data-scroll-target="#phase-iii-market-1980s-to-2000s">Phase III — Market (1980s to 2000s)</a></li>
+  <li><a href="#phase-iv-platform-authoritarian-2016-to-present" id="toc-phase-iv-platform-authoritarian-2016-to-present" class="nav-link" data-scroll-target="#phase-iv-platform-authoritarian-2016-to-present">Phase IV — Platform-authoritarian (2016 to present)</a></li>
+  </ul></li>
+  <li><a href="#what-is-distinctive-about-phase-iv" id="toc-what-is-distinctive-about-phase-iv" class="nav-link" data-scroll-target="#what-is-distinctive-about-phase-iv">1.3 What is distinctive about Phase IV</a>
+  <ul class="collapse">
+  <li><a href="#a-asymmetric-institutional-aggression" id="toc-a-asymmetric-institutional-aggression" class="nav-link" data-scroll-target="#a-asymmetric-institutional-aggression">(a) Asymmetric institutional aggression</a></li>
+  <li><a href="#b-platform-symbiosis" id="toc-b-platform-symbiosis" class="nav-link" data-scroll-target="#b-platform-symbiosis">(b) Platform symbiosis</a></li>
+  <li><a href="#c-aestheticisation-of-opposition" id="toc-c-aestheticisation-of-opposition" class="nav-link" data-scroll-target="#c-aestheticisation-of-opposition">(c) Aestheticisation of opposition</a></li>
+  <li><a href="#d-cross-regime-convergence" id="toc-d-cross-regime-convergence" class="nav-link" data-scroll-target="#d-cross-regime-convergence">(d) Cross-regime convergence</a></li>
+  </ul></li>
+  <li><a href="#comparative-cases" id="toc-comparative-cases" class="nav-link" data-scroll-target="#comparative-cases">1.4 Comparative cases</a>
+  <ul class="collapse">
+  <li><a href="#hungary-post-2010" id="toc-hungary-post-2010" class="nav-link" data-scroll-target="#hungary-post-2010">1.4.1 Hungary post-2010</a></li>
+  <li><a href="#india-under-the-bjp" id="toc-india-under-the-bjp" class="nav-link" data-scroll-target="#india-under-the-bjp">1.4.2 India under the BJP</a></li>
+  <li><a href="#turkey-under-the-akp" id="toc-turkey-under-the-akp" class="nav-link" data-scroll-target="#turkey-under-the-akp">1.4.3 Turkey under the AKP</a></li>
+  <li><a href="#the-united-states-20252026" id="toc-the-united-states-20252026" class="nav-link" data-scroll-target="#the-united-states-20252026">1.4.4 The United States, 2025–2026</a></li>
+  <li><a href="#russia-china-and-the-convergence-puzzle" id="toc-russia-china-and-the-convergence-puzzle" class="nav-link" data-scroll-target="#russia-china-and-the-convergence-puzzle">1.4.5 Russia, China, and the convergence puzzle</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-genealogy.html">Part I — The Political Crisis of Public Reason</a></li><li class="breadcrumb-item"><a href="./01-genealogy.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-genealogy" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The contemporary anti-intellectual moment is not new, but it is not simply the recurrence of an old pattern either. This chapter reconstructs anti-intellectualism as a recurring structural feature of modern mass politics — one that takes distinctively different shapes under liberal-democratic capitalism, illiberal-majoritarian populism, and authoritarian statism, but that, in the contemporary moment, exhibits a <em>cross-regime convergence</em> which earlier accounts did not anticipate and cannot adequately explain. The chapter identifies four historical phases of modern anti-intellectualism with distinguishable mechanisms, and argues that the current phase (post-2016) is qualitatively novel in four respects: its <em>platform-mediated</em> character, its <em>transnational coordination</em>, its <em>targeted institutional aggression</em> against universities and expertise as such, and the <em>convergence</em> of capitalist and non-capitalist state actors around a shared repertoire of practices for the capture, defunding, and disciplining of intellectual life.</p>
+<p>The earlier framing of anti-intellectualism as a ‘structural feature of mass democracy under capitalism’ captures an important truth about the market phase (<a href="#sec-genealogy" class="quarto-xref"><span>Chapter 1</span></a>), but it is now too narrow. State actors in consolidated liberal-democratic capitalist polities — the United States, Italy, the United Kingdom, the Netherlands — increasingly deploy techniques against universities and experts that are indistinguishable from, and in some respects more aggressive than, those long associated with the non-capitalist authoritarianisms of Russia or post-Tiananmen China <span class="citation" data-cites="mckee-figueras2025 applebaum2024 levitsky-way2025">(<a href="references.html#ref-applebaum2024" role="doc-biblioref">Applebaum, 2024</a>; <a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>; <a href="references.html#ref-mckee-figueras2025" role="doc-biblioref">McKee et al., 2025</a>)</span>. The puzzle that organises the rest of this book is how to make sense of that convergence without collapsing its real heterogeneity, and without reproducing the moralised nostalgia that the very analysis of anti-intellectualism so easily generates <span class="citation" data-cites="filatova2021">(<a href="references.html#ref-filatova2021" role="doc-biblioref">Filatova, 2021</a>)</span>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="" style="font-size: 0.9em;">
+<p>The Dutch case is analytically useful because it combines a long tradition of consensual politics with rising pressures on expertise. Studies of populist distrust of elites <span class="citation" data-cites="VerbeekZaslove2024">(<a href="references.html#ref-VerbeekZaslove2024" role="doc-biblioref">Verbeek and Zaslove, 2024</a>)</span>, analyses of anti‑intellectual framings in public debate <span class="citation" data-cites="Segers2025Anti">(<a href="references.html#ref-Segers2025Anti" role="doc-biblioref">Segers, 2025</a>)</span>, and reporting on hybrid information warfare targeting Dutch audiences <span class="citation" data-cites="NewLines2024War">(<a href="references.html#ref-NewLines2024War" role="doc-biblioref">Magazine, 2024</a>)</span> show how these tensions reshape attitudes toward knowledge and authority.</p>
+</div></div><section id="hofstadters-diagnosis-and-its-limits" class="level2 unnumbered page-columns page-full">
+<h2 class="unnumbered anchored" data-anchor-id="hofstadters-diagnosis-and-its-limits">1.1 Hofstadter’s diagnosis and its limits</h2>
+<p>A close re-reading of Richard Hofstadter’s <em>Anti-Intellectualism in American Life</em> <span class="citation" data-cites="hofstadter1963">(<a href="references.html#ref-hofstadter1963" role="doc-biblioref">1963</a>)</span> establishes the foundational analytical vocabulary with which the contemporary debate continues to operate, often without acknowledgement. Hofstadter’s definition of anti-intellectualism as a ‘resentment and suspicion of the life of the mind’ and of those held to represent it; his fourfold typology of evangelical, populist, business and educational strands; his identification of the phenomenon with the democratisation of culture under conditions of mass society; and his diagnosis of the recurring American suspicion of expertise as a foreign, effete and feminised imposition upon a virtuously practical people — all of these remain analytically indispensable. The book remains the unavoidable point of departure for any serious genealogy.</p>
+<p>Yet six limitations of Hofstadter’s account need to be marked, and each of them sets an agenda for the analysis that follows.</p>
+<p>The first is <em>methodological nationalism</em>. Hofstadter’s frame is the exceptional history of the United States, with its distinctive configuration of evangelical Protestantism, frontier populism, businessman pragmatism, and Cold War conformity. The phenomenon he analysed is now structurally transnational. Anti-intellectual repertoires circulate across jurisdictions through shared media infrastructures, shared political consultancies, shared funding streams, and shared legal templates <span class="citation" data-cites="applebaum2024">(<a href="references.html#ref-applebaum2024" role="doc-biblioref">Applebaum, 2024</a>)</span>. To treat the American case as paradigmatic is to mistake one regional instantiation of a transnational pattern for the pattern itself. The work of correcting this requires a comparative apparatus that Hofstadter neither possessed nor needed. Liam Klein’s intellectual history of <em>Whig Anti-Intellectualism</em> <span class="citation" data-cites="klein2024">(<a href="references.html#ref-klein2024" role="doc-biblioref">2024</a>)</span>, which reconstructs a parallel British tradition of suspicion of theoretical knowledge running from the eighteenth-century critique of ‘enthusiasm’ through Burke and into the long Anglosphere, is a salutary corrective: the genealogy is not just American, it has multiple national branches with distinctive lexicons, and the contemporary phenomenon draws on all of them.</p>
+
+<div class="no-row-height column-margin column-container"><div class="" style="font-size: 0.9em;">
+<p>A parallel southern-European genealogy would draw on Camille Lacau Saint-Guily’s reconstruction of conservative <em>anti-Bergsonism</em> in interwar Spain <span class="citation" data-cites="saint-guily2013">(<a href="references.html#ref-saint-guily2013" role="doc-biblioref">2013</a>)</span>, in which the Spanish Catholic and <em>Acción Española</em> press attacked Bergson’s intuitionism as ‘decadent, impressionist, semitic, antithetical to conservative <em>noucentista</em> thinking’. The structural homology with later attacks on Frankfurt-school theorists, on French post-structuralism, and most recently on ‘critical race theory’ as a synecdoche for the humanities is striking. The lexicon of <em>anti-intellectualism</em> travels.</p>
+</div></div><p>The second limit is what might be called the <em>political-economic limit</em>. Hofstadter analyses anti-intellectualism as a cultural-ideological posture: a structure of feeling, a recurring American suspicion of mind. It is also, and increasingly, a <em>political-economic</em> phenomenon — one organised through funding decisions, accreditation regimes, asset-stripping, and the capture of governance arrangements. The post-2010 attacks on the Central European University, the post-2020 capture of New College of Florida, the 2025 federal compacts with U.S. universities, and the increasingly aggressive cuts to university budgets across Europe are not in the first instance cultural moves; they are political-economic ones <span class="citation" data-cites="aaup2025 schrecker2025 insidehighered2025">(<a href="references.html#ref-aaup2025" role="doc-biblioref">American Association of University Professors, 2025</a>; <a href="references.html#ref-insidehighered2025" role="doc-biblioref">Brest, 2025</a>; <a href="references.html#ref-schrecker2025" role="doc-biblioref">Schrecker, 2025</a>)</span>. The cultural register is the surface; the redistributive logic is the depth.</p>
+<p>The third limit is <em>temporal</em>: Hofstadter’s account predates, by nearly half a century, the platform-mediated information ecology that, post-2010, has restructured the very conditions of possibility for public reason. The transformation is not merely a matter of delivery technology. The algorithmic shaping of attention, the collapse of the gatekeeping function previously performed by editors and credentialed institutions, the rise of parasocial epistemic authority, and the affective premium that platform metrics place on intensity over coherence have together produced what Harsin <span class="citation" data-cites="harsin2024">(<a href="references.html#ref-harsin2024" role="doc-biblioref">2024</a>)</span> describes as a regime of ‘epistemic disorientation’ qualitatively distinct from any prior media environment. Hofstadter’s analytical vocabulary, however acute, was not designed for this ecology and cannot be made to fit it without significant theoretical extension <span class="citation" data-cites="williams2018 nguyen2020">(<a href="references.html#ref-nguyen2020" role="doc-biblioref">Nguyen, 2020</a>; <a href="references.html#ref-williams2018" role="doc-biblioref">Williams, 2018</a>)</span>.</p>
+<p>The fourth limit is more uncomfortable, because it concerns not external attacks on the university but its <em>internal</em> condition. The sharpest contemporary statement of this point is Brett Holt’s <span class="citation" data-cites="holt2025">(<a href="references.html#ref-holt2025" role="doc-biblioref">2025</a>)</span> argument that intellectualism and anti-intellectualism function as ‘two equal sides of the same fear-generating coin’, both of them barriers to academic freedom. Holt’s claim — that the isolation, performative superiority, and managerial self-protection of academic faculty themselves contribute to the public hostility that anti-intellectual political movements then mobilise against them — is one that William Diaz had already developed, in a different register, through Adorno’s category of <em>Halbbildung</em> (‘half-cultivation’, or pseudo-culture). Diaz <span class="citation" data-cites="diaz2021">(<a href="references.html#ref-diaz2021" role="doc-biblioref">2021</a>)</span> argues that contemporary academic anti-intellectualism is rooted, on the one side, in the ‘vast penetration of managerial discourse’ into higher education itself, and on the other in the institutional sedimentation of ideas as commonplaces — the procedural hardening of intellectual positions until they cease to be intellectual at all. The point is not the symmetrical one sometimes made by reactionaries — that the universities have <em>caused</em> their own troubles — but the more difficult one: that the managerialisation of academic life over the last four decades has left universities with attenuated capacities to defend the intellectual practices they were established to protect.</p>
+<p>The fifth limit follows directly. Hofstadter wrote in a moment of relative institutional confidence about American higher education, and his diagnosis presumed a robust, autonomous, well-resourced academic estate against which the populist and businessman strands of anti-intellectualism could be measured as ‘external’ threats. The analyst writing in 2026 cannot make that presumption. The most striking feature of the European university landscape over the last two decades is the <em>passive acceptance</em>, by university leaderships themselves, of conditions that would have been considered intolerable in the period in which Hofstadter wrote: the casualisation of the academic workforce on a continental scale, with adjunct, fixed-term and ‘hourly-paid’ positions now constituting the majority of teaching labour in many systems; the visible deterioration of laboratory equipment, library holdings, and physical infrastructure in countries — Spain, Italy, Greece, Portugal, the United Kingdom since 2010, France in significant disciplinary pockets — that were once world-leading in the relevant fields; and the systematic under-defence of the humanities by leaderships, including moderate and progressive ones, who have come to share the unexamined conviction that STEM disciplines are the proper measure of a university’s social value. None of these pressures originated in right-wing populism; many of them were enthusiastically implemented by social-democratic governments under the banner of reform or modernisation.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The fact that they cannot be straightforwardly mapped onto Hofstadter’s typology — they are neither evangelical, nor populist in his sense, nor strictly business-driven — is itself an indication that his typology has been overtaken by the phenomenon it was designed to describe.</p>
+<p>The sixth limit is the one that contemporary critics most often fail to mark in their own analysis, and which Asya Filatova <span class="citation" data-cites="filatova2021">(<a href="references.html#ref-filatova2021" role="doc-biblioref">2021</a>)</span> has pressed most sharply: the temptation to treat the anti-intellectual as morally vicious, and to mobilise the analytical vocabulary of <em>vice epistemology</em> — bad faith, motivated reasoning, epistemic vice, conspiracy thinking — as a political weapon. Filatova’s argument, drawing on Steve Fuller’s social epistemology, is that vice-epistemic frames almost invariably collapse into ideological tools when deployed against anti-intellectualism, since the imputation of epistemic vice is at once descriptive and condemnatory and lends itself with great ease to the disciplining of disagreement. The risk is real, and it is one that this book explicitly takes itself to be exposed to. The whole point of Hofstadter’s diagnosis was to make anti-intellectualism <em>intelligible</em> without making it <em>justifiable</em>; the contemporary revival of the diagnosis must be careful not to lose that distinction.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>These six limits, taken together, do not undermine Hofstadter’s diagnosis: they extend its programme. The remainder of this chapter takes that extension forward by reconstructing the genealogy of modern anti-intellectualism as a sequence of four phases, each with its own configuration of mechanisms, and by identifying what is distinctive about the phase in which we are now living.</p>
+</section>
+<section id="four-phases" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="four-phases">1.2 Four phases</h2>
+<p>The periodisation that follows is heuristic rather than rigid. The phases overlap chronologically; the mechanisms they isolate are present, in different combinations, throughout the modern period. The point of the periodisation is to identify, for each phase, the mechanism that <em>predominates</em> and that gives the period its characteristic shape.</p>
+<section id="phase-i-populist-1880s-to-1930s" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="phase-i-populist-1880s-to-1930s">Phase I — Populist (1880s to 1930s)</h3>
+<p>The first identifiable wave of <em>modern</em> anti-intellectualism — that is, anti-intellectualism in the sense in which Hofstadter analyses it, rather than the perennial suspicion of philosophers that goes back to Aristophanes — emerges with the consolidation of mass democracy in the late nineteenth century, in the United States with the Bryan moment and the evangelical anti-modernism that culminated in the Scopes trial of 1925, and in Europe with the various nationalist, völkisch and clerical-conservative reactions to the political mobilisation of new social forces <span class="citation" data-cites="hofstadter1963 stanley2018 paxton2004">(<a href="references.html#ref-hofstadter1963" role="doc-biblioref">Hofstadter, 1963</a>; <a href="references.html#ref-paxton2004" role="doc-biblioref">Paxton, 2004</a>; <a href="references.html#ref-stanley2018" role="doc-biblioref">Stanley, 2018</a>)</span>. Frederick Hale’s <span class="citation" data-cites="hale2013">(<a href="references.html#ref-hale2013" role="doc-biblioref">2013</a>)</span> careful philological reconstruction shows that the term ‘fundamentalist’ itself, originally used positively by defenders of orthodoxy in the 1920 Northern Baptist Convention, was extended into political journalism within three years, and definitively associated with anti-intellectualism and obscurantism by the time of the Scopes trial. The lexicon was forged at the moment of the phenomenon, and its circulation across the Anglosphere during the inter-war years fixed a vocabulary for talking about anti-intellectualism that the rest of the twentieth century inherited.</p>
+<p>The populist phase has two distinct sub-strands that are worth keeping analytically apart. The first is the <em>anti-modernist evangelical</em> strand, which targets specific intellectual claims — the theory of evolution, biblical higher criticism, the social sciences of religion — as threats to a religious worldview. The second is the <em>völkisch-fascist</em> strand, which targets the figure of the intellectual as such — cosmopolitan, Jewish, Marxist, decadent — as a threat to national or racial integrity. The two converge in the inter-war period, particularly in the German and Italian fascisms analysed by Paxton <span class="citation" data-cites="paxton2004">(<a href="references.html#ref-paxton2004" role="doc-biblioref">2004</a>)</span>, but they retain their analytic distinctness. The Spanish <em>anti-bergsonismo</em> of the 1910s and 1920s reconstructed by Saint-Guily <span class="citation" data-cites="saint-guily2013">(<a href="references.html#ref-saint-guily2013" role="doc-biblioref">2013</a>)</span> is a particularly instructive case, in which a recognisably Catholic-traditionalist attack on a French philosopher was articulated through the figure of a three-headed monster condensing Jacobin revolution, Reformation and decadent Romanticism — a triad of imputed contaminations whose displaced form reappears in contemporary right-wing attacks on the academy.</p>
+<p>The crucial point about the populist phase is that, although it involved attacks on individual intellectuals and on specific intellectual movements, it did not — outside the totalitarian trajectories of the 1930s — produce a sustained institutional assault on the university as such. The university, even in its more contested forms, remained relatively insulated, and the populist attack was largely a <em>cultural</em> attack: a posture, a register, a recurring populist trope.</p>
+</section>
+<section id="phase-ii-reactive-1940s-to-1960s" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="phase-ii-reactive-1940s-to-1960s">Phase II — Reactive (1940s to 1960s)</h3>
+<p>The second phase, which Hofstadter himself was writing both within and against, is the McCarthyite-Cold-War phase: anti-intellectualism as the cultural arm of an anti-communist political project, with the universities as a particularly contested terrain because of their role in producing both the technical-scientific labour that the Cold War required and the politically suspect humanities and social-science cultures that it feared <span class="citation" data-cites="schrecker1998">(<a href="references.html#ref-schrecker1998" role="doc-biblioref">Schrecker, 1998</a>)</span>. Stephen Whitfield’s revisitation of the period <span class="citation" data-cites="whitfield2019">(<a href="references.html#ref-whitfield2019" role="doc-biblioref">2019</a>)</span>, read through the figure of Roy Cohn, makes the point that the McCarthy-to-Trump genealogy is more direct than is sometimes admitted; it also makes clear that McCarthy’s tactics, however destructive, did not pose the kind of <em>systemic</em> threat to democratic institutions that the contemporary attacks do, and that he ‘did not directly and explicitly activate bigotry or nativism’ in the manner of his successors.</p>
+<p>The instructive feature of Phase II for present purposes is the <em>mirror-image</em> anti-intellectualism that operated, simultaneously, on the other side of the Iron Curtain. The Stalinist suppression of intellectual life in the Soviet bloc — the campaigns against ‘cosmopolitanism’, against ‘formalism’ in the arts, against genetics — was not ‘capitalist’ anti-intellectualism, but it shared with its American counterpart a structural feature: the <em>political instrumentalisation</em> of expertise, in which the criterion of intellectual legitimacy was political loyalty rather than disciplinary norm. The convergence of these two anti-intellectualisms across opposed political-economic systems is a precedent for the convergence we shall see in Phase IV, and it bears on the framing question raised in the introduction to this chapter.</p>
+</section>
+<section id="phase-iii-market-1980s-to-2000s" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="phase-iii-market-1980s-to-2000s">Phase III — Market (1980s to 2000s)</h3>
+<p>The third phase is the one to which the framing of anti-intellectualism as a ‘feature of mass democracy under capitalism’ applies most fully. From the late 1970s onwards, in the Anglo-American world first and in continental Europe through the 1990s and 2000s, the universities were systematically reorganised along enterprise lines: tuition fees were introduced or sharply raised, research was reorganised around impact metrics and external funding, governance was professionalised and centralised in managerial cadres, and the language of ‘productivity’, ‘efficiency’, and ‘student satisfaction’ came to govern what had been, for nearly a century, governed by the language of the disciplinary norm <span class="citation" data-cites="brown2015 mirowski2013">(<a href="references.html#ref-brown2015" role="doc-biblioref">Brown, 2015</a>; <a href="references.html#ref-mirowski2013" role="doc-biblioref">Mirowski, 2013</a>)</span>. The neoliberal recoding of the university as enterprise is the analytical core of this phase, but it was accompanied by two further developments: the rise of the corporate think tank as a <em>parallel</em> knowledge-producing infrastructure designed to circumvent academic peer review, and the development of a partisan press apparatus — the Murdoch press in the Anglosphere, with national variants elsewhere — that operated as a parallel epistemic infrastructure for the dissemination of contrarian-orthodox opinion.</p>
+<p>The European trajectory is instructive precisely because it cannot be straightforwardly assimilated to the American story. The Bologna process, the precarisation of the academic workforce in southern Europe, the chronic under-funding of public universities in Spain, Italy, Greece and post-2010 United Kingdom, and the gradual displacement of humanities funding by STEM and ‘innovation’ funding were not, in most cases, the work of right-wing populist governments. They were implemented, often with considerable enthusiasm, by centre-left and centre-right administrations under the banner of ‘modernisation’ and ‘European convergence’. The universities, in turn, accepted these reforms with a striking absence of organised resistance — a phenomenon that Diaz <span class="citation" data-cites="diaz2021">(<a href="references.html#ref-diaz2021" role="doc-biblioref">2021</a>)</span> analyses through the Adornian category of <em>Halbbildung</em> and that demands explanation in its own right. The result, by 2010, was a European university system in which physical infrastructure had visibly deteriorated relative to the post-war high; in which permanent academic positions had become rare and concentrated in the hands of older cohorts; and in which the humanities — once the defining strength of the continental tradition — were increasingly treated, by their own institutional leaderships, as a residual category to be funded after STEM, professional schools, and ‘priority areas’.</p>
+<p>This European trajectory is not ‘anti-intellectualism’ in Hofstadter’s primary sense. It does not involve a populist hostility to intellect; it involves, on the contrary, an instrumentalised <em>affirmation</em> of certain forms of knowledge production. But it created the conditions under which the more aggressive anti-intellectual moves of Phase IV could land on a structurally weakened institutional terrain, and it left European universities — once the global reference for the very disciplines now most under threat — with attenuated political capital to mount a defence.</p>
+</section>
+<section id="phase-iv-platform-authoritarian-2016-to-present" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="phase-iv-platform-authoritarian-2016-to-present">Phase IV — Platform-authoritarian (2016 to present)</h3>
+<p>The fourth phase opens, with no implied causal monocausality, around 2016: the year of the Brexit referendum, the first Trump election, the fourth election of Recep Tayyip Erdoğan in Turkey, and the consolidation of Narendra Modi’s first government in India. The phase is characterised, as the chapter has argued, by four features that distinguish it qualitatively from its predecessors: authoritarian-populist political mobilisation against expertise as ‘elite’ <span class="citation" data-cites="norris-inglehart2019 nichols2017">(<a href="references.html#ref-nichols2017" role="doc-biblioref">Nichols, 2017</a>; <a href="references.html#ref-norris-inglehart2019" role="doc-biblioref">Norris and Inglehart, 2019</a>)</span>; direct state aggression against universities through defunding, ideological compacts, deportation regimes, and viewpoint mandates; platform-mediated epistemic disorientation; and transnational coordination across regimes. These are developed in the next section.</p>
+<p>What is worth marking at the level of periodisation is that Phase IV does not simply <em>succeed</em> the earlier phases; it incorporates and recombines them. The evangelical and populist registers of Phase I are mobilised in support of the institutional assaults of Phase IV; the McCarthyite techniques of Phase II reappear, more aggressively, in 2025–26 American campus politics; and the marketising apparatus of Phase III provides the fiscal levers — funding withdrawal, accreditation pressure, governance restructuring — through which Phase IV operates. The phase is therefore not ‘new’ in the sense of being unprecedented; it is new in the specific configuration of mechanisms it brings together, and in the cross-regime convergence to which the next section turns.</p>
+</section>
+</section>
+<section id="what-is-distinctive-about-phase-iv" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="what-is-distinctive-about-phase-iv">1.3 What is distinctive about Phase IV</h2>
+<p>Four features mark the current phase as qualitatively novel. The first three were anticipated, with greater or lesser clarity, in the literature of the early 2020s; the fourth has come into focus only since 2024 and is the principal claim of this chapter.</p>
+<section id="a-asymmetric-institutional-aggression" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="a-asymmetric-institutional-aggression">(a) Asymmetric institutional aggression</h3>
+<p>Earlier phases of anti-intellectualism were largely cultural — a posture, a register, a recurring trope mobilised in particular political conjunctures. Phase IV is <em>infrastructural</em>: it targets the funding streams, visa regimes, accreditation bodies, research budgets, governance arrangements, tax-exempt statuses and physical estates through which intellectual institutions reproduce themselves. The U.S. trajectory of 2025–2026 — federal funding withdrawals tied to ideological compacts; the targeted use of deportation against international students and scholars; the imposition of viewpoint-related mandates as conditions of continued accreditation — illustrates the pattern with particular clarity <span class="citation" data-cites="aaup2025 schrecker2025 insidehighered2025 spitalniak2026">(<a href="references.html#ref-aaup2025" role="doc-biblioref">American Association of University Professors, 2025</a>; <a href="references.html#ref-insidehighered2025" role="doc-biblioref">Brest, 2025</a>; <a href="references.html#ref-schrecker2025" role="doc-biblioref">Schrecker, 2025</a>; <a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. Christopher Rufo’s stated aim of producing ‘existential terror’ in universities is not rhetoric; it is policy.</p>
+<p>What makes the aggression <em>asymmetric</em> is that it is not simply external. The post-2010 acceptance, by university leaderships themselves, of the precarisation, asset-stripping, and managerialisation analysed in Phase III left the institution ill-equipped to mount a coordinated defence. Holt’s <span class="citation" data-cites="holt2025">(<a href="references.html#ref-holt2025" role="doc-biblioref">2025</a>)</span> diagnosis — that the contemporary academy is at once attacked from without and weakened from within by its own intellectualist isolation, performative superiority, and managerial self-protection — is therefore not a counsel of despair but an analytical condition for any adequate response. The institutional aggression of Phase IV is asymmetric because the university’s capacity to resist is itself asymmetric: still considerable in elite, well-endowed institutions, much weaker in the regional and public universities that bear the greatest political exposure.</p>
+</section>
+<section id="b-platform-symbiosis" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="b-platform-symbiosis">(b) Platform symbiosis</h3>
+<p>Phase IV anti-intellectualism is parasitic on, and adapted to, an information ecology that is algorithmically engineered to reward affective intensity over deliberative coherence. The ‘manosphere’ podcaster, the conspiracy-theoretic influencer, the contrarian Substacker, and what Mazumdar <span class="citation" data-cites="mazumdar2026">(<a href="references.html#ref-mazumdar2026" role="doc-biblioref">2026</a>)</span> calls the ‘pop influencer’ in the Indian Hindutva ecosystem function as <em>tertiary epistemic actors</em> whose existence is technologically conditioned in a way that earlier demagogues’ was not <span class="citation" data-cites="nguyen2020 harsin2024 hadarics2025">(<a href="references.html#ref-hadarics2025" role="doc-biblioref">Hadarics, 2025</a>; <a href="references.html#ref-harsin2024" role="doc-biblioref">Harsin, 2024</a>; <a href="references.html#ref-nguyen2020" role="doc-biblioref">Nguyen, 2020</a>)</span>. These actors are not best understood as <em>replacements</em> for traditional experts; they operate in a parallel attentional economy in which expert authority is one signal among many, weighted by the platform metrics of engagement and shareability rather than by the disciplinary norms of peer review or editorial judgement <span class="citation" data-cites="zuboff2019 williams2018">(<a href="references.html#ref-williams2018" role="doc-biblioref">Williams, 2018</a>; <a href="references.html#ref-zuboff2019" role="doc-biblioref">Zuboff, 2019</a>)</span>.</p>
+<p>Two empirical findings bear on this point and deserve emphasis. First, the work of Hasell and Chinn <span class="citation" data-cites="hasell_chinn_2023">(<a href="references.html#ref-hasell_chinn_2023" role="doc-biblioref">2023</a>)</span> establishes that aspirational social-media use is associated with anti-intellectual attitudes and inaccurate beliefs even when the content consumed is not explicitly political. The attentional-economic mechanism, in other words, operates <em>upstream</em> of explicit political mobilisation; it produces the dispositional substrate on which the more visible mobilisations of the next section then act. Second, Edward Hohe’s <span class="citation" data-cites="hohe2024">(<a href="references.html#ref-hohe2024" role="doc-biblioref">2024</a>)</span> careful disaggregation of partisan epistemic dispositions establishes that ‘anti-intellectual affect’ is asymmetrically distributed: where both major U.S. parties show forms of <em>epistemic hubris</em>, only the Republican coalition shows the specific dispositional anti-intellectualism that drives motivated resistance to expert consensus. The asymmetry is empirical, and the analyst who flattens it in pursuit of ‘balanced’ treatment misrepresents the phenomenon.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+</section>
+<section id="c-aestheticisation-of-opposition" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="c-aestheticisation-of-opposition">(c) Aestheticisation of opposition</h3>
+<p>What is unprecedented, and what occupies Part II of this book, is that Phase IV anti-intellectualism coexists with — and is in part <em>complementary to</em> — a parallel aestheticisation of intellect itself as a sign of cultural distinction. The figure of the ‘fashion-Substack’ literary tastemaker, the Dior tote bag printed with the title of <em>Madame Bovary</em>, the supermodel reading Didion backstage, the BookTok recommendation that turns a backlist title into a bestseller — these constitute, taken together, an aesthetic <em>recoding</em> of the intellect as luxury sign. The mausoleum (the dignified display of intellect-as-relic) and the assault (the political attack on intellect-as-practice) are sustained by the same underlying process: the conversion of public reason into private commodity. The case for this connection is developed at length in <a href="03-attention-economy.html" class="quarto-xref"><span>Chapter 3</span></a> and <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a>, where the recoding is shown to operate not as the <em>opposite</em> of anti-intellectualism but as one of its forms, in the precise sense that Inbar and colleagues <span class="citation" data-cites="inbar-jablonka2025">(<a href="references.html#ref-inbar-jablonka2025" role="doc-biblioref">2025</a>)</span> specify when they distinguish the ‘aesthetic mode of knowing’ as a legitimate but <em>distinct</em> mode that can be hospitable, under specific market conditions, to the very evacuation of intellectual practice it appears to celebrate.</p>
+</section>
+<section id="d-cross-regime-convergence" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="d-cross-regime-convergence">(d) Cross-regime convergence</h3>
+<p>The fourth feature is the one that most clearly distinguishes Phase IV from its predecessors and that has received the least analytical attention. It is the convergence, around a shared repertoire of anti-intellectual practices, of state actors operating under radically different political-economic foundations. The United States under the second Trump administration, the Hungary of Viktor Orbán, the India of Narendra Modi, the Italy of Giorgia Meloni, the Turkey of Recep Tayyip Erdoğan, the Russia of Vladimir Putin, and the China of Xi Jinping do not share an economic system, a political culture, a religious tradition, or a constitutional form. They share, increasingly, a <em>toolkit</em>: the disciplining of universities through funding pressure and governance capture; the targeting of international students and foreign-trained scholars; the use of platform-mediated information operations; the political designation of specific disciplines (gender studies; area studies; climate science; certain branches of history) as ideological threats; and the cross-border laundering of both wealth and political technique <span class="citation" data-cites="applebaum2024 scheppele2022 levitsky-way2025 mckee-figueras2025">(<a href="references.html#ref-applebaum2024" role="doc-biblioref">Applebaum, 2024</a>; <a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>; <a href="references.html#ref-mckee-figueras2025" role="doc-biblioref">McKee et al., 2025</a>; <a href="references.html#ref-scheppele2022" role="doc-biblioref">Scheppele, 2022</a>)</span>.</p>
+<p>The analytical implications of this convergence are significant. First, it falsifies any account of contemporary anti-intellectualism as essentially a <em>capitalist</em> phenomenon: state actors in non-capitalist or only partially-capitalist regimes deploy the same repertoire, often more effectively, and the Russian and Chinese cases — the latter analysed by Zhang <span class="citation" data-cites="zhang2021">(<a href="references.html#ref-zhang2021" role="doc-biblioref">2021</a>)</span> for the earlier period of the Cultural Revolution, and by McKee and colleagues <span class="citation" data-cites="mckee-figueras2025">(<a href="references.html#ref-mckee-figueras2025" role="doc-biblioref">2025</a>)</span> for the contemporary moment — show that the disciplining of intellectual life can be pursued under socialist or post-socialist auspices with as much severity as under capitalist ones. Second, it falsifies any account of contemporary anti-intellectualism as essentially a <em>democratic</em> phenomenon in Hofstadter’s sense: authoritarian regimes that have never been democratic operate in the same register. Third, and most consequentially, it suggests that what we are observing is not a recurrence of an old pattern but the emergence of a <em>transnationally integrated</em> infrastructure of anti-intellectual statecraft, in which liberal-democratic capitalism, illiberal-majoritarian populism, and authoritarian statism are converging — at the level of <em>practice</em>, not of <em>justification</em> — around shared techniques for managing, disciplining, and where necessary destroying intellectual institutions.</p>
+<p>This convergence is the analytical centre of gravity of the rest of the book.</p>
+</section>
+</section>
+<section id="comparative-cases" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="comparative-cases">1.4 Comparative cases</h2>
+<p>The chapter closes with five short comparative cases sketching how the Phase IV pattern instantiates differently across regimes. The cases are not exhaustive; they are chosen because, taken together, they make the convergence claim of the previous section concrete without flattening the heterogeneity of its instantiations.</p>
+<section id="hungary-post-2010" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="hungary-post-2010">1.4.1 Hungary post-2010</h3>
+<p>The Hungarian case under Orbán remains the paradigmatic example of <em>soft-authoritarian university capture</em> in a nominally liberal-democratic setting <span class="citation" data-cites="scheppele2022">(<a href="references.html#ref-scheppele2022" role="doc-biblioref">Scheppele, 2022</a>)</span>. The 2017 ‘Lex CEU’, which forced the Central European University out of Budapest under the legal cover of a generic regulation of foreign-accredited universities; the 2018 abolition of gender studies as a recognised master’s discipline; the 2019 reorganisation of the Hungarian Academy of Sciences, which transferred its research network to a government-controlled foundation; and the gradual <em>kuratórium</em>-isation of the public universities, in which previously state-administered institutions were transferred to government-aligned foundations, together constitute a sequence in which the characteristic Phase IV mechanisms — legal-administrative pressure, discipline-specific targeting, governance capture, the use of foundations as instruments of political control — were rehearsed before they were exported. The Hungarian case is paradigmatic not because it is exceptional, but because it is the <em>template</em>.</p>
+</section>
+<section id="india-under-the-bjp" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="india-under-the-bjp">1.4.2 India under the BJP</h3>
+<p>The Indian case differs from the Hungarian in that the underlying ideological project — Hindutva majoritarianism — is rooted in religious-cultural rather than market-individualist categories <span class="citation" data-cites="asianstudiesreview2025">(<a href="references.html#ref-asianstudiesreview2025" role="doc-biblioref">Anand, 2025</a>)</span>. Anti-intellectualism in this register operates through the systematic re-coding of secular, left-leaning, and minority intellectuals as un-Indian; through the re-writing of school and university curricula; through the disciplining of social-science departments and the intimidation of academic critics; and, increasingly, through the platform-mediated work of the ‘pop influencer’ as informal ally of the political project, which Mazumdar <span class="citation" data-cites="mazumdar2026">(<a href="references.html#ref-mazumdar2026" role="doc-biblioref">2026</a>)</span> documents in detail. The Indian case is important because it shows that the cross-regime convergence of Section 1.3 is not driven by a single ideological formation: a Hindutva-majoritarian government and a white-Christian-nationalist one converge on similar institutional techniques despite operating from radically different cultural premises.</p>
+</section>
+<section id="turkey-under-the-akp" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="turkey-under-the-akp">1.4.3 Turkey under the AKP</h3>
+<p>The Turkish case under the AKP, analysed by Cangül Örnek <span class="citation" data-cites="ornek2020 ornek2022">(<a href="references.html#ref-ornek2020" role="doc-biblioref">2020</a>, <a href="references.html#ref-ornek2022" role="doc-biblioref">2022</a>)</span>, offers a third variant in which the genealogy of anti-intellectualism is bound up with a long Ottoman-Republican history of state-bureaucratic conflict that predates the contemporary populist wave. The post-2016 purges, which removed thousands of academics from their positions in the wake of the failed coup and which have produced the largest single-state cohort of exiled scholars in the contemporary period, combined the techniques of Phase II reactive anti-intellectualism (loyalty oaths, security-clearance regimes) with those of Phase IV (governance capture, the use of state-of-emergency powers to restructure universities). The Gencoglu <span class="citation" data-cites="gencoglu2021">(<a href="references.html#ref-gencoglu2021" role="doc-biblioref">2021</a>)</span> analysis of celebrity politics under the AKP makes the further point that the platform-mediated celebrification of authority has been mobilised, in the Turkish case, as an instrument of ‘neoliberal-conservative’ hegemony — a configuration that is neither fully capitalist in the Western liberal-democratic sense nor authoritarian in the Russian or Chinese sense.</p>
+</section>
+<section id="the-united-states-20252026" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="the-united-states-20252026">1.4.4 The United States, 2025–2026</h3>
+<p>The U.S. case in the 2025–2026 window represents the most rapid and aggressive institutional aggression yet documented in a consolidated democracy <span class="citation" data-cites="levitsky-way2025 aaup2025 spitalniak2026">(<a href="references.html#ref-aaup2025" role="doc-biblioref">American Association of University Professors, 2025</a>; <a href="references.html#ref-levitsky-way2025" role="doc-biblioref">Levitsky and Way, 2025</a>; <a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. The federal funding withdrawals, the administrative reshaping of the Department of Education, the renewed campaign against ‘critical’ fields, the expansion of deportation as an instrument of campus discipline, the use of the Internal Revenue Service against the tax-exempt status of selected universities, and the federal compacts that have been signed with several institutions under fiscal duress — these have, between them, compressed into a period of months a sequence that took the Hungarian regime nearly a decade. The acceleration is itself part of the phenomenon: it suggests both the maturity of the transnational toolkit (which no longer needs to be reinvented) and the relative weakness of the institutional defences (which had been attenuated, through Phase III, before the Phase IV assault began).</p>
+<p>The empirical work of Trujillo and Trujillo <span class="citation" data-cites="trujillo-trujillo2026">(<a href="references.html#ref-trujillo-trujillo2026" role="doc-biblioref">2026</a>)</span> on contemporary American distrust of government and science suggests that the political ground for this assault is best understood not through the older ‘rural identity’ framework alone <span class="citation" data-cites="trujillo2022">(<a href="references.html#ref-trujillo2022" role="doc-biblioref">Trujillo, 2022</a>)</span>, but through Heumann’s <span class="citation" data-cites="heumann2026">(<a href="references.html#ref-heumann2026" role="doc-biblioref">2026</a>)</span> reconstruction of a <em>rival epistemic framework</em> — proximity to nature, hands-on practical work, and ‘common sense’ — that is mobilised against expert knowledge in distinct rural-conservative constituencies. Berg’s <span class="citation" data-cites="berg2025">(<a href="references.html#ref-berg2025" role="doc-biblioref">2025</a>)</span> analysis of anti-COVID mobilisations reinforces the point: the protesters in question did not ‘reject science’; they appropriated the rhetorical authority of science for their own counter-positions, in a pattern that is better described as <em>epistemic re-articulation</em> than as anti-science in any straightforward sense. These nuances matter for the design of any response. They do not soften the diagnosis of Section 1.3; they sharpen it.</p>
+</section>
+<section id="russia-china-and-the-convergence-puzzle" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="russia-china-and-the-convergence-puzzle">1.4.5 Russia, China, and the convergence puzzle</h3>
+<p>The fifth case is, properly speaking, a <em>contrast</em> case, included to make the convergence claim of Section 1.3 visible. Russia and China are not Phase IV anti-intellectual regimes in the same sense as Hungary, India, or the contemporary United States: their anti-intellectualism has different roots, different institutional forms, and different relationships to popular legitimation. The Russian post-2022 crackdown on academic freedom, the systematic emigration of Russian scholars after the invasion of Ukraine, the classification of Western-funded research and academic exchange as ‘foreign agent’ activity, and the increasingly aggressive disciplining of historical research on the Soviet period all operate within a framework that pre-dates Phase IV and that inherits much from the late-Soviet and post-Soviet trajectory. The Chinese case is differently configured again: the post-2012 discipline of <em>xianzheng</em> (constitutionalism) discourse, the 2013 ‘Document Number 9’ targeting of Western liberal categories in the universities, the platform-internal disciplining of social science research through self-censorship and editorial review, and the more recent extraterritorial pressures on overseas Chinese scholars together constitute an anti-intellectual regime that has no significant overlap with the populist mobilisations of the Anglosphere or with the religious-majoritarian framings of India.</p>
+<p>The convergence is therefore not a convergence of <em>causes</em> but of <em>techniques</em>. The same instruments — funding pressure, governance capture, discipline-specific targeting, platform-mediated disinformation, the policing of international scholarly exchange — are deployed across regime types whose justificatory grammars are incompatible. The point is significant for the analytical framing of the rest of the book, because it implies that the response to Phase IV cannot be derived simply from a critique of capitalism, nor simply from a defence of liberal democracy, nor simply from an appeal to the autonomy of academic norms. It has to be constructed on the terrain of what these convergent practices actually do, and of what intellectual institutions actually <em>are</em> under the conditions Phase IV has produced.</p>
+<hr>
+<p>The next chapter (<a href="02-authoritarian-moment.html" class="quarto-xref"><span>Chapter 2</span></a>) takes the present U.S. case as an analytical anchor and develops, in detail, the relationship between the authoritarian turn and the assault on the university — the institution that, in the typology of Levitsky and Ziblatt <span class="citation" data-cites="levitsky-way2025">(<a href="references.html#ref-levitsky-way2025" role="doc-biblioref">2025</a>)</span>, is among the ‘soft guardrails’ whose erosion makes democratic backsliding possible. The U.S. case is chosen for that chapter not because it is the worst (it is not: by several metrics Hungary is more advanced, India more sustained, and Turkey more brutal in the immediate post-coup period) but because its very public, very rapid, and very legally documented unfolding in 2025–2026 makes the underlying mechanisms unusually legible. The comparative apparatus established here then enables the reader of <a href="02-authoritarian-moment.html" class="quarto-xref"><span>Chapter 2</span></a> to recognise the U.S. trajectory as a regional instantiation of the transnational pattern, calibrated by the speed with which a consolidated democracy can be reshaped when the institutional defences, attenuated through Phase III, give way.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-aaup2025" class="csl-entry" role="listitem">
+American Association of University Professors. (2025). <em>Statement on the 2025 federal assault on higher education</em>.
+</div>
+<div id="ref-asianstudiesreview2025" class="csl-entry" role="listitem">
+Anand, A. (2025). The sociocultural component of india’s democratic backsliding. <em>Asian Studies Review</em>, <em>50</em>(1), 62–80.
+</div>
+<div id="ref-applebaum2024" class="csl-entry" role="listitem">
+Applebaum, A. (2024). <em>Autocracy, inc.: The dictators who want to run the world</em>. Doubleday.
+</div>
+<div id="ref-berg2025" class="csl-entry" role="listitem">
+Berg, A. (2025). Anti-<span>COVID</span> = anti-science? <span>H</span>ow protesters against <span>COVID-19</span> measures appropriate science to navigate the information environment. <em>New Media &amp; Society</em>, <em>27</em>(2), 1093–1109. <a href="https://doi.org/10.1177/14614448231189262">https://doi.org/10.1177/14614448231189262</a>
+</div>
+<div id="ref-insidehighered2025" class="csl-entry" role="listitem">
+Brest, P. (2025, October). <em>How the compact curtails academic freedom</em>. Inside Higher Ed. <a href="https://law.stanford.edu/2025/10/23/how-the-compact-curtails-academic-freedom/">https://law.stanford.edu/2025/10/23/how-the-compact-curtails-academic-freedom/</a>
+</div>
+<div id="ref-brown2015" class="csl-entry" role="listitem">
+Brown, W. (2015). <em>Undoing the demos: Neoliberalism’s stealth revolution</em>. Zone Books.
+</div>
+<div id="ref-diaz2021" class="csl-entry" role="listitem">
+Diaz, W. (2021). On a small glossary of academic anti-intellectualism. <em>CLCWeb: Comparative Literature and Culture</em>, <em>23</em>(2). <a href="https://fileserver-az.core.ac.uk/download/511342897.pdf">https://fileserver-az.core.ac.uk/download/511342897.pdf</a>
+</div>
+<div id="ref-filatova2021" class="csl-entry" role="listitem">
+Filatova, A. A. (2021). <span>‘</span>Vicious minds<span>’</span>: Vice epistemology and rhetoric of resistance to anti-intellectualism. <em>Epistemology &amp; Philosophy of Science</em>. <a href="https://doi.org/10.5840/eps202158465">https://doi.org/10.5840/eps202158465</a>
+</div>
+<div id="ref-gencoglu2021" class="csl-entry" role="listitem">
+Gencoglu, [autor. a. verificar]. (2021). <em>Heroes, villains and celebritisation of politics</em>.
+</div>
+<div id="ref-hadarics2025" class="csl-entry" role="listitem">
+Hadarics, M. (2025). Democratic backsliding based on illusions: Authoritarians’ biased perception of media freedom contributes to their political support. <em>International Journal of Psychology</em>. <a href="https://doi.org/10.1002/ijop.70126">https://doi.org/10.1002/ijop.70126</a>
+</div>
+<div id="ref-hale2013" class="csl-entry" role="listitem">
+Hale, F. (2013). <span>‘</span>Fundamentalism<span>’</span> and <span>‘</span>fundamentalist<span>’</span> semantically considered: Their lexical origins, early polysemy, and pejoration. <em>In Die Skriflig / In Luce Verbi</em>.
+</div>
+<div id="ref-harsin2024" class="csl-entry" role="listitem">
+Harsin, J. (2024). Post-truth politics and epistemic populism. In <em>The palgrave handbook of communication and populism</em>. Palgrave Macmillan.
+</div>
+<div id="ref-hasell_chinn_2023" class="csl-entry" role="listitem">
+Hasell, A., and Chinn, S. (2023). The political influence of lifestyle influencers? Examining the relationship between aspirational social media use and anti-expert attitudes and beliefs. <em>Social Media + Society</em>, <em>9</em>(4), 20563051231211945. <a href="https://doi.org/10.1177/20563051231211945">https://doi.org/10.1177/20563051231211945</a>
+</div>
+<div id="ref-heumann2026" class="csl-entry" role="listitem">
+Heumann, [autor. a. verificar]. (2026). <em><span>‘</span>They don<span>’</span>t know what they<span>’</span>re doing<span>’</span></em>.
+</div>
+<div id="ref-hofstadter1963" class="csl-entry" role="listitem">
+Hofstadter, R. (1963). <em>Anti-intellectualism in american life</em>. Knopf.
+</div>
+<div id="ref-hohe2024" class="csl-entry" role="listitem">
+Hohe, E. (2024). Red vs blue hubris: Clarifying the relationship between partisanship and (anti)intellectualism. <em>Party Politics</em>.
+</div>
+<div id="ref-holt2025" class="csl-entry" role="listitem">
+Holt, B. J. (2025). Intellectualism and anti-intellectualism act as barriers to academic freedom. <em>International Journal of Technology and Inclusive Education</em>, <em>14</em>(2), 2099–2108. <a href="https://doi.org/10.20533/ijtie.2047.0533.2025.0261">https://doi.org/10.20533/ijtie.2047.0533.2025.0261</a>
+</div>
+<div id="ref-inbar-jablonka2025" class="csl-entry" role="listitem">
+Inbar, S., Jablonka, E., Ginsburg, S., and Zeligowski, A. (2025). <em>Common sense, scientific images, and the aesthetic mode of knowing</em>. <a href="https://doi.org/10.1007/s40656-025-00697-z">https://doi.org/10.1007/s40656-025-00697-z</a>
+</div>
+<div id="ref-klein2024" class="csl-entry" role="listitem">
+Klein, L. J. A. (2024). <em>Whig anti-intellectualism: An intellectual history</em> [{PhD} dissertation]. <a href="https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37377897">https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37377897</a>
+</div>
+<div id="ref-kremer2016" class="csl-entry" role="listitem">
+Kremer, M. (2016). Ideology and knowledge-how: A <span>R</span>ylean perspective. <em>Theoria. Revista de Teoría, Historia y Fundamentos de La Ciencia</em>, <em>31</em>(3), 295–311. <a href="https://doi.org/10.1387/theoria.16292">https://doi.org/10.1387/theoria.16292</a>
+</div>
+<div id="ref-levitsky-way2025" class="csl-entry" role="listitem">
+Levitsky, S., and Way, L. A. (2025). The path to american authoritarianism: <span>What</span> comes after democratic breakdown. <em>Foreign Affairs</em>, <em>104</em>(2). <a href="https://www.foreignaffairs.com/united-states/path-american-authoritarianism-trump">https://www.foreignaffairs.com/united-states/path-american-authoritarianism-trump</a>
+</div>
+<div id="ref-NewLines2024War" class="csl-entry" role="listitem">
+Magazine, N. L. (2024). <em>A war on universities in the netherlands</em>. <a href="https://newlinesmag.com/spotlight/a-war-on-universities-in-the-netherlands/">https://newlinesmag.com/spotlight/a-war-on-universities-in-the-netherlands/</a>
+</div>
+<div id="ref-mazumdar2026" class="csl-entry" role="listitem">
+Mazumdar, S. (2026). <em>Informal allies: Hindutva pop influencers and propaganda in digital <span>I</span>ndia</em>. <a href="https://doi.org/10.52698/brbp3915">https://doi.org/10.52698/brbp3915</a>
+</div>
+<div id="ref-mckee-figueras2025" class="csl-entry" role="listitem">
+McKee, M., Figueras, J., Kalediene, R., Joshi, A., El-Mohandes, A., Otok, R., Magaña, L., Marchandise, C., and Barros, H. (2025). An agenda for public health diplomacy in an age of populism. <em>Public Health Reviews</em>, <em>46</em>, 1609089. <a href="https://doi.org/10.3389/phrs.2025.1609089">https://doi.org/10.3389/phrs.2025.1609089</a>
+</div>
+<div id="ref-mirowski2013" class="csl-entry" role="listitem">
+Mirowski, P. (2013). <em>Never let a serious crisis go to waste: How neoliberalism survived the financial meltdown</em>. Verso.
+</div>
+<div id="ref-nguyen2020" class="csl-entry" role="listitem">
+Nguyen, C. T. (2020). <em>Games: Agency as art</em>. Oxford University Press.
+</div>
+<div id="ref-nichols2017" class="csl-entry" role="listitem">
+Nichols, T. (2017). <em>The death of expertise: The campaign against established knowledge and why it matters</em>. Oxford University Press.
+</div>
+<div id="ref-norris-inglehart2019" class="csl-entry" role="listitem">
+Norris, P., and Inglehart, R. (2019). <em>Cultural backlash: Trump, brexit, and authoritarian populism</em>. Cambridge University Press.
+</div>
+<div id="ref-ornek2020" class="csl-entry" role="listitem">
+Örnek, C. (2020). The bureaucracy and its discontents in modern <span>T</span>urkey: Liberalism, neo-liberalism and anti-intellectualism. In <em>Faces of republican turkey: Beyond the modernization hypothesis</em> (pp. 129–147). <a href="https://doi.org/10.26650/B/SS30.2020.004.06">https://doi.org/10.26650/B/SS30.2020.004.06</a>
+</div>
+<div id="ref-ornek2022" class="csl-entry" role="listitem">
+Örnek, C. (2022). Why does the <span>AKP</span> hate cultivated minds? <span>T</span>he historical background of anti-intellectualism of political <span>I</span>slam in <span>T</span>urkey. <em>Journal of Mediterranean Studies</em>, <em>31</em>(1), 37–56.
+</div>
+<div id="ref-paxton2004" class="csl-entry" role="listitem">
+Paxton, R. O. (2004). <em>The anatomy of fascism</em>. Knopf.
+</div>
+<div id="ref-saint-guily2013" class="csl-entry" role="listitem">
+Saint-Guily, C. L. (2013). Henri <span>B</span>ergson and the <span>S</span>panish conservatives (1907–1940). <em>Cahiers de Civilisation Espagnole Contemporaine</em>.
+</div>
+<div id="ref-scheppele2022" class="csl-entry" role="listitem">
+Scheppele, K. L. (2022). How viktor orbán wins. <em>Journal of Democracy</em>, <em>33</em>(3), 45–61.
+</div>
+<div id="ref-schrecker1998" class="csl-entry" role="listitem">
+Schrecker, E. (1998). <em>Many are the crimes: <span>McCarthyism</span> in <span>America</span></em>. Princeton University Press.
+</div>
+<div id="ref-schrecker2025" class="csl-entry" role="listitem">
+Schrecker, E. (2025). <em>The lost soul of higher education: Updated edition</em>. New Press.
+</div>
+<div id="ref-Segers2025Anti" class="csl-entry" role="listitem">
+Segers, I. B. (2025). <span>“The anti-woke academy”</span>: Dutch far-right politics of knowledge about gender. <em>Politics &amp; Gender</em>, <em>21</em>(2), 195–219. <a href="https://doi.org/10.1017/S1743923X24000448">https://doi.org/10.1017/S1743923X24000448</a>
+</div>
+<div id="ref-spitalniak2026" class="csl-entry" role="listitem">
+Spitalniak, L. (2026). <em>Trump 2.0’s impact on higher ed: The first year in 8 numbers</em>. <span>Higher Ed Dive</span>. <a href="https://www.highereddive.com/news/trump-20s-impact-on-higher-ed-the-first-year-in-8-numbers/809909/">https://www.highereddive.com/news/trump-20s-impact-on-higher-ed-the-first-year-in-8-numbers/809909/</a>
+</div>
+<div id="ref-stanley2018" class="csl-entry" role="listitem">
+Stanley, J. (2018). <em>How fascism works: The politics of us and them</em>. Random House.
+</div>
+<div id="ref-trujillo2022" class="csl-entry" role="listitem">
+Trujillo, K. L. (2022). Rural identity as a contributing factor to anti-intellectualism in the <span>US</span>. <em>Political Behavior</em>, <em>44</em>(3), 1509–1532. <a href="https://doi.org/10.1007/s11109-022-09770-w">https://doi.org/10.1007/s11109-022-09770-w</a>
+</div>
+<div id="ref-trujillo-trujillo2026" class="csl-entry" role="listitem">
+Trujillo, K. L., and Trujillo, M. (2026). What drives a contemporary lack of trust in government and science in the <span>U</span>nited <span>S</span>tates? <em>American Politics Research</em>. <a href="https://doi.org/10.1177/1532673X261443521">https://doi.org/10.1177/1532673X261443521</a>
+</div>
+<div id="ref-VerbeekZaslove2024" class="csl-entry" role="listitem">
+Verbeek, B., and Zaslove, A. (2024). Waking the sleeping populist giant: The 2024 european elections and populism in the netherlands. In G. Ivaldi and E. Zankina (Eds.), <em>2024 EP elections under the shadow of rising populism</em>. European Center for Populism Studies (ECPS). <a href="https://doi.org/10.55271/rp0086">https://doi.org/10.55271/rp0086</a>
+</div>
+<div id="ref-whitfield2019" class="csl-entry" role="listitem">
+Whitfield, S. (2019). From <span>M</span>c<span>C</span>arthy to <span>T</span>rump. <em>Society</em>.
+</div>
+<div id="ref-williams2018" class="csl-entry" role="listitem">
+Williams, J. (2018). <em>Stand out of our light: Freedom and resistance in the attention economy</em>. Cambridge University Press.
+</div>
+<div id="ref-zhang2021" class="csl-entry" role="listitem">
+Zhang, W. (2021). Politicizing fashion: Inconspicuous consumption and anti-intellectualism during the cultural revolution in china. <em>Journal of Consumer Culture</em>, <em>21</em>(4), 950–966. <a href="https://doi.org/10.1177/1469540519889989">https://doi.org/10.1177/1469540519889989</a>
+</div>
+<div id="ref-zuboff2019" class="csl-entry" role="listitem">
+Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power</em>. PublicAffairs.
+</div>
+</div>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Diaz’s <span class="citation" data-cites="diaz2021">(<a href="references.html#ref-diaz2021" role="doc-biblioref">2021</a>)</span> characterisation extends Schlesinger’s much older formulation about the businessman to academia itself — arguing, with intentional sharpness, that anti-intellectual postures now operate from within the very institutions historically charged with defending intellectual life. The harshness of the formulation is deliberate: it names the structural similarity between the political attacks on universities from outside, and the managerial techniques through which universities themselves have been disciplined, ‘rationalised’, and stripped of their distinctive infrastructure. The two are not the same; but they are not unrelated either.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A related warning, from a different philosophical register, comes from Michael Kremer’s <span class="citation" data-cites="kremer2016">(<a href="references.html#ref-kremer2016" role="doc-biblioref">2016</a>)</span> critique of Jason Stanley’s political reading of the Rylean distinction between knowledge-how and knowledge-that. Kremer argues that the distinction between ‘intellectualism’ and ‘anti-intellectualism’ in the analytic philosophy of mind has none of the political consequences Stanley ascribes to it, and that ‘intellectualism’ in the technical philosophical sense aligns no more reliably with progressive politics than ‘anti-intellectualism’ does with reactionary politics. The political analyst who borrows Stanley’s vocabulary inherits the risk, identified by Kremer, of importing a misleading inferential warrant from the technical debate. The political case for taking expertise seriously can — and must — be made without leaning on it.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>This finding does not licence the inverse error of treating the problem as exclusively right-wing. Filatova’s <span class="citation" data-cites="filatova2021">(<a href="references.html#ref-filatova2021" role="doc-biblioref">2021</a>)</span> warning about vice-epistemic moralism is precisely a warning against that move. The point is rather that the empirical asymmetry must be acknowledged as such, and that an even-handed treatment which masks it is itself a form of analytical failure.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./00-introduction.html" class="pagination-link" aria-label="Introduction: The Mausoleum of the Mind">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction: The Mausoleum of the Mind</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./02-authoritarian-moment.html" class="pagination-link" aria-label="The Competitive-Authoritarian Moment">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

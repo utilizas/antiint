@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; AI and the Automation of Intellectual Labour – Brains as Brand</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./07-education-battleground.html" rel="next">
+<link href="./05-cultural-capital-gender.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-aeb32cb3453d7d606b6c0a50f15f0871.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d7bb2a7abcc71ede1f4a44f14a5ae606.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+  /* Iconos CC inline: heredan color del texto, sin filter trick */
+  .cc-license-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+  .cc-license-link svg {
+    height: 1.2em;
+    width: 1.2em;
+    fill: currentColor;
+  }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+// Solo en la página principal del libro
+const path = window.location.pathname;
+const isIndex = path.endsWith("/") || 
+        path.endsWith("/index.html") || 
+        path === "/index.html";
+        if (!isIndex) return;
+        
+const meta = document.querySelector(".quarto-title-meta");
+if (!meta) return;
+
+  // ---------- 1. Bloque de autores en dos columnas ----------
+  const authors = document.querySelectorAll(".quarto-title-author");
+  if (authors.length > 0) {
+    const dateEl = document.querySelector(".quarto-title-date");
+    const dateText = dateEl ? dateEl.textContent.trim() : "";
+
+    const block = document.createElement("div");
+    block.className = "author-block";
+    const left  = document.createElement("div"); left.className  = "author-col";
+    const right = document.createElement("div"); right.className = "author-col";
+
+    authors.forEach((author, i) => {
+      const col   = (i % 2 === 0) ? left : right;
+      const entry = document.createElement("div");
+      entry.className = "author-entry";
+
+      const name = document.createElement("div");
+      name.className = "author-name";
+      name.textContent = author.textContent.trim();
+      entry.appendChild(name);
+
+      ["role", "affiliation", "note"].forEach(attr => {
+        const value = author.getAttribute("data-author-" + attr);
+        if (value) {
+          const div = document.createElement("div");
+          div.className = "author-" + attr;
+          div.textContent = value;
+          entry.appendChild(div);
+        }
+      });
+
+      if (dateText) {
+        const dateDiv = document.createElement("div");
+        dateDiv.className = "author-date";
+        dateDiv.textContent = dateText;
+        entry.appendChild(dateDiv);
+      }
+
+      col.appendChild(entry);
+    });
+
+    block.appendChild(left);
+    block.appendChild(right);
+    meta.appendChild(block);
+  }
+
+  // ---------- 2. Entrada de licencia con SVG inline ----------
+  // SVG inline con fill=currentColor → adapta a tema claro/oscuro
+  // sin filter hack y sin dependencias externas.
+  const licenseEntry = document.createElement("div");
+  licenseEntry.innerHTML = `
+    <div class="quarto-title-meta-heading">License</div>
+    <div class="quarto-title-meta-contents">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+         target="_blank" rel="license noopener"
+         class="cc-license-link"
+         aria-label="CC BY-NC-SA 4.0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">CC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">BY</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">NC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">SA</text></svg>
+        <span style="margin-left:0.2em;">4.0</span>
+      </a>
+    </div>
+  `;
+  meta.appendChild(licenseEntry);
+});
+</script>
+
+
+</head>
+
+<body class="nav-sidebar floating slimcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-performative-intellectualism.html">Part II — The Cultural Recoding of Intellect</a></li><li class="breadcrumb-item"><a href="./06-ai-cognition.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Brains as Brand</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: The Mausoleum of the Mind</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I — The Political Crisis of Public Reason</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-genealogy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-authoritarian-moment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-attention-economy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II — The Cultural Recoding of Intellect</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-performative-intellectualism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Performative Intellectualism: From BookTok to the Bottega Catwalk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-cultural-capital-gender.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cultural Capital, Gender and the Marketisation of Intellect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-ai-cognition.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III — Reconstruction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-education-battleground.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Education as Battleground: Universities, Schools, and the Politics of Curiosity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion: Leaving the Mausoleum</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A-methodology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Methodological Note</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./B-corpus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Corpus of Cultural Artefacts Examined</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C-chronology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Chronology of Principal Events, 2016–2026</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-automated-what-is-not" id="toc-what-is-automated-what-is-not" class="nav-link active" data-scroll-target="#what-is-automated-what-is-not"><span class="header-section-number">6.1</span> What is automated, what is not</a></li>
+  <li><a href="#the-shifting-frontier-and-the-renegotiation-of-cultural-value" id="toc-the-shifting-frontier-and-the-renegotiation-of-cultural-value" class="nav-link" data-scroll-target="#the-shifting-frontier-and-the-renegotiation-of-cultural-value"><span class="header-section-number">6.2</span> The shifting frontier and the renegotiation of cultural value</a></li>
+  <li><a href="#the-political-economy-of-foundation-model-ownership" id="toc-the-political-economy-of-foundation-model-ownership" class="nav-link" data-scroll-target="#the-political-economy-of-foundation-model-ownership"><span class="header-section-number">6.3</span> The political economy of foundation-model ownership</a></li>
+  <li><a href="#cognitive-offloading-and-the-displacement-of-formation" id="toc-cognitive-offloading-and-the-displacement-of-formation" class="nav-link" data-scroll-target="#cognitive-offloading-and-the-displacement-of-formation"><span class="header-section-number">6.4</span> Cognitive offloading and the displacement of formation</a></li>
+  <li><a href="#the-premium-on-the-unautomated-sign" id="toc-the-premium-on-the-unautomated-sign" class="nav-link" data-scroll-target="#the-premium-on-the-unautomated-sign"><span class="header-section-number">6.5</span> The premium on the unautomated sign</a></li>
+  <li><a href="#conditions-for-a-genuine-reconstruction" id="toc-conditions-for-a-genuine-reconstruction" class="nav-link" data-scroll-target="#conditions-for-a-genuine-reconstruction"><span class="header-section-number">6.6</span> Conditions for a genuine reconstruction</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-performative-intellectualism.html">Part II — The Cultural Recoding of Intellect</a></li><li class="breadcrumb-item"><a href="./06-ai-cognition.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ai-cognition" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Between roughly 2022 and 2026, generative artificial intelligence has displaced significant quantities of the routine cognitive labour through which intellectual life was historically reproduced — summarising, drafting, translating, formatting, citing, explaining — and the displacement is still in train. This is not a marginal addendum to the analyses of the preceding chapters but a <em>third structural force</em>, alongside political authoritarianism (Part I) and platform-economic capture (<a href="03-attention-economy.html" class="quarto-xref"><span>Chapter 3</span></a>), that is reshaping the conditions of public reason in our period.</p>
+<p>Three claims organise what follows. First, AI is a <strong>labour-process transformation</strong>: it changes who does what cognitive work, on what timescales, with what error-distributions, at what cost. Second, AI is an <strong>infrastructural transformation</strong>: the firms that own the foundation models are largely the same firms — or sit in the same oligopolistic structure — as those that own the attention-economic platforms, with the consequence that the political-economic incentives that produced the engagement economy now structure the knowledge-production economy. Third, AI is a <strong>cultural-symbolic transformation</strong>: the displacement of routine intellectual labour forces a renegotiation of what a human mind is <em>for</em>, and therefore of what counts as a desirable cognitive trait — a renegotiation that intersects directly with the performative-intellectualism analysis of Part II.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Foundation-model owners and the attention-economic incumbents.</strong><br>
+The same firms that own the dominant foundation models also own — or sit in oligopolistic relation to — the dominant infrastructures of the engagement economy.<br>
+<strong>Alphabet</strong> controls Google Search, YouTube and Android, and develops the Gemini family of models through Google DeepMind.<br>
+<strong>Meta</strong> owns Facebook, Instagram, WhatsApp and Threads, and develops the Llama model family.<br>
+<strong>Microsoft</strong> holds an exclusive cloud and commercial partnership with OpenAI, integrates GPT-class models across Windows, Microsoft 365 and Azure, and operates one of the three hyperscale clouds on which most frontier training runs.<br>
+<strong>Amazon</strong> operates AWS — the largest of the three hyperscale clouds — develops its Nova and Titan model families, and holds a multi-billion-dollar partnership with Anthropic.<br>
+<strong>Apple</strong> controls iOS and macOS distribution, has begun deploying on-device models under the <em>Apple Intelligence</em> brand, and partners with OpenAI for off-device inference. The continuity is structural rather than coincidental: training-scale compute, large-scale data pipelines and consumer-facing distribution channels concentrate where capital is already concentrated, reproducing under the AI label the oligopolistic logic that structured the engagement economy <span class="citation" data-cites="bratton2026 zuboff2019">(<a href="references.html#ref-bratton2026" role="doc-biblioref">Bratton, 2026</a>; <a href="references.html#ref-zuboff2019" role="doc-biblioref">Zuboff, 2019</a>)</span>.</p>
+</div></div><p>A clarification is in order at the outset. What follows is not a polemic against AI, and certainly not a refusal of the genuine benefits of these tools. Many of the routines they have absorbed were tedious and unequally distributed; many of the capabilities they make available were previously the privilege of expensive infrastructures. The argument is that <em>how</em> the technology has been built, <em>who</em> owns it, and <em>under what social practices</em> it is now being deployed are political-economic questions that have been largely answered, so far, by a small number of firms whose interests are not those of the cognitive enterprise — the collective human effort to improve the quality of thinking, of learning, and of public reasoning. The point holds even, and perhaps especially, when some of these firms make the question of public purpose explicit: Palantir’s April 2026 manifesto, taken up later in the chapter, recasts democratic deliberation itself as a “friction” to be engineered away <span class="citation" data-cites="KarpZamiska2025Tech coeckelbergh2026">(<a href="references.html#ref-coeckelbergh2026" role="doc-biblioref">Coeckelbergh, 2026</a>; <a href="references.html#ref-KarpZamiska2025Tech" role="doc-biblioref">Karp and Zamiska, 2025</a>)</span>. That asymmetry, and what it costs, is the chapter’s subject.</p>
+<section id="what-is-automated-what-is-not" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="what-is-automated-what-is-not"><span class="header-section-number">6.1</span> What is automated, what is not</h2>
+<p>A descriptive distinction can be drawn — provisional, contestable, revisable — between cognitive tasks where rapidly improving automation is now a fact and tasks where, on present trajectories, automation remains partial or absent.</p>
+<p>On the side of rapidly improving automation: summarisation of documents, translation between major languages, first-draft generation of routine prose, citation formatting and bibliographic search, code completion, standard explanation of established concepts. On the side of resistance: original empirical investigation in unfamiliar terrain; sustained interpretation that requires accountability for an inherited disciplinary archive; peer contestation grounded in tacit professional norms; pedagogical relationships under conditions of mutual recognition.</p>
+<p>The line is not stable. Boundaries shift; resistant tasks become partly automatable; new forms of human contribution appear. What matters analytically is that the <em>distribution</em> of cognitive labour has shifted, and is shifting, in ways that have political-economic and cultural consequences regardless of where any particular boundary settles in 2027 or 2030.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Evidence on the moving frontier
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="" aria-current="page">Knowledge work</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Education and learning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Frontier claims</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Caveats</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>A 2025 survey-based study of knowledge workers using generative AI in their daily tasks reported self-perceived reductions in cognitive effort across drafting, summarising and information retrieval, with confidence effects that varied by domain expertise: workers more confident in the AI’s output reported less critical evaluation of that output, and <em>vice versa</em> <span class="citation" data-cites="lee2025">(<a href="references.html#ref-lee2025" role="doc-biblioref">Lee et al., 2025</a>)</span>. Earlier productivity studies on professional writing tasks documented substantial speed gains from AI assistance, with quality assessments varying by task <span class="citation" data-cites="noy-zhang2023">(<a href="references.html#ref-noy-zhang2023" role="doc-biblioref">Noy and Zhang, 2023</a>)</span>.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Stadler, Bannert and Sailer <span class="citation" data-cites="stadler2024">(<a href="references.html#ref-stadler2024" role="doc-biblioref">Stadler et al., 2024</a>)</span> found that LLM use reduces immediate cognitive load in student scientific inquiry but compromises depth of engagement. Kosmyna et al. <span class="citation" data-cites="kosmyna2025preprint">(<a href="references.html#ref-kosmyna2025preprint" role="doc-biblioref">Kosmyna et al., 2025</a>)</span>, in an EEG study of essay-writing tasks across three groups (LLM, search engine, brain-only), reported reduced inter-regional brain connectivity in the LLM group — up to 55% in some bands — consistent with reduced internal generation of content. Their “cognitive debt” argument is that early reliance on LLMs impairs later unaided performance, and that participants who had used LLMs reproduced narrower idea sets and reported weaker ownership of their texts.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>In 2024–2025, several actors — Sakana AI, Autoscience Institute, FutureHouse (now spinning out a commercial subsidiary, Edison Scientific), and US national-laboratory teams at Argonne, Oak Ridge and Lawrence Berkeley — announced systems claiming to automate substantial parts of the scientific research workflow: literature review, hypothesis generation, experimental design, manuscript authoring <span class="citation" data-cites="beel-kan2025 sakana2024">(<a href="references.html#ref-beel-kan2025" role="doc-biblioref">Beel et al., 2025</a>; <a href="references.html#ref-sakana2024" role="doc-biblioref">Lu et al., 2024</a>)</span>. Independent evaluations have found the manuscripts produced to be of uneven quality — Beel, Kan and Baumgart <span class="citation" data-cites="beel-kan2025">(<a href="references.html#ref-beel-kan2025" role="doc-biblioref">Beel et al., 2025</a>)</span> compare them to “an unmotivated undergraduate rushing to meet a deadline” — but the trend is toward systems intended to operate with increasing autonomy.</p>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>The frontier between “automatable” and “resistant” is not stable, and is actively contested within the AI research community itself. Apple’s 2025 <em>Illusion of Thinking</em> study reported that frontier reasoning models exhibit a complete accuracy collapse beyond a threshold of problem complexity, with the models reducing their own reasoning effort precisely as the task gets harder <span class="citation" data-cites="shojaee2025-illusion">(<a href="references.html#ref-shojaee2025-illusion" role="doc-biblioref">Shojaee et al., 2025</a>)</span>. Replications and counter-replications followed within weeks, and the resulting debate is itself an instance of the contestation: Dellibarda Varela et al. <span class="citation" data-cites="dellibarda2025-rethinking">(<a href="references.html#ref-dellibarda2025-rethinking" role="doc-biblioref">2025</a>)</span> re-ran two of the original benchmarks and concluded that the picture is more nuanced than either critics or defenders of the original paper had allowed. Independent evaluations of the most ambitious end-to-end “AI scientist” pipelines have similarly found their outputs uneven relative to their billing <span class="citation" data-cites="beel-kan2025">(<a href="references.html#ref-beel-kan2025" role="doc-biblioref">Beel et al., 2025</a>)</span>. Some boundaries will consolidate; others will move. The chapter takes no position on which. The political-economic and cultural-symbolic consequences traced below do not depend on settling the technical question.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>The distributional point is more important than the boundary question. Even where automation works well, what it absorbs is unevenly distributed across domains, regions and class positions. The tasks most densely automated in 2026 are precisely those through which intellectual <em>formation</em> — the moving from novice to competent to expert — has historically taken place: writing first drafts, summarising in one’s own words, working through citations, drafting explanations. That has consequences, taken up below, that no descriptive boundary line can settle.</p>
+</section>
+<section id="the-shifting-frontier-and-the-renegotiation-of-cultural-value" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="the-shifting-frontier-and-the-renegotiation-of-cultural-value"><span class="header-section-number">6.2</span> The shifting frontier and the renegotiation of cultural value</h2>
+<p>A complication of the period 2024–2026 has been that public expectations about <em>what</em> can be automated have moved faster than the technical reality. Several firms have declared the goal of end-to-end “AI scientists” capable of formulating hypotheses, running experiments, and producing publishable manuscripts with limited human involvement, restricted at most to a validation phase <span class="citation" data-cites="sakana2024 beel-kan2025">(<a href="references.html#ref-beel-kan2025" role="doc-biblioref">Beel et al., 2025</a>; <a href="references.html#ref-sakana2024" role="doc-biblioref">Lu et al., 2024</a>)</span>. Whether these systems live up to their billing is a separate question; the point here is that the <em>claim</em> is on the table, made by serious actors with serious capital, and absorbed by educational institutions, funding bodies and the public under their reputational halo.</p>
+<p>This claim — and the broader claim of which it is a part, that generative AI is now extending from prose into music, image, code, mathematics, scientific discovery, and creative production generally — forces a question that the cultural commentary has mostly avoided. If the cognitive activities that have historically counted as marks of a sophisticated, desirable, <em>interesting</em> human mind are, one by one, being absorbed into machine work, what remains?</p>
+<p>The Cartner-Morley piece on “intellectualism pop” — discussed in <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a> — caught the moment in which “smart is sexy” became a cultural slogan. But its anchoring is now in question. Being smart was attractive, in part, because cognitive labour was scarce, costly and unevenly distributed: a person’s visible thoughtfulness signalled the investment of time and the shaping of an inner life. Once that labour can be cheaply externalised, the <em>signal</em> has to find a different referent.</p>
+<p>Three responses are now visible. The first is the line attended to in <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a>: the displacement of intellect into <em>signs</em> of intellect — the highlighted novel, the bookshelf photographed in soft focus, the title-bag — read here, in the AI period, as the production of an aesthetic of unautomated thought. The signs are valuable not because they correspond to actual cognitive practice but because they correspond to its image at a moment when its practice is increasingly outsourced.</p>
+<p>The second response is a renewed cultural premium on those forms of cognitive labour that <em>cannot</em> — at least not yet — be automated: embodied creative judgement, original empirical investigation, sustained interpretation grounded in disciplinary memory, pedagogical relationship under conditions of mutual recognition. These are the cognitive capacities that survive automation by definition, because their automation would constitute a different order of technological change. The empirical-economic literature converges on this prediction from a different vantage: in customer-service settings, the introduction of generative-AI assistance compresses skill differentials by raising the productivity of less-experienced workers while leaving experienced workers’ performance largely unchanged <span class="citation" data-cites="brynjolfsson-li-raymond2025">(<a href="references.html#ref-brynjolfsson-li-raymond2025" role="doc-biblioref">Brynjolfsson et al., 2025</a>)</span>, a pattern consistent with what Acemoglu’s task-based model identifies as automation’s tendency to widen the gap between capital and labour income while displacing routine cognitive tasks <span class="citation" data-cites="acemoglu2025-macroeconomics">(<a href="references.html#ref-acemoglu2025-macroeconomics" role="doc-biblioref">Acemoglu, 2025</a>)</span>. The implication, read against the cultural argument here, is that the cognitive capacities resistant to automation become not only scarce in supply but increasingly unevenly remunerated. They will plausibly become the genuinely scarce cognitive goods of the coming decade.</p>
+<p>The third response — the harder one to think through — is a quieter erosion. If generative AI can produce passable music, passable poetry, passable scientific writing, passable creative prose, then the <em>categorical</em> status of a human mind as a producer of those things is altered. Not because any individual practitioner has been replaced — most have not — but because the cultural framing of what their work means is open to renegotiation. Whether this renegotiation produces a robust new appreciation of what only human minds can do, or a quieter slide toward the devaluation of intellectual labour as such, is one of the open questions of the present moment. The cultural register and the economic register are not independent: a <em>de-eroticisation</em> of intellectual labour — its loss of status as a marker of sophistication and desirability — runs alongside its <em>precarisation</em> as a labour input, despite the sustained formation that competent intellectual work has always required. Susskind and Susskind <span class="citation" data-cites="susskind2022-professions">(<a href="references.html#ref-susskind2022-professions" role="doc-biblioref">Susskind and Susskind, 2022</a>)</span> documented the early form of this convergence within the established professions; subsequent labour-market evidence on generative-AI exposure shows the pattern extending into knowledge work more broadly, with productivity gains accruing disproportionately to capital and to a narrow class of workers in complementary positions <span class="citation" data-cites="acemoglu2025-macroeconomics brynjolfsson-li-raymond2025">(<a href="references.html#ref-acemoglu2025-macroeconomics" role="doc-biblioref">Acemoglu, 2025</a>; <a href="references.html#ref-brynjolfsson-li-raymond2025" role="doc-biblioref">Brynjolfsson et al., 2025</a>)</span>. The answer will not be technical. It will be political-economic and cultural-pedagogical, and open to deliberate shaping.</p>
+</section>
+<section id="the-political-economy-of-foundation-model-ownership" class="level2 page-columns page-full" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="the-political-economy-of-foundation-model-ownership"><span class="header-section-number">6.3</span> The political economy of foundation-model ownership</h2>
+<p>The firms that own the foundation models — Microsoft (with OpenAI), Google (with DeepMind), Anthropic, Meta, and a handful of challengers — sit in roughly the same oligopolistic structure as the platforms analysed in <a href="03-attention-economy.html" class="quarto-xref"><span>Chapter 3</span></a>. The continuity is not a coincidence. The compute, data and talent required to train frontier models concentrate where capital is already concentrated; the distribution channels for AI products run through the same operating systems, app stores and cloud infrastructures that mediated the platform era. Recent quarterly results are read by analysts not as autonomous AI revenue but as AI-driven cloud revenue for the same incumbents <span class="citation" data-cites="bratton2026">(<a href="references.html#ref-bratton2026" role="doc-biblioref">Bratton, 2026</a>)</span>.</p>
+<p>The deeper point, however, concerns the relation between these firms and the <em>cognitive enterprise</em> — the collective effort, by education systems, public research bodies, libraries, journalism and civic institutions, to improve human capacities for thinking, learning and public reasoning. The relation is, on the evidence, asymmetric in ways that should be named.</p>
+<p>Some of these firms have built tools that practitioners in education and research find genuinely useful, and have funded education and research grants that have produced real benefit. The point is not to deny these contributions. The point is that the firms’ interest is by definition lucrative, that their philanthropic and educational activity is marginal in scale relative to their core business, and that even their most visible philanthropic vehicles operate within constraints set by the broader corporate and political environment. A documented illustration of the period is the Gates Foundation’s halting of grants administered by a major consulting firm with ties to the Democratic Party in early 2025, in the wake of pressure from the Trump administration; the Ford Foundation, in the same period, began scrutinising grants that “could be criticised” as partisan <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span>. The Gates Foundation is not a direct corporate vehicle of Microsoft, but the wealth that funds it, and the public-relations halo it generates, are closely associated with Microsoft’s institutional reputation; analogous adjustments have been documented at corporate-linked foundations across the sector. Whatever one thinks of these decisions individually, they document the dependence of corporate philanthropy on political weather — the opposite of what an autonomous cognitive enterprise would require, and a structural fact that should temper any reading of these firms as principal agents of public-interest cognitive work.</p>
+<p>A second asymmetry concerns the use of cognitive infrastructures the firms do not pay for. The political economy of training-data appropriation reproduces the broader pattern of unpriced extraction from the cultural commons that Zuboff named <span class="citation" data-cites="zuboff2019">(<a href="references.html#ref-zuboff2019" role="doc-biblioref">2019</a>)</span>: books, articles, code, images, audio, the writings of millions of users, absorbed into training sets without compensation and on terms set unilaterally by the firms doing the absorbing. The works whose quality the models inherit were produced by the very cognitive enterprise from which the firms have remained distant.</p>
+<p>A third asymmetry has become visible in the period 2025–2026, and deserves particular attention because it complicates any simple reading. The most prominent public conflict in the AI sector during this period was not between AI firms and democratic accountability, but between AI firms over the question of whether democratic accountability should constrain them at all. Palantir’s April 2026 manifesto — read by Coeckelbergh as “technofascism in plain sight” <span class="citation" data-cites="coeckelbergh2026">(<a href="references.html#ref-coeckelbergh2026" role="doc-biblioref">Coeckelbergh, 2026</a>)</span> and by Varoufakis as “techfeudalism” <span class="citation" data-cites="varoufakis2026">(<a href="references.html#ref-varoufakis2026" role="doc-biblioref">Varoufakis, 2026</a>)</span> — argued that Silicon Valley owes a “moral debt” to American hard power, that “the question is not whether AI weapons will be built but who will build them and for what purpose,” and that the “frictions of democratic process” are “a bug to be engineered away” <span class="citation" data-cites="KarpZamiska2025Tech">(<a href="references.html#ref-KarpZamiska2025Tech" role="doc-biblioref">Karp and Zamiska, 2025</a>)</span>. The same period saw Anthropic refuse to allow its models to be used for autonomous lethal weapons or mass surveillance, an internal letter from over five hundred Google executives and employees protesting an expanded Pentagon contract, and a Trump-administration attempt to blacklist Anthropic that ultimately failed <span class="citation" data-cites="eldiario2026">(<a href="references.html#ref-eldiario2026" role="doc-biblioref">elDiario.es, 2026</a>)</span>. The contestation matters because it shows that the political economy of foundation-model ownership is not monolithic: there are real disagreements within the sector about what these systems ought to be for, and democratic publics retain some leverage where they choose to exercise it.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>OpenAI’s countermove.</strong><br>
+Three weeks after the Palantir manifesto, Altman published <em>Our Principles</em> on the OpenAI website <span class="citation" data-cites="altman2026-principles">(<a href="references.html#ref-altman2026-principles" role="doc-biblioref">Altman, 2026</a>)</span>. The document inverts Karp and Zamiska’s vocabulary almost point by point: where Palantir frames democratic deliberation as “friction,” OpenAI’s first principle commits to ensuring that “key decisions about AI are made via democratic processes and with egalitarian principles, and not just made by AI labs”; where Palantir invokes a “moral debt” to American hard power, Altman invokes a mission to ensure “that AGI benefits all of humanity.” The contrast is real at the level of stated commitments. Whether it survives the structural fact that OpenAI shares with Palantir the same compute infrastructure, the same investor base, and the same oligopolistic market position is the open question — and the question on which democratic publics retain leverage if they choose to exercise it.</p>
+</div></div><p>The point of recording the asymmetries is not to deny the existence of internal contestation. It is to clarify the structural situation: a small number of firms, sitting in oligopolistic positions inherited from the platform era, now own the infrastructure of an emerging knowledge-production economy. Their incentives are commercial; their accountability to publics is thin; the philanthropic and ethical activity through which they signal public-interest commitment is, in scale and in structure, secondary to the core business. <em>That</em> is the situation against which any serious response — pedagogical, regulatory, civic — must be designed.</p>
+<p>The transition this completes is the one Hari traced in <em>Stolen Focus</em>: the platform economy of the 2010s organised attention as a resource to be captured and monetised, with documented costs to sustained reading, sleep, mental health and democratic deliberation <span class="citation" data-cites="hari2022">(<a href="references.html#ref-hari2022" role="doc-biblioref">Hari, 2022</a>)</span>. The AI economy of the 2020s extends the same logic to <em>the production of knowledge itself</em>. Where the attention economy degraded the conditions under which people think, the knowledge-production economy proposes to <em>do their thinking for them</em>, on terms set by the same firms, with similar opacity, and with comparable indifference to the long-term effects on the cognitive capacities of those who use the tools. The autonomous, informed citizen — the one whose responsible use of AI was supposed to be the technology’s democratic justification — is structurally disfavoured by an arrangement that profits from dependence rather than from autonomy. Véliz’s argument that privacy operates as democratic infrastructure rather than as a private preference <span class="citation" data-cites="veliz2024oxford">(<a href="references.html#ref-veliz2024oxford" role="doc-biblioref">Véliz, 2024</a>)</span> generalises naturally to the cognitive case: where the conditions for unsupervised reading, reasoning and deliberation depend on infrastructures owned by firms whose business model is the harvesting of those activities, the formal liberty to exercise civic autonomy is hollowed out by the practical conditions under which it must be exercised.</p>
+</section>
+<section id="cognitive-offloading-and-the-displacement-of-formation" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="cognitive-offloading-and-the-displacement-of-formation"><span class="header-section-number">6.4</span> Cognitive offloading and the displacement of formation</h2>
+<p>This section draws together a body of empirical work, much of it post-2024, on what happens to the cognitive practices through which intellectual formation has historically been reproduced when those practices are displaced to machines.</p>
+<p>The starting observation comes from work that predates the AI period but has become newly relevant. Hari <span class="citation" data-cites="hari2022">(<a href="references.html#ref-hari2022" role="doc-biblioref">Hari, 2022</a>)</span> documented the collapse of sustained reading among American adults across the 2000s and 2010s, with the median attention span on a single task in office settings dropping to roughly three minutes; Wolf <span class="citation" data-cites="wolf2018">(<a href="references.html#ref-wolf2018" role="doc-biblioref">Wolf, 2018</a>)</span> described, from a literacy-research vantage, the migration of the reading brain from linear depth to scanning and skimming under screen-based conditions. These findings established a baseline of weakened sustained-attention practices <em>before</em> generative AI became routinely available — that is, the cognitive infrastructure on which AI tools were grafted was already attenuated.</p>
+<p>What the 2024–2026 evidence adds is the cognitive cost of grafting LLM use onto that already attenuated infrastructure. The MIT study by Kosmyna and colleagues <span class="citation" data-cites="kosmyna2025preprint">(<a href="references.html#ref-kosmyna2025preprint" role="doc-biblioref">Kosmyna et al., 2025</a>)</span> is the most discussed: in an EEG comparison of essay-writers using ChatGPT, a search engine, or no tools, the LLM group showed reduced inter-regional brain connectivity (up to 55% in some bands) consistent with weaker internal generation of content; participants who had relied on the LLM in earlier sessions and then wrote without it showed intermediate connectivity patterns rather than recovering to the brain-only baseline. The authors framed this in terms of “cognitive debt”: LLM use defers cognitive effort in the short term but incurs long-term costs in retention, retrieval, and the sense of authorship over one’s own ideas. Critically, the LLM group reported weaker ownership of their texts and reproduced narrower n-gram patterns — that is, less independent ideational range.</p>
+<p>The Microsoft–CMU study by Lee and colleagues <span class="citation" data-cites="lee2025">(<a href="references.html#ref-lee2025" role="doc-biblioref">Lee et al., 2025</a>)</span> reaches a convergent conclusion from a different methodology. Surveying knowledge workers using generative AI in daily tasks, the authors found self-reported reductions in cognitive effort across drafting, summarising and information-retrieval; critical-thinking engagement varied with confidence in the AI’s output, with workers more confident in the AI engaging in <em>less</em> critical evaluation. Stadler, Bannert and Sailer <span class="citation" data-cites="stadler2024">(<a href="references.html#ref-stadler2024" role="doc-biblioref">Stadler et al., 2024</a>)</span> documented the same pattern in student scientific inquiry: lower mental effort, lower depth of engagement.</p>
+<p>A fourth strand concerns what is sometimes called “skill atrophy.” Frequent users of AI tools, in a range of recent studies, bypass deeper engagement with material in tasks like brainstorming and problem-solving, with measurable consequences for unaided performance <span class="citation" data-cites="lee2025 kosmyna2025preprint">(<a href="references.html#ref-kosmyna2025preprint" role="doc-biblioref">Kosmyna et al., 2025</a>; <a href="references.html#ref-lee2025" role="doc-biblioref">Lee et al., 2025</a>)</span>. The pattern is not universal and has important moderators — Kosmyna’s “Brain-to-LLM” group, which used the LLM after writing without tools, integrated AI suggestions more strategically and showed more cohesive neural signatures — but the <em>direction</em> of the effect is consistent: introducing AI assistance early, before underlying skills are consolidated, weakens the formation of those skills.</p>
+<p>The consequences are not symmetrically distributed. The most privileged students continue to be exposed to friction — small seminars, individual supervision, pedagogical relationships that require sustained engagement, infrastructures that make AI assistance an option rather than a substitute. The least privileged students, in under-resourced schools and over-large classes, encounter intellectual work primarily through mediated and increasingly automated channels, with weaker scaffolding for the unaided practices through which AI assistance, when it comes, can be integrated rather than depended on. Hayles’s analyses of distributed cognition <span class="citation" data-cites="hayles2023">(<a href="references.html#ref-hayles2023" role="doc-biblioref">Hayles, 2023</a>)</span> caution against a simple “humans become less intelligent” reading: cognition is and has always been distributed, and the question is not whether tools are used but <em>how</em> they are integrated into the practices through which human capabilities are formed. The empirical answer in 2026 is that, on present trajectories, integration is poor, and the cost falls disproportionately on those who can least absorb it <span class="citation" data-cites="holopainen2025inf">(<a href="references.html#ref-holopainen2025inf" role="doc-biblioref">Holopainen et al., 2025</a>)</span>.</p>
+<p>A final consideration concerns generational effect. The youngest cohorts now in formal education are the first to have encountered LLM-mediated cognitive work <em>before</em> they consolidated the practices of unaided cognitive work. Whether this constitutes a generational break — comparable to, but distinct from, the screen-mediated literacy break Wolf described — is too early to settle empirically; the longitudinal evidence is not yet available. What is available is suggestive enough that the question should be taken seriously rather than assumed away. Educators are already reporting, in qualitative terms, that students forget content more easily than a few years ago <span class="citation" data-cites="hogenboom2026">(<a href="references.html#ref-hogenboom2026" role="doc-biblioref">Hogenboom, 2026</a>)</span>; the converging evidence from neural, behavioural and survey studies <span class="citation" data-cites="kosmyna2025preprint lee2025 stadler2024">(<a href="references.html#ref-kosmyna2025preprint" role="doc-biblioref">Kosmyna et al., 2025</a>; <a href="references.html#ref-lee2025" role="doc-biblioref">Lee et al., 2025</a>; <a href="references.html#ref-stadler2024" role="doc-biblioref">Stadler et al., 2024</a>)</span> is consistent with that report. A precautionary posture — designing pedagogical practice as if cognitive debt is a real phenomenon, while waiting for the longitudinal evidence — is the rational response <span class="citation" data-cites="riveranovoa2025ext">(<a href="references.html#ref-riveranovoa2025ext" role="doc-biblioref">Rivera-Novoa and Duarte Arias, 2025</a>)</span>.</p>
+</section>
+<section id="the-premium-on-the-unautomated-sign" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="the-premium-on-the-unautomated-sign"><span class="header-section-number">6.5</span> The premium on the unautomated sign</h2>
+<p>A pivot back to the analysis of <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a> is now possible. If the displacement of routine cognitive labour is a real political-economic process, then the cultural premium attached to <em>signs</em> of unautomated cognition rises. This is, in part, the mechanism the mausoleum thesis tracked from a different angle: when a practice loses its embedded function, what circulates in its place is the sign of the practice as a luxury commodity. The handwritten marginalia, the dog-eared paperback, the longhand journal, the Substack essay flagged as “written by a human” — all of these acquire status precisely because they are difficult to counterfeit at scale, and precisely because their cultural meaning references a cognitive practice that is now distributed unevenly.</p>
+<p>The analytical move here is that the mausoleum phenomenon analysed in Part II has <em>two</em> drivers, not one. Its first driver, taken up in <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a>, was the platform attention economy: the conversion of cognitive practices into engagement content for distribution. Its second driver, taken up here, is the AI economy: the absorption of routine cognitive labour into machine work. Both drivers reinforce one another. What circulates as a luxury sign in 2026 — the photographed bookshelf, the <em>Madame Bovary</em> tote — is a sign that responds simultaneously to platform extraction and to AI-mediated automation. It marks the human as the bearer of an interiority that is, by both forces, made scarce.</p>
+<p>Whether the response to that scarcity ends in genuine re-cultivation of the practices the signs reference, or in their ongoing replacement by signs that displace them further, is again a political-economic and cultural-pedagogical question, not a technical one. The next section turns to what a serious response would require.</p>
+</section>
+<section id="conditions-for-a-genuine-reconstruction" class="level2 page-columns page-full" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="conditions-for-a-genuine-reconstruction"><span class="header-section-number">6.6</span> Conditions for a genuine reconstruction</h2>
+<p>A reconstructive programme adequate to the situation diagnosed above would require simultaneous work at three levels. The chapter records what each level involves and where, on the evidence available in 2026, work is — and is not — happening. The fuller elaboration of these conditions is the work of Part III; what follows is the orienting sketch.</p>
+<p>At the <em>infrastructural</em> level, the question is whether public provision can keep pace with private oligopoly. The historical analogue is the public library: a piece of public infrastructure that, in the long aftermath of its mid-twentieth-century consolidation, made the products of an emerging knowledge economy available on terms that did not depend on the capacity to pay. A serious AI policy in our period would build the equivalent: public foundation-model access (with pricing transparent and use-cases audited), public computational capacity, public training-data provisioning that respects the rights of contributors, and public evaluation regimes that the firms must meet rather than self-report against. None of this is currently being delivered at meaningful scale in any major jurisdiction. The European Union’s AI Act addresses some risks of deployment but not the underlying distributional question, and independent assessments have noted that its compliance-cost structure may in fact entrench the position of firms with the regulatory infrastructure to absorb it <span class="citation" data-cites="bommasani2024euact kretschmer2023risks">(<a href="references.html#ref-bommasani2024euact" role="doc-biblioref">Bommasani et al., 2024</a>; <a href="references.html#ref-kretschmer2023risks" role="doc-biblioref">Kretschmer et al., 2023</a>)</span>. The United Kingdom has, on the evidence of 2025–2026, oriented its policy toward attracting investment from the same firms whose oligopolistic position is the problem: the <em>AI Opportunities Action Plan</em> of January 2025 <span class="citation" data-cites="uk2025-ai-opportunities">(<a href="references.html#ref-uk2025-ai-opportunities" role="doc-biblioref">UK Government, Department for Science, Innovation and Technology and Clifford, 2025</a>)</span> was followed by the September 2025 <em>Tech Prosperity Deal</em> with the United States <span class="citation" data-cites="cnbc2025-uk-buildout">(<a href="references.html#ref-cnbc2025-uk-buildout" role="doc-biblioref">Browne, 2025</a>)</span>, whose principal effect to date has been to channel multi-billion-dollar commitments from Microsoft, Nvidia, Google and OpenAI into UK data-centre infrastructure. The United States has actively dismantled what regulatory architecture existed: Executive Order 14148 of 20 January 2025 rescinded the Biden administration’s AI executive order; Executive Order 14179 of 23 January 2025 directed federal agencies to remove “barriers” to AI development <span class="citation" data-cites="trumpEO14179-2025">(<a href="references.html#ref-trumpEO14179-2025" role="doc-biblioref">The White House, 2025a</a>)</span>; the December 2025 Executive Order on the <em>National Policy Framework for Artificial Intelligence</em> established a litigation task force to challenge state AI laws considered inconsistent with federal policy <span class="citation" data-cites="trumpEO2025-preemption mayerbrown2025-aieo">(<a href="references.html#ref-mayerbrown2025-aieo" role="doc-biblioref">Christian and Waltzman, 2025</a>; <a href="references.html#ref-trumpEO2025-preemption" role="doc-biblioref">The White House, 2025b</a>)</span>.</p>
+<p>At the <em>pedagogical</em> level, the question is whether educational institutions can take the differential distribution of cognitive friction as a primary problem and address it. The empirical evidence summarised in the previous section is consistent on one point: AI assistance integrates well into the cognitive lives of those who have already consolidated unaided cognitive practices, and integrates badly into the cognitive lives of those who have not <span class="citation" data-cites="kosmyna2025preprint lee2025 stadler2024">(<a href="references.html#ref-kosmyna2025preprint" role="doc-biblioref">Kosmyna et al., 2025</a>; <a href="references.html#ref-lee2025" role="doc-biblioref">Lee et al., 2025</a>; <a href="references.html#ref-stadler2024" role="doc-biblioref">Stadler et al., 2024</a>)</span>. The pedagogical implication is that AI exposure should be <em>delayed</em>, in formation, until the underlying practices are in place — not refused, but sequenced. Implementing such a sequencing requires resources that are themselves unevenly distributed, and the work of the next chapter is in part to consider what defending the conditions for such pedagogy looks like under a hostile political economy.</p>
+<p>At the <em>cultural</em> level, the question is whether the practices of authentic cognitive labour can be defended as practices, rather than relegated to the order of luxury signs. The mausoleum phenomenon is the symptom, not the disease; the disease is the collapse of the conditions under which sustained reading, careful writing, original investigation and pedagogical relationship can be ordinary rather than aspirational. There are concrete infrastructures that support those conditions and that can be defended against erosion: independent bookshops and reading communities, public broadcasters with genuine commissioning authority, peer-reviewed journals not captured by oligopolistic publishers, open-access scholarship infrastructures, public science-communication platforms, libraries (again), schools, and — the test case for Part III — universities. None of these is flourishing in 2026; most are under sustained pressure. But none is irrecoverable, and several are recoverable on timescales shorter than the political horizon usually contemplated for such institutions.</p>
+
+<div class="no-row-height column-margin column-container"><div class="" style="font-size: 0.85em;">
+<p><strong>Recent evidence on recoverable cultural infrastructures</strong></p>
+<p>Independent bookshops show <em>fragile resilience</em>: 45 new openings in 2024 despite sectoral contraction, confirming that curated reading communities remain viable (Booksellers Association, 2025).<br>
+Public-interest publishing and open-access infrastructures face financial strain but exhibit active reform momentum, with strong author trust and expanding institutional memberships (PeerJ Survey, 2025).<br>
+The wider knowledge ecosystem —universities, libraries, public-facing cultural institutions— is under sustained pressure yet structurally recoverable, with sector reports emphasising turbulence rather than terminal decline (Publishing Futures Report, 2025).</p>
+<p><strong>Sources:</strong><br>
+- <a href="https://pubspot.ibpa-online.org/article/understanding-global-book-buying-trends-and-reading-habits">Booksellers Association (2025)</a><br>
+- <a href="https://peerj.com">PeerJ Author Survey (2025)</a><br>
+- <a href="https://www.cambridge.org/core/services/aop-file-manager/file/68ef9df9a6c3702e57eae12a/Cambridge-University-Press-Publishing-futures.pdf">Publishing Futures Report (2025)</a></p>
+</div></div><p>Two conditions for grounded hope can be named. The first is that the recent evidence on cognitive offloading and on the political economy of foundation models has begun to circulate beyond the specialist literature into educational practice, into journalism, and into the explicit awareness of users — a precondition for any democratic response. The second is that the contestation within the AI sector itself, visible in the Anthropic–Palantir conflict and in the internal letters at Google and across other firms, documents that the trajectory is not closed. Where engineers, researchers and citizens have organised around the question of what these systems are for, they have on occasion changed outcomes. They have not, on the available evidence, reversed the structural direction; but they have demonstrated that the structural direction is contested, and contestation is the precondition for change.</p>
+<hr>
+<p>If Parts I and II have, between them, identified three structural forces — authoritarian assault, platform-economic capture, and AI-mediated automation — that are eroding the conditions of public reason, Part III asks what reconstruction would require. The university, as the institution where formation, research and democratic deliberation have historically intersected, is the test case.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-acemoglu2025-macroeconomics" class="csl-entry" role="listitem">
+Acemoglu, D. (2025). The simple macroeconomics of <span>AI</span>. <em>Economic Policy</em>, <em>40</em>(121), 13–58. <a href="https://doi.org/10.1093/epolic/eiae042">https://doi.org/10.1093/epolic/eiae042</a>
+</div>
+<div id="ref-altman2026-principles" class="csl-entry" role="listitem">
+Altman, S. (2026). <em>Our principles</em>. <span>OpenAI</span>. <a href="https://openai.com/index/our-principles/">https://openai.com/index/our-principles/</a>
+</div>
+<div id="ref-beel-kan2025" class="csl-entry" role="listitem">
+Beel, J., Kan, M.-Y., and Baumgart, M. (2025). Evaluating sakana’s <span>AI</span> scientist for autonomous research: Wishful thinking or an emerging reality towards <span>“artificial research intelligence”</span> (<span>ARI</span>)? <em><span>ACM</span> <span>SIGIR</span> Forum</em>. <a href="https://doi.org/10.1145/3769733.3769747">https://doi.org/10.1145/3769733.3769747</a>
+</div>
+<div id="ref-bommasani2024euact" class="csl-entry" role="listitem">
+Bommasani, R., Klyman, K., Kapoor, S., Longpre, S., Xiong, B., Maslej, N., and Liang, P. (2024). Foundation models in the <span>EU AI A</span>ct: A stanford <span>CRFM</span> analysis. <em>Stanford Center for Research on Foundation Models</em>. <a href="https://crfm.stanford.edu/2024/08/01/eu-ai-act.html">https://crfm.stanford.edu/2024/08/01/eu-ai-act.html</a>
+</div>
+<div id="ref-bratton2026" class="csl-entry" role="listitem">
+Bratton, L. (2026). <em>Briefing: Beneficios de palantir, <span>OpenAI</span> y <span>M</span>icrosoft</em>. <span>The Information</span>. <a href="https://www.theinformation.com/">https://www.theinformation.com/</a>
+</div>
+<div id="ref-cnbc2025-uk-buildout" class="csl-entry" role="listitem">
+Browne, R. (2025). <em>One year on from the <span>UK</span>’s grand <span>AI</span> plan: Has its infrastructure buildout been a success?</em> <span>CNBC</span>. <a href="https://www.cnbc.com/2025/12/27/has-the-uks-ai-infrastructure-buildout-been-a-success.html">https://www.cnbc.com/2025/12/27/has-the-uks-ai-infrastructure-buildout-been-a-success.html</a>
+</div>
+<div id="ref-brynjolfsson-li-raymond2025" class="csl-entry" role="listitem">
+Brynjolfsson, E., Li, D., and Raymond, L. R. (2025). Generative <span>AI</span> at work. <em>The Quarterly Journal of Economics</em>, <em>140</em>(2), 889–942. <a href="https://doi.org/10.1093/qje/qjae044">https://doi.org/10.1093/qje/qjae044</a>
+</div>
+<div id="ref-mayerbrown2025-aieo" class="csl-entry" role="listitem">
+Christian, M. A., and Waltzman, H. W. (2025). <em>President <span>T</span>rump issues executive order on <span>“ensuring a national policy framework for artificial intelligence”</span></em>. <span>Mayer Brown Insights</span>. <a href="https://www.mayerbrown.com/en/insights/publications/2025/12/president-trump-issues-executive-order-on-ensuring-a-national-policy-framework-for-artificial-intelligence">https://www.mayerbrown.com/en/insights/publications/2025/12/president-trump-issues-executive-order-on-ensuring-a-national-policy-framework-for-artificial-intelligence</a>
+</div>
+<div id="ref-coeckelbergh2026" class="csl-entry" role="listitem">
+Coeckelbergh, M. (2026). <em><span class="nocase">Palantir’s</span> manifesto: Technofascism in plain sight</em>. Medium (personal blog). <a href="https://coeckelbergh.medium.com/palantirs-manifesto-technofascism-in-plain-sight-c160ca377e9a">https://coeckelbergh.medium.com/palantirs-manifesto-technofascism-in-plain-sight-c160ca377e9a</a>
+</div>
+<div id="ref-dellibarda2025-rethinking" class="csl-entry" role="listitem">
+Dellibarda Varela, I., Romero-Sorozabal, P., Rocon, E., and Cebrian, M. (2025). Rethinking the illusion of thinking. <em>arXiv Preprint arXiv:2507.01231</em>. <a href="https://arxiv.org/abs/2507.01231">https://arxiv.org/abs/2507.01231</a>
+</div>
+<div id="ref-eldiario2026" class="csl-entry" role="listitem">
+elDiario.es. (2026). <em><span class="nocase">¿Guerra civil en Silicon Valley?</span> <span>Anthropic</span>, <span>Palantir</span> y ejecutivos de <span>Google</span> chocan por los límites de la <span>IA</span> militar</em>. <span>elDiario.es</span>. <a href="https://www.eldiario.es/tecnologia/guerra-civil-silicon-valley-anthropic-palantir-ejecutivos-google-chocan-limites-ia-militar_1_13181195.html">https://www.eldiario.es/tecnologia/guerra-civil-silicon-valley-anthropic-palantir-ejecutivos-google-chocan-limites-ia-militar_1_13181195.html</a>
+</div>
+<div id="ref-hari2022" class="csl-entry" role="listitem">
+Hari, J. (2022). <em>Stolen focus: Why you can’t pay attention</em>. Crown.
+</div>
+<div id="ref-hayles2023" class="csl-entry" role="listitem">
+Hayles, N. K. (2023). Cognitive assemblages and distributed cognition in the age of generative AI. <em>Critical Inquiry</em>.
+</div>
+<div id="ref-hogenboom2026" class="csl-entry" role="listitem">
+Hogenboom, M. (2026). <em><span>AI</span> chatbots could be making you stupider</em>. <span>BBC Future</span>. <a href="https://www.bbc.com/future/article/20260417-ai-chatbots-could-be-making-you-stupider">https://www.bbc.com/future/article/20260417-ai-chatbots-could-be-making-you-stupider</a>
+</div>
+<div id="ref-holopainen2025inf" class="csl-entry" role="listitem">
+Holopainen, J. et al. (2025). Infinity book: Speculating literary expressions in the age of generative AI. <em>Proceedings of the 2025 ACM Designing Interactive Systems Conference</em>, 1430–1454. <a href="https://doi.org/10.1145/3715336.3735735">https://doi.org/10.1145/3715336.3735735</a>
+</div>
+<div id="ref-KarpZamiska2025Tech" class="csl-entry" role="listitem">
+Karp, A., and Zamiska, N. W. (2025). <em>The technological republic: Hard power, soft belief, and the future of the west</em> (First edition). Crown Currency.
+</div>
+<div id="ref-kosmyna2025preprint" class="csl-entry" role="listitem">
+Kosmyna, N. et al. (2025). <em>Your brain on <span>ChatGPT</span>: Accumulation of cognitive activity across sessions</em>. arXiv preprint. <a href="https://arxiv.org/abs/2506.08872">https://arxiv.org/abs/2506.08872</a>
+</div>
+<div id="ref-kretschmer2023risks" class="csl-entry" role="listitem">
+Kretschmer, M., Kretschmer, T., Peukert, A., and Peukert, C. (2023). The risks of risk-based <span>AI</span> regulation: Taking liability seriously. <em>arXiv Preprint arXiv:2311.14684</em>. <a href="https://doi.org/10.48550/arXiv.2311.14684">https://doi.org/10.48550/arXiv.2311.14684</a>
+</div>
+<div id="ref-lee2025" class="csl-entry" role="listitem">
+Lee, H.-P. (Hank)., Sarkar, A., Tankelevitch, L., Drosos, I., Rintel, S., Banks, R., and Wilson, N. (2025). The impact of generative <span>AI</span> on critical thinking: Self-reported reductions in cognitive effort and confidence effects from a survey of knowledge workers. <em>Proceedings of the 2025 <span>CHI</span> Conference on Human Factors in Computing Systems (<span>CHI ’25</span>)</em>. <a href="https://doi.org/10.1145/3706598.3713778">https://doi.org/10.1145/3706598.3713778</a>
+</div>
+<div id="ref-levitsky-way-ziblatt2025-price" class="csl-entry" role="listitem">
+Levitsky, S., Way, L. A., and Ziblatt, D. (2025). The price of american authoritarianism: <span>What</span> can reverse democratic decline? <em>Foreign Affairs</em>. <a href="https://www.foreignaffairs.com/united-states/price-american-authoritarianism">https://www.foreignaffairs.com/united-states/price-american-authoritarianism</a>
+</div>
+<div id="ref-sakana2024" class="csl-entry" role="listitem">
+Lu, C., Lu, C., Lange, R. T., Foerster, J., Clune, J., and Ha, D. (2024). The <span>AI</span> scientist: Towards fully automated open-ended scientific discovery. <em>arXiv Preprint arXiv:2408.06292</em>. <a href="https://arxiv.org/abs/2408.06292">https://arxiv.org/abs/2408.06292</a>
+</div>
+<div id="ref-noy-zhang2023" class="csl-entry" role="listitem">
+Noy, S., and Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. <em>Science</em>, <em>381</em>, 187–192. <a href="https://doi.org/10.1126/science.adh2586">https://doi.org/10.1126/science.adh2586</a>
+</div>
+<div id="ref-riveranovoa2025ext" class="csl-entry" role="listitem">
+Rivera-Novoa, A., and Duarte Arias, D. A. (2025). Generative artificial intelligence and extended cognition in science learning contexts. <em>Science &amp; Education</em>. <a href="https://doi.org/10.1007/s11191-025-00660-1">https://doi.org/10.1007/s11191-025-00660-1</a>
+</div>
+<div id="ref-shojaee2025-illusion" class="csl-entry" role="listitem">
+Shojaee, P., Mirzadeh, I., Alizadeh, K., Horton, M., Bengio, S., and Farajtabar, M. (2025). The illusion of thinking: Understanding the strengths and limitations of reasoning models via the lens of problem complexity. <em>arXiv Preprint arXiv:2506.06941</em>. <a href="https://arxiv.org/abs/2506.06941">https://arxiv.org/abs/2506.06941</a>
+</div>
+<div id="ref-stadler2024" class="csl-entry" role="listitem">
+Stadler, M., Bannert, M., and Sailer, M. (2024). Cognitive ease at a cost: <span>LLMs</span> reduce mental effort but compromise depth in student scientific inquiry. <em>Computers in Human Behavior</em>, <em>160</em>, 108386. <a href="https://doi.org/10.1016/j.chb.2024.108386">https://doi.org/10.1016/j.chb.2024.108386</a>
+</div>
+<div id="ref-susskind2022-professions" class="csl-entry" role="listitem">
+Susskind, R., and Susskind, D. (2022). <em>The future of the professions: How technology will transform the work of human experts</em> (Updated). Oxford University Press.
+</div>
+<div id="ref-trumpEO14179-2025" class="csl-entry" role="listitem">
+The White House. (2025a). <em>Executive order 14179: Removing barriers to american leadership in artificial intelligence</em>. Presidential Action. <a href="https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/">https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/</a>
+</div>
+<div id="ref-trumpEO2025-preemption" class="csl-entry" role="listitem">
+The White House. (2025b). <em>Executive order: Eliminating state law obstruction of national artificial intelligence policy</em>. Presidential Action. <a href="https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/">https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/</a>
+</div>
+<div id="ref-uk2025-ai-opportunities" class="csl-entry" role="listitem">
+UK Government, Department for Science, Innovation and Technology, and Clifford, M. (2025). <em><span>AI</span> opportunities action plan</em>. Policy paper, GOV.UK. <a href="https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan">https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan</a>
+</div>
+<div id="ref-varoufakis2026" class="csl-entry" role="listitem">
+Varoufakis, Y. (2026). <em>Palantir and the new order: Neoliberalism is dead, say hello to techlordism</em>. The Point Magazine. <a href="https://thepoint.com.au/opinions/260422-palantir-and-the-new-order-neoliberalism-is-dead-say-hello-to-techlordism">https://thepoint.com.au/opinions/260422-palantir-and-the-new-order-neoliberalism-is-dead-say-hello-to-techlordism</a>
+</div>
+<div id="ref-veliz2024oxford" class="csl-entry" role="listitem">
+Véliz, C. (Ed.). (2024). <em>The oxford handbook of digital ethics</em> (1st ed.). Oxford University Press.
+</div>
+<div id="ref-wolf2018" class="csl-entry" role="listitem">
+Wolf, M. (2018). <em>Reader, come home: The reading brain in a digital world</em>. Harper.
+</div>
+<div id="ref-zuboff2019" class="csl-entry" role="listitem">
+Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power</em>. PublicAffairs.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./05-cultural-capital-gender.html" class="pagination-link" aria-label="Cultural Capital, Gender and the Marketisation of Intellect">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cultural Capital, Gender and the Marketisation of Intellect</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./07-education-battleground.html" class="pagination-link" aria-label="Education as Battleground: Universities, Schools, and the Politics of Curiosity">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Education as Battleground: Universities, Schools, and the Politics of Curiosity</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

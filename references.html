@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>References – Brains as Brand</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./A-methodology.html" rel="next">
+<link href="./08-conclusion.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-aeb32cb3453d7d606b6c0a50f15f0871.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d7bb2a7abcc71ede1f4a44f14a5ae606.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+  /* Iconos CC inline: heredan color del texto, sin filter trick */
+  .cc-license-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+  .cc-license-link svg {
+    height: 1.2em;
+    width: 1.2em;
+    fill: currentColor;
+  }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+// Solo en la página principal del libro
+const path = window.location.pathname;
+const isIndex = path.endsWith("/") || 
+        path.endsWith("/index.html") || 
+        path === "/index.html";
+        if (!isIndex) return;
+        
+const meta = document.querySelector(".quarto-title-meta");
+if (!meta) return;
+
+  // ---------- 1. Bloque de autores en dos columnas ----------
+  const authors = document.querySelectorAll(".quarto-title-author");
+  if (authors.length > 0) {
+    const dateEl = document.querySelector(".quarto-title-date");
+    const dateText = dateEl ? dateEl.textContent.trim() : "";
+
+    const block = document.createElement("div");
+    block.className = "author-block";
+    const left  = document.createElement("div"); left.className  = "author-col";
+    const right = document.createElement("div"); right.className = "author-col";
+
+    authors.forEach((author, i) => {
+      const col   = (i % 2 === 0) ? left : right;
+      const entry = document.createElement("div");
+      entry.className = "author-entry";
+
+      const name = document.createElement("div");
+      name.className = "author-name";
+      name.textContent = author.textContent.trim();
+      entry.appendChild(name);
+
+      ["role", "affiliation", "note"].forEach(attr => {
+        const value = author.getAttribute("data-author-" + attr);
+        if (value) {
+          const div = document.createElement("div");
+          div.className = "author-" + attr;
+          div.textContent = value;
+          entry.appendChild(div);
+        }
+      });
+
+      if (dateText) {
+        const dateDiv = document.createElement("div");
+        dateDiv.className = "author-date";
+        dateDiv.textContent = dateText;
+        entry.appendChild(dateDiv);
+      }
+
+      col.appendChild(entry);
+    });
+
+    block.appendChild(left);
+    block.appendChild(right);
+    meta.appendChild(block);
+  }
+
+  // ---------- 2. Entrada de licencia con SVG inline ----------
+  // SVG inline con fill=currentColor → adapta a tema claro/oscuro
+  // sin filter hack y sin dependencias externas.
+  const licenseEntry = document.createElement("div");
+  licenseEntry.innerHTML = `
+    <div class="quarto-title-meta-heading">License</div>
+    <div class="quarto-title-meta-contents">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+         target="_blank" rel="license noopener"
+         class="cc-license-link"
+         aria-label="CC BY-NC-SA 4.0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">CC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">BY</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">NC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">SA</text></svg>
+        <span style="margin-left:0.2em;">4.0</span>
+      </a>
+    </div>
+  `;
+  meta.appendChild(licenseEntry);
+});
+</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Brains as Brand</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: The Mausoleum of the Mind</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I — The Political Crisis of Public Reason</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-genealogy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-authoritarian-moment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-attention-economy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II — The Cultural Recoding of Intellect</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-performative-intellectualism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Performative Intellectualism: From BookTok to the Bottega Catwalk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-cultural-capital-gender.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cultural Capital, Gender and the Marketisation of Intellect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-ai-cognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III — Reconstruction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-education-battleground.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Education as Battleground: Universities, Schools, and the Politics of Curiosity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion: Leaving the Mausoleum</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A-methodology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Methodological Note</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./B-corpus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Corpus of Cultural Artefacts Examined</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C-chronology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Chronology of Principal Events, 2016–2026</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-references" class="quarto-section-identifier">References</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-abernathy2024" class="csl-entry" role="listitem">
+Abernathy, P. M. (2024). <em>The state of local news <span>2024</span>:
+Expanding news deserts, growing gaps, emerging bright spots</em>. Medill
+School of Journalism, Northwestern University. <a href="https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2024/">https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2024/</a>
+</div>
+<div id="ref-acemoglu2025-macroeconomics" class="csl-entry" role="listitem">
+Acemoglu, D. (2025). The simple macroeconomics of <span>AI</span>.
+<em>Economic Policy</em>, <em>40</em>(121), 13–58. <a href="https://doi.org/10.1093/epolic/eiae042">https://doi.org/10.1093/epolic/eiae042</a>
+</div>
+<div id="ref-adams2021cults" class="csl-entry" role="listitem">
+Adams, R. (2021, June 28). <em>Schools caught in culture wars over
+teaching of race, empire and gender, say heads</em>. The Guardian. <a href="https://www.theguardian.com/education/2021/jun/28/schools-caught-in-culture-wars-over-teaching-of-race-empire-and-gender-say-heads">https://www.theguardian.com/education/2021/jun/28/schools-caught-in-culture-wars-over-teaching-of-race-empire-and-gender-say-heads</a>
+</div>
+<div id="ref-anvur2026" class="csl-entry" role="listitem">
+Agenzia Nazionale di Valutazione del Sistema Universitario e della
+Ricerca. (2026). <em><span class="nocase">Rapporto sul sistema della
+formazione superiore e della ricerca 2026</span></em> [Quinto Rapporto].
+ANVUR. <a href="https://www.anvur.it/it/dati-e-pubblicazioni/rapporto-anvur">https://www.anvur.it/it/dati-e-pubblicazioni/rapporto-anvur</a>
+</div>
+<div id="ref-akbari2025" class="csl-entry" role="listitem">
+Akbari, A. (2025). <em>Digital development dilemma</em>. 15–29.
+</div>
+<div id="ref-altman2026-principles" class="csl-entry" role="listitem">
+Altman, S. (2026). <em>Our principles</em>. <span>OpenAI</span>. <a href="https://openai.com/index/our-principles/">https://openai.com/index/our-principles/</a>
+</div>
+<div id="ref-aaup1915" class="csl-entry" role="listitem">
+American Association of University Professors. (1915). <em>1915
+declaration of principles on academic freedom and academic tenure</em>.
+</div>
+<div id="ref-aaup1940" class="csl-entry" role="listitem">
+American Association of University Professors. (1940). <em>1940
+statement of principles on academic freedom and tenure</em>.
+</div>
+<div id="ref-aaup2025" class="csl-entry" role="listitem">
+American Association of University Professors. (2025). <em>Statement on
+the 2025 federal assault on higher education</em>.
+</div>
+<div id="ref-asianstudiesreview2025" class="csl-entry" role="listitem">
+Anand, A. (2025). The sociocultural component of india’s democratic
+backsliding. <em>Asian Studies Review</em>, <em>50</em>(1), 62–80.
+</div>
+<div id="ref-aneca2014_2023_titulos" class="csl-entry" role="listitem">
+ANECA. (2014). <em>Informes de verificación y renovación de títulos
+universitarios</em>. <a href="https://www.aneca.es">https://www.aneca.es</a>
+</div>
+<div id="ref-anheier1995" class="csl-entry" role="listitem">
+Anheier, H. K., Gerhards, J., and Romo, F. P. (1995). Forms of capital
+and social structure in cultural fields: Examining bourdieu’s social
+topography. <em>American Journal of Sociology</em>, <em>100</em>(4),
+859–903. <a href="http://www.jstor.org/stable/2782154">http://www.jstor.org/stable/2782154</a>
+</div>
+<div id="ref-applebaum2024" class="csl-entry" role="listitem">
+Applebaum, A. (2024). <em>Autocracy, inc.: The dictators who want to run
+the world</em>. Doubleday.
+</div>
+<div id="ref-banet-weiser2018" class="csl-entry" role="listitem">
+Banet-Weiser, S. (2018). <em>Empowered: Popular feminism and popular
+misogyny</em>. Duke University Press.
+</div>
+<div id="ref-bayard2007" class="csl-entry" role="listitem">
+Bayard, P. (2007). <em>Comment parler des livres que l’on n’a pas
+lus?</em> Minuit.
+</div>
+<div id="ref-beel-kan2025" class="csl-entry" role="listitem">
+Beel, J., Kan, M.-Y., and Baumgart, M. (2025). Evaluating sakana’s
+<span>AI</span> scientist for autonomous research: Wishful thinking or
+an emerging reality towards <span>“artificial research
+intelligence”</span> (<span>ARI</span>)? <em><span>ACM</span>
+<span>SIGIR</span> Forum</em>. <a href="https://doi.org/10.1145/3769733.3769747">https://doi.org/10.1145/3769733.3769747</a>
+</div>
+<div id="ref-Benjamin2019RaceAfterTechnology" class="csl-entry" role="listitem">
+Benjamin, R. (2019). <em>Race after technology: Abolitionist tools for
+the new jim code</em>. Polity Press.
+</div>
+<div id="ref-benjamin1936" class="csl-entry" role="listitem">
+Benjamin, W. (1936). <em>The work of art in the age of mechanical
+reproduction</em>.
+</div>
+<div id="ref-berg2025" class="csl-entry" role="listitem">
+Berg, A. (2025). Anti-<span>COVID</span> = anti-science?
+<span>H</span>ow protesters against <span>COVID-19</span> measures
+appropriate science to navigate the information environment. <em>New
+Media &amp; Society</em>, <em>27</em>(2), 1093–1109. <a href="https://doi.org/10.1177/14614448231189262">https://doi.org/10.1177/14614448231189262</a>
+</div>
+<div id="ref-binns2022" class="csl-entry" role="listitem">
+Binns, R. (2022). Algorithmic accountability: A primer. <em>Internet
+Policy Review</em>.
+</div>
+<div id="ref-commonslibrary2025" class="csl-entry" role="listitem">
+Bolton, P. (2025). <em>Student loan statistics</em>. House of Commons
+Library Research Briefing SN01079. <a href="https://commonslibrary.parliament.uk/research-briefings/sn01079/">https://commonslibrary.parliament.uk/research-briefings/sn01079/</a>
+</div>
+<div id="ref-bommasani2024euact" class="csl-entry" role="listitem">
+Bommasani, R., Klyman, K., Kapoor, S., Longpre, S., Xiong, B., Maslej,
+N., and Liang, P. (2024). Foundation models in the <span>EU AI
+A</span>ct: A stanford <span>CRFM</span> analysis. <em>Stanford Center
+for Research on Foundation Models</em>. <a href="https://crfm.stanford.edu/2024/08/01/eu-ai-act.html">https://crfm.stanford.edu/2024/08/01/eu-ai-act.html</a>
+</div>
+<div id="ref-bourdieu1984" class="csl-entry" role="listitem">
+Bourdieu, P. (1984). <em>Distinction: A social critique of the judgement
+of taste</em>. Harvard University Press.
+</div>
+<div id="ref-bourdieu1986" class="csl-entry" role="listitem">
+Bourdieu, P. (1986). The forms of capital. In J. Richardson (Ed.),
+<em>Handbook of theory and research for the sociology of education</em>
+(pp. 241–258). Greenwood.
+</div>
+<div id="ref-bratton2026" class="csl-entry" role="listitem">
+Bratton, L. (2026). <em>Briefing: Beneficios de palantir,
+<span>OpenAI</span> y <span>M</span>icrosoft</em>. <span>The
+Information</span>. <a href="https://www.theinformation.com/">https://www.theinformation.com/</a>
+</div>
+<div id="ref-insidehighered2025" class="csl-entry" role="listitem">
+Brest, P. (2025, October). <em>How the compact curtails academic
+freedom</em>. Inside Higher Ed. <a href="https://law.stanford.edu/2025/10/23/how-the-compact-curtails-academic-freedom/">https://law.stanford.edu/2025/10/23/how-the-compact-curtails-academic-freedom/</a>
+</div>
+<div id="ref-booksonthebedside" class="csl-entry" role="listitem">
+Brown, H. (2021). <em>Books on the bedside</em>. TikTok account
+<code>@booksonthebedside</code>. <a href="https://www.tiktok.com/@booksonthebedside">https://www.tiktok.com/@booksonthebedside</a>
+</div>
+<div id="ref-brown2015" class="csl-entry" role="listitem">
+Brown, W. (2015). <em>Undoing the demos: Neoliberalism’s stealth
+revolution</em>. Zone Books.
+</div>
+<div id="ref-brown2019" class="csl-entry" role="listitem">
+Brown, W. (2019). <em>In the ruins of neoliberalism: The rise of
+antidemocratic politics in the west</em>. Columbia University Press.
+</div>
+<div id="ref-brown2023" class="csl-entry" role="listitem">
+Brown, W. (2023). <em>Nihilistic times: Thinking with max weber</em>.
+Harvard University Press.
+</div>
+<div id="ref-cnbc2025-uk-buildout" class="csl-entry" role="listitem">
+Browne, R. (2025). <em>One year on from the <span>UK</span>’s grand
+<span>AI</span> plan: Has its infrastructure buildout been a
+success?</em> <span>CNBC</span>. <a href="https://www.cnbc.com/2025/12/27/has-the-uks-ai-infrastructure-buildout-been-a-success.html">https://www.cnbc.com/2025/12/27/has-the-uks-ai-infrastructure-buildout-been-a-success.html</a>
+</div>
+<div id="ref-Browne2015DarkMatters" class="csl-entry" role="listitem">
+Browne, S. (2015). <em>Dark matters: On the surveillance of
+blackness</em>. Duke University Press.
+</div>
+<div id="ref-brynjolfsson-li-raymond2025" class="csl-entry" role="listitem">
+Brynjolfsson, E., Li, D., and Raymond, L. R. (2025). Generative
+<span>AI</span> at work. <em>The Quarterly Journal of Economics</em>,
+<em>140</em>(2), 889–942. <a href="https://doi.org/10.1093/qje/qjae044">https://doi.org/10.1093/qje/qjae044</a>
+</div>
+<div id="ref-bulletin2025" class="csl-entry" role="listitem">
+Bulletin of the Atomic Scientists. (2025). How AI and surveillance
+capitalism are undermining democracy. <em>Bulletin of the Atomic
+Scientists</em>.
+</div>
+<div id="ref-callender2017" class="csl-entry" role="listitem">
+Callender, C., and Mason, G. (2017). Does student loan debt deter higher
+education participation? New evidence from <span>England</span>. <em>The
+ANNALS of the American Academy of Political and Social Science</em>,
+<em>671</em>(1), 20–48. <a href="https://doi.org/10.1177/0002716217696041">https://doi.org/10.1177/0002716217696041</a>
+</div>
+<div id="ref-caraballo2025pin" class="csl-entry" role="listitem">
+Caraballo, C. (2025, March 25). <em>Pin parental u órdenes de
+alejamiento virtuales: así es la ley de protección de menores en
+España</em>. Euronews. <a href="https://es.euronews.com/2025/03/25/pin-parental-u-ordenes-de-alejamiento-virtuales-asi-es-la-ley-de-proteccion-de-menores">https://es.euronews.com/2025/03/25/pin-parental-u-ordenes-de-alejamiento-virtuales-asi-es-la-ley-de-proteccion-de-menores</a>
+</div>
+<div id="ref-cartnermorley2026" class="csl-entry" role="listitem">
+Cartner-Morley, J. (2026). We are living in a period of political
+anti-intellectualism. But in pop culture, clever is the new cool.
+<em>The Guardian</em>. <a href="https://www.theguardian.com/fashion/2026/mar/22/living-period-political-anti-intellectualism-pop-culture-clever-new-cool">https://www.theguardian.com/fashion/2026/mar/22/living-period-political-anti-intellectualism-pop-culture-clever-new-cool</a>
+</div>
+<div id="ref-cesur2026cost" class="csl-entry" role="listitem">
+CESUR. (2026). <em>Cuánto cuesta un grado superior: Precio medio</em>.
+<a href="https://www.cesurformacion.com/blog/grado-superior-precio-medio">https://www.cesurformacion.com/blog/grado-superior-precio-medio</a>
+</div>
+<div id="ref-mayerbrown2025-aieo" class="csl-entry" role="listitem">
+Christian, M. A., and Waltzman, H. W. (2025). <em>President
+<span>T</span>rump issues executive order on <span>“ensuring a national
+policy framework for artificial intelligence”</span></em>. <span>Mayer
+Brown Insights</span>. <a href="https://www.mayerbrown.com/en/insights/publications/2025/12/president-trump-issues-executive-order-on-ensuring-a-national-policy-framework-for-artificial-intelligence">https://www.mayerbrown.com/en/insights/publications/2025/12/president-trump-issues-executive-order-on-ensuring-a-national-policy-framework-for-artificial-intelligence</a>
+</div>
+<div id="ref-citton2017" class="csl-entry" role="listitem">
+Citton, Y. (2017). <em>The ecology of attention</em>. Polity.
+</div>
+<div id="ref-coeckelbergh2022" class="csl-entry" role="listitem">
+Coeckelbergh, M. (2022). <em>The political philosophy of
+<span>AI</span>: An introduction</em>. Polity Press.
+</div>
+<div id="ref-coeckelbergh2026paper" class="csl-entry" role="listitem">
+Coeckelbergh, M. (2026a). Technofascism: <span>AI</span>, power, and the
+authoritarian drift. <em>AI &amp; Society</em>. <a href="https://doi.org/10.1007/s00146-026-02862-9">https://doi.org/10.1007/s00146-026-02862-9</a>
+</div>
+<div id="ref-coeckelbergh2026" class="csl-entry" role="listitem">
+Coeckelbergh, M. (2026b). <em><span class="nocase">Palantir’s</span>
+manifesto: Technofascism in plain sight</em>. Medium (personal blog). <a href="https://coeckelbergh.medium.com/palantirs-manifesto-technofascism-in-plain-sight-c160ca377e9a">https://coeckelbergh.medium.com/palantirs-manifesto-technofascism-in-plain-sight-c160ca377e9a</a>
+</div>
+<div id="ref-Cohen2019BetweenTruthPower" class="csl-entry" role="listitem">
+Cohen, J. E. (2019). <em>Between truth and power: The legal
+constructions of informational capitalism</em>. Oxford University Press.
+</div>
+<div id="ref-collin2021" class="csl-entry" role="listitem">
+Collin, M. (2021). <em>Academic freedom and foreign funding: How gulf
+donors shape research agendas in western universities</em>. King’s
+College London Policy Institute. <a href="https://www.kcl.ac.uk/policy-institute">https://www.kcl.ac.uk/policy-institute</a>
+</div>
+<div id="ref-Crawford2021AtlasAI" class="csl-entry" role="listitem">
+Crawford, K. (2021). <em>Atlas of <span>AI</span>: Power, politics, and
+the planetary costs of artificial intelligence</em>. Yale University
+Press.
+</div>
+<div id="ref-techrepublicbook2026" class="csl-entry" role="listitem">
+Crown Currency. (2025--2026). <em>The technological republic: Reviews
+and commentary</em>. Publisher promotional page, techrepublicbook.com.
+<a href="https://techrepublicbook.com/">https://techrepublicbook.com/</a>
+</div>
+<div id="ref-cyberpsychology2025" class="csl-entry" role="listitem">
+Cyberpsychology, Behavior, and Social Networking. (2025). BookTok as
+cultural infrastructure: Emotion, influence, and the future of reading.
+<em>Cyberpsychology, Behavior, and Social Networking</em>. <a href="https://doi.org/10.1177/21522715251408721">https://doi.org/10.1177/21522715251408721</a>
+</div>
+<div id="ref-DignazioKlein2020DataFeminism" class="csl-entry" role="listitem">
+D’Ignazio, C., and Klein, L. F. (2020). <em>Data feminism</em>. MIT
+Press.
+</div>
+<div id="ref-dean2024" class="csl-entry" role="listitem">
+Dean, J. (2024). The neofeudalising tendency of communicative
+capitalism. <em>tripleC: Communication, Capitalism &amp; Critique</em>,
+<em>22</em>(1), 197–207.
+</div>
+<div id="ref-dellibarda2025-rethinking" class="csl-entry" role="listitem">
+Dellibarda Varela, I., Romero-Sorozabal, P., Rocon, E., and Cebrian, M.
+(2025). Rethinking the illusion of thinking. <em>arXiv Preprint
+arXiv:2507.01231</em>. <a href="https://arxiv.org/abs/2507.01231">https://arxiv.org/abs/2507.01231</a>
+</div>
+<div id="ref-dencik2022" class="csl-entry" role="listitem">
+Dencik, L., Hintz, A., Redden, J., and Treré, E. (2022). <em>Data
+justice</em>. SAGE.
+</div>
+<div id="ref-diaz2021" class="csl-entry" role="listitem">
+Diaz, W. (2021). On a small glossary of academic anti-intellectualism.
+<em>CLCWeb: Comparative Literature and Culture</em>, <em>23</em>(2). <a href="https://fileserver-az.core.ac.uk/download/511342897.pdf">https://fileserver-az.core.ac.uk/download/511342897.pdf</a>
+</div>
+<div id="ref-donaire2026cent" class="csl-entry" role="listitem">
+Donaire, G., and Limón, R. (2026). Centenares de manifestantes reclaman
+una dotación suficiente para las universidades públicas en andalucía.
+<em>El País</em>. <a href="https://elpais.com/espana/andalucia/2026-04-29/centenares-de-manifestantes-reclaman-una-dotacion-suficiente-para-las-universidades-publicas-en-andalucia.html">https://elpais.com/espana/andalucia/2026-04-29/centenares-de-manifestantes-reclaman-una-dotacion-suficiente-para-las-universidades-publicas-en-andalucia.html</a>
+</div>
+<div id="ref-DownBooth2026Palantir" class="csl-entry" role="listitem">
+Down, A., and Booth, R. (2026). Palantir manifesto described as
+<span>“ramblings of a supervillain”</span> amid UK contract fears.
+<em>The Guardian</em>. <a href="https://www.theguardian.com/technology/2026/apr/21/palantir-manifesto-uk-contract-fears-mps">https://www.theguardian.com/technology/2026/apr/21/palantir-manifesto-uk-contract-fears-mps</a>
+</div>
+<div id="ref-driscoll-rehbergsedo2019" class="csl-entry" role="listitem">
+Driscoll, B., and Rehberg Sedo, D. (2019). <em>Read by strangers</em>.
+Iowa University Press.
+</div>
+<div id="ref-driscoll-squires2023" class="csl-entry" role="listitem">
+Driscoll, B., and Squires, C. (2023). <em>Literary festivals and
+cultures of distinction</em>.
+</div>
+<div id="ref-eldiario2026" class="csl-entry" role="listitem">
+elDiario.es. (2026). <em><span class="nocase">¿Guerra civil en Silicon
+Valley?</span> <span>Anthropic</span>, <span>Palantir</span> y
+ejecutivos de <span>Google</span> chocan por los límites de la
+<span>IA</span> militar</em>. <span>elDiario.es</span>. <a href="https://www.eldiario.es/tecnologia/guerra-civil-silicon-valley-anthropic-palantir-ejecutivos-google-chocan-limites-ia-militar_1_13181195.html">https://www.eldiario.es/tecnologia/guerra-civil-silicon-valley-anthropic-palantir-ejecutivos-google-chocan-limites-ia-militar_1_13181195.html</a>
+</div>
+<div id="ref-eubanks2018" class="csl-entry" role="listitem">
+Eubanks, V. (2018). <em>Automating inequality: How high-tech tools
+profile, police, and punish the poor</em>. St.&nbsp;Martin’s Press.
+</div>
+<div id="ref-filatova2021" class="csl-entry" role="listitem">
+Filatova, A. A. (2021). <span>‘</span>Vicious minds<span>’</span>: Vice
+epistemology and rhetoric of resistance to anti-intellectualism.
+<em>Epistemology &amp; Philosophy of Science</em>. <a href="https://doi.org/10.5840/eps202158465">https://doi.org/10.5840/eps202158465</a>
+</div>
+<div id="ref-floridi2019" class="csl-entry" role="listitem">
+Floridi, L., and Cowls, J. (2019). A unified framework of five
+principles for <span>AI</span> in society. <em>Harvard Data Science
+Review</em>, <em>1</em>(1). <a href="https://doi.org/10.1162/99608f92.8cd550d1">https://doi.org/10.1162/99608f92.8cd550d1</a>
+</div>
+<div id="ref-fraser2022" class="csl-entry" role="listitem">
+Fraser, N. (2022). <em>Cannibal capitalism: How our system is devouring
+democracy, care, and the planet</em>. Verso.
+</div>
+<div id="ref-gencoglu2021" class="csl-entry" role="listitem">
+Gencoglu, [autor. a. verificar]. (2021). <em>Heroes, villains and
+celebritisation of politics</em>.
+</div>
+<div id="ref-gill2017" class="csl-entry" role="listitem">
+Gill, R. (2017). The affective, cultural and psychic life of
+postfeminism. <em>European Journal of Cultural Studies</em>,
+<em>20</em>(6), 606–626.
+</div>
+<div id="ref-gill2024" class="csl-entry" role="listitem">
+Gill, R. (2024). <em>Perfect: Feeling judged on social media</em>.
+Polity.
+</div>
+<div id="ref-gillespie2018" class="csl-entry" role="listitem">
+Gillespie, T. (2018). <em>Custodians of the internet: Platforms, content
+moderation, and the hidden decisions that shape social media</em>. Yale
+University Press.
+</div>
+<div id="ref-Ginsberg2011Fall" class="csl-entry" role="listitem">
+Ginsberg, B. (2011). <em>The fall of the faculty: The rise of the
+all-administrative university and why it matters</em>. Oxford University
+Press. <a href="https://doi.org/10.1093/oso/9780199782444.001.0001">https://doi.org/10.1093/oso/9780199782444.001.0001</a>
+</div>
+<div id="ref-giousmpasoglou2016" class="csl-entry" role="listitem">
+Giousmpasoglou, C., Marinakou, E., and Paliktzoglou, V. (2016). Economic
+crisis and higher education in <span>Greece</span>. In P. Ordóñez de
+Pablos and R. D. Tennyson (Eds.), <em>Impact of economic crisis on
+education and the next-generation workforce</em> (pp. 120–148). IGI
+Global. <a href="https://doi.org/10.4018/978-1-4666-9455-2.ch006">https://doi.org/10.4018/978-1-4666-9455-2.ch006</a>
+</div>
+<div id="ref-giroux2022" class="csl-entry" role="listitem">
+Giroux, H. A. (2022). <em>Pedagogy of resistance: Against manufactured
+ignorance</em>. Bloomsbury.
+</div>
+<div id="ref-goodereader2024" class="csl-entry" role="listitem">
+Good e-Reader. (2024). <em>Global e-book and digital reading report
+2024</em>. Good e-Reader Media. <a href="https://goodereader.com">https://goodereader.com</a>
+</div>
+<div id="ref-green2022" class="csl-entry" role="listitem">
+Green, B. (2022). <em>The smart enough city: Putting technology in its
+place to reclaim our urban future</em>. MIT Press.
+</div>
+<div id="ref-habermas2023" class="csl-entry" role="listitem">
+Habermas, J. (2023). <em>A new structural transformation of the public
+sphere and deliberative politics</em>. Polity.
+</div>
+<div id="ref-hadarics2025" class="csl-entry" role="listitem">
+Hadarics, M. (2025). Democratic backsliding based on illusions:
+Authoritarians’ biased perception of media freedom contributes to their
+political support. <em>International Journal of Psychology</em>. <a href="https://doi.org/10.1002/ijop.70126">https://doi.org/10.1002/ijop.70126</a>
+</div>
+<div id="ref-Hagendorff2020EthicsAIEthics" class="csl-entry" role="listitem">
+Hagendorff, T. (2020). The ethics of <span>AI</span> ethics: An
+evaluation of guidelines. <em>Minds and Machines</em>, <em>30</em>(1),
+99–120.
+</div>
+<div id="ref-hale2013" class="csl-entry" role="listitem">
+Hale, F. (2013). <span>‘</span>Fundamentalism<span>’</span> and
+<span>‘</span>fundamentalist<span>’</span> semantically considered:
+Their lexical origins, early polysemy, and pejoration. <em>In Die
+Skriflig / In Luce Verbi</em>.
+</div>
+<div id="ref-han2018" class="csl-entry" role="listitem">
+Han, S. (2018). <span class="nocase">Adorno’s</span> reflections on
+anti-intellectualism: Questions of the relation between democracy and
+intellect. <em>Cheolhak: Korean Journal of Philosophy</em>,
+<em>135</em>, 23–46. <a href="https://doi.org/10.18694/KJP.2018.05.135.23">https://doi.org/10.18694/KJP.2018.05.135.23</a>
+</div>
+<div id="ref-hari2022" class="csl-entry" role="listitem">
+Hari, J. (2022). <em>Stolen focus: Why you can’t pay attention</em>.
+Crown.
+</div>
+<div id="ref-harsin2024" class="csl-entry" role="listitem">
+Harsin, J. (2024). Post-truth politics and epistemic populism. In
+<em>The palgrave handbook of communication and populism</em>. Palgrave
+Macmillan.
+</div>
+<div id="ref-wapo2026xai" class="csl-entry" role="listitem">
+Harwell, D., and Zakrzewski, C. (2026). Inside trump’s AI strategy: xAI
+emerges as key ideological and technical ally. <em>The Washington
+Post</em>. <a href="https://www.washingtonpost.com">https://www.washingtonpost.com</a>
+</div>
+<div id="ref-hasell_chinn_2023" class="csl-entry" role="listitem">
+Hasell, A., and Chinn, S. (2023). The political influence of lifestyle
+influencers? Examining the relationship between aspirational social
+media use and anti-expert attitudes and beliefs. <em>Social Media +
+Society</em>, <em>9</em>(4), 20563051231211945. <a href="https://doi.org/10.1177/20563051231211945">https://doi.org/10.1177/20563051231211945</a>
+</div>
+<div id="ref-hayles2023" class="csl-entry" role="listitem">
+Hayles, N. K. (2023). Cognitive assemblages and distributed cognition in
+the age of generative AI. <em>Critical Inquiry</em>.
+</div>
+<div id="ref-hesmondhalgh2013_culturalindustries" class="csl-entry" role="listitem">
+Hesmondhalgh, D. (2013). <em>The cultural industries</em> (3rd ed.).
+SAGE.
+</div>
+<div id="ref-heumann2026" class="csl-entry" role="listitem">
+Heumann, [autor. a. verificar]. (2026). <em><span>‘</span>They
+don<span>’</span>t know what they<span>’</span>re
+doing<span>’</span></em>.
+</div>
+<div id="ref-TheHill2020FederalForces" class="csl-entry" role="listitem">
+Hill, T. (2020). Trump says he will deploy military if states don’t stop
+violent protests. <em>The Hill</em>. <a href="https://thehill.com/homenews/administration/500606-trump-says-he-will-deploy-military-if-states-dont-stop-violent/">https://thehill.com/homenews/administration/500606-trump-says-he-will-deploy-military-if-states-dont-stop-violent/</a>
+</div>
+<div id="ref-hitz2020" class="csl-entry" role="listitem">
+Hitz, Z. (2020). <em>Lost in thought: The hidden pleasures of an
+intellectual life</em>. Princeton University Press.
+</div>
+<div id="ref-hofstadter1963" class="csl-entry" role="listitem">
+Hofstadter, R. (1963). <em>Anti-intellectualism in american life</em>.
+Knopf.
+</div>
+<div id="ref-hogenboom2026" class="csl-entry" role="listitem">
+Hogenboom, M. (2026). <em><span>AI</span> chatbots could be making you
+stupider</em>. <span>BBC Future</span>. <a href="https://www.bbc.com/future/article/20260417-ai-chatbots-could-be-making-you-stupider">https://www.bbc.com/future/article/20260417-ai-chatbots-could-be-making-you-stupider</a>
+</div>
+<div id="ref-hohe2024" class="csl-entry" role="listitem">
+Hohe, E. (2024). Red vs blue hubris: Clarifying the relationship between
+partisanship and (anti)intellectualism. <em>Party Politics</em>.
+</div>
+<div id="ref-holopainen2025inf" class="csl-entry" role="listitem">
+Holopainen, J. et al. (2025). Infinity book: Speculating literary
+expressions in the age of generative AI. <em>Proceedings of the 2025 ACM
+Designing Interactive Systems Conference</em>, 1430–1454. <a href="https://doi.org/10.1145/3715336.3735735">https://doi.org/10.1145/3715336.3735735</a>
+</div>
+<div id="ref-holt2025" class="csl-entry" role="listitem">
+Holt, B. J. (2025). Intellectualism and anti-intellectualism act as
+barriers to academic freedom. <em>International Journal of Technology
+and Inclusive Education</em>, <em>14</em>(2), 2099–2108. <a href="https://doi.org/10.20533/ijtie.2047.0533.2025.0261">https://doi.org/10.20533/ijtie.2047.0533.2025.0261</a>
+</div>
+<div id="ref-inbar-jablonka2025" class="csl-entry" role="listitem">
+Inbar, S., Jablonka, E., Ginsburg, S., and Zeligowski, A. (2025).
+<em>Common sense, scientific images, and the aesthetic mode of
+knowing</em>. <a href="https://doi.org/10.1007/s40656-025-00697-z">https://doi.org/10.1007/s40656-025-00697-z</a>
+</div>
+<div id="ref-insidehighered2026" class="csl-entry" role="listitem">
+Inside Higher Ed Staff. (2026). <em>Faculty concerned about <span class="nocase">ASU’s</span> new <span>AI</span> course builder</em>.
+<span>Inside Higher Ed</span>. <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/04/29/faculty-concerned-about-asus-new-ai-course">https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/04/29/faculty-concerned-about-asus-new-ai-course</a>
+</div>
+<div id="ref-nea2022" class="csl-entry" role="listitem">
+Iyengar, S. (2023). <em><span>U.S.</span> Trends in arts attendance and
+literary reading: 2002–2022</em> [Research Report]. National Endowment
+for the Arts. <a href="https://www.arts.gov/impact/research/publications">https://www.arts.gov/impact/research/publications</a>
+</div>
+<div id="ref-jerasa2025" class="csl-entry" role="listitem">
+Jerasa, S. (2025). The <span>#</span>BookTok connection: Examining
+cultural and linguistic identity expression in online reading
+communities. <em>Education Sciences</em>, <em>15</em>(2), 234. <a href="https://doi.org/10.3390/educsci15020234">https://doi.org/10.3390/educsci15020234</a>
+</div>
+<div id="ref-KarpZamiska2025Tech" class="csl-entry" role="listitem">
+Karp, A., and Zamiska, N. W. (2025). <em>The technological republic:
+Hard power, soft belief, and the future of the west</em> (First
+edition). Crown Currency.
+</div>
+<div id="ref-karpf2026" class="csl-entry" role="listitem">
+Karpf, D. (2026). <em>Palantir’s <span>CEO</span> is like a james bond
+villain, except bond villains are better dressed</em>. Beehiiv (personal
+newsletter). <a href="https://davekarpf.beehiiv.com/p/palantir-s-ceo-is-like-a-james-bond-villain-except-bond-villains-are-better-dressed">https://davekarpf.beehiiv.com/p/palantir-s-ceo-is-like-a-james-bond-villain-except-bond-villains-are-better-dressed</a>
+</div>
+<div id="ref-klein2024" class="csl-entry" role="listitem">
+Klein, L. J. A. (2024). <em>Whig anti-intellectualism: An intellectual
+history</em> [{PhD} dissertation]. <a href="https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37377897">https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37377897</a>
+</div>
+<div id="ref-kosmyna2025preprint" class="csl-entry" role="listitem">
+Kosmyna, N. et al. (2025). <em>Your brain on <span>ChatGPT</span>:
+Accumulation of cognitive activity across sessions</em>. arXiv preprint.
+<a href="https://arxiv.org/abs/2506.08872">https://arxiv.org/abs/2506.08872</a>
+</div>
+<div id="ref-kremer2016" class="csl-entry" role="listitem">
+Kremer, M. (2016). Ideology and knowledge-how: A <span>R</span>ylean
+perspective. <em>Theoria. Revista de Teoría, Historia y Fundamentos de
+La Ciencia</em>, <em>31</em>(3), 295–311. <a href="https://doi.org/10.1387/theoria.16292">https://doi.org/10.1387/theoria.16292</a>
+</div>
+<div id="ref-kretschmer2023risks" class="csl-entry" role="listitem">
+Kretschmer, M., Kretschmer, T., Peukert, A., and Peukert, C. (2023). The
+risks of risk-based <span>AI</span> regulation: Taking liability
+seriously. <em>arXiv Preprint arXiv:2311.14684</em>. <a href="https://doi.org/10.48550/arXiv.2311.14684">https://doi.org/10.48550/arXiv.2311.14684</a>
+</div>
+<div id="ref-lawless2021" class="csl-entry" role="listitem">
+Lawless, K. A. (2021). The digital cultural capital framework: Enhancing
+equity in digital education. <em>Learning, Media and Technology</em>,
+<em>46</em>(4), 1–15. <a href="https://doi.org/10.1080/17439884.2021.xxxxx">https://doi.org/10.1080/17439884.2021.xxxxx</a>
+</div>
+<div id="ref-lee2025" class="csl-entry" role="listitem">
+Lee, H.-P. (Hank)., Sarkar, A., Tankelevitch, L., Drosos, I., Rintel,
+S., Banks, R., and Wilson, N. (2025). The impact of generative
+<span>AI</span> on critical thinking: Self-reported reductions in
+cognitive effort and confidence effects from a survey of knowledge
+workers. <em>Proceedings of the 2025 <span>CHI</span> Conference on
+Human Factors in Computing Systems (<span>CHI ’25</span>)</em>. <a href="https://doi.org/10.1145/3706598.3713778">https://doi.org/10.1145/3706598.3713778</a>
+</div>
+<div id="ref-levitsky-way2010" class="csl-entry" role="listitem">
+Levitsky, S., and Way, L. A. (2010). <em>Competitive authoritarianism:
+Hybrid regimes after the cold war</em>. Cambridge University Press.
+</div>
+<div id="ref-levitsky-way2025" class="csl-entry" role="listitem">
+Levitsky, S., and Way, L. A. (2025). The path to american
+authoritarianism: <span>What</span> comes after democratic breakdown.
+<em>Foreign Affairs</em>, <em>104</em>(2). <a href="https://www.foreignaffairs.com/united-states/path-american-authoritarianism-trump">https://www.foreignaffairs.com/united-states/path-american-authoritarianism-trump</a>
+</div>
+<div id="ref-levitsky-way-ziblatt2025-price" class="csl-entry" role="listitem">
+Levitsky, S., Way, L. A., and Ziblatt, D. (2025). The price of american
+authoritarianism: <span>What</span> can reverse democratic decline?
+<em>Foreign Affairs</em>. <a href="https://www.foreignaffairs.com/united-states/price-american-authoritarianism">https://www.foreignaffairs.com/united-states/price-american-authoritarianism</a>
+</div>
+<div id="ref-lillocea2025compensatory" class="csl-entry" role="listitem">
+Lillo Cea, P., and Bertilsson, E. (2025). <span><span>“By reason or by
+force”</span></span>: Compensatory higher education strategies and elite
+reproduction in <span>Chile</span>. <em>British Journal of Sociology of
+Education</em>, <em>47</em>(1), 99–120. <a href="https://doi.org/10.1080/01425692.2025.2584174">https://doi.org/10.1080/01425692.2025.2584174</a>
+</div>
+<div id="ref-sakana2024" class="csl-entry" role="listitem">
+Lu, C., Lu, C., Lange, R. T., Foerster, J., Clune, J., and Ha, D.
+(2024). The <span>AI</span> scientist: Towards fully automated
+open-ended scientific discovery. <em>arXiv Preprint
+arXiv:2408.06292</em>. <a href="https://arxiv.org/abs/2408.06292">https://arxiv.org/abs/2408.06292</a>
+</div>
+<div id="ref-NewLines2024War" class="csl-entry" role="listitem">
+Magazine, N. L. (2024). <em>A war on universities in the
+netherlands</em>. <a href="https://newlinesmag.com/spotlight/a-war-on-universities-in-the-netherlands/">https://newlinesmag.com/spotlight/a-war-on-universities-in-the-netherlands/</a>
+</div>
+<div id="ref-mazumdar2026" class="csl-entry" role="listitem">
+Mazumdar, S. (2026). <em>Informal allies: Hindutva pop influencers and
+propaganda in digital <span>I</span>ndia</em>. <a href="https://doi.org/10.52698/brbp3915">https://doi.org/10.52698/brbp3915</a>
+</div>
+<div id="ref-mccright2010" class="csl-entry" role="listitem">
+McCright, A. M., and Dunlap, R. E. (2010). Anti-reflexivity: The
+american conservative movement’s success in undermining climate science
+and policy. <em>Theory, Culture &amp; Society</em>, <em>27</em>(2–3),
+100–133. <a href="https://doi.org/10.1177/0263276409356001">https://doi.org/10.1177/0263276409356001</a>
+</div>
+<div id="ref-mcdonald2026" class="csl-entry" role="listitem">
+McDonald, T. J. (2026). <em>Viewpoint diversity: <span class="nocase">It’s</span> the disciplines, stupid!</em> [Opinion].
+<span>Inside Higher Ed</span>. <a href="https://www.insidehighered.com/opinion/views/2026/04/30/viewpoint-diversity-its-disciplines-stupid-opinion">https://www.insidehighered.com/opinion/views/2026/04/30/viewpoint-diversity-its-disciplines-stupid-opinion</a>
+</div>
+<div id="ref-mckee-figueras2025" class="csl-entry" role="listitem">
+McKee, M., Figueras, J., Kalediene, R., Joshi, A., El-Mohandes, A.,
+Otok, R., Magaña, L., Marchandise, C., and Barros, H. (2025). An agenda
+for public health diplomacy in an age of populism. <em>Public Health
+Reviews</em>, <em>46</em>, 1609089. <a href="https://doi.org/10.3389/phrs.2025.1609089">https://doi.org/10.3389/phrs.2025.1609089</a>
+</div>
+<div id="ref-mcrobbie2009" class="csl-entry" role="listitem">
+McRobbie, A. (2009). <em>The aftermath of feminism: Gender, culture and
+social change</em>. Sage.
+</div>
+<div id="ref-merkley2020" class="csl-entry" role="listitem">
+Merkley, E. (2020). Anti-intellectualism, populism, and motivated
+resistance to expert consensus. <em>Public Opinion Quarterly</em>,
+<em>84</em>(1), 24–48. <a href="https://doi.org/10.1093/poq/nfz053">https://doi.org/10.1093/poq/nfz053</a>
+</div>
+<div id="ref-aauw2017" class="csl-entry" role="listitem">
+Miller, K. (2017). <em>Deeper in debt: Women and student loans</em>.
+American Association of University Women. <a href="https://www.aauw.org/resources/research/deeper-in-debt/">https://www.aauw.org/resources/research/deeper-in-debt/</a>
+</div>
+<div id="ref-mirowski2013" class="csl-entry" role="listitem">
+Mirowski, P. (2013). <em>Never let a serious crisis go to waste: How
+neoliberalism survived the financial meltdown</em>. Verso.
+</div>
+<div id="ref-mittelstadt2016" class="csl-entry" role="listitem">
+Mittelstadt, B. D., Allo, P., Taddeo, M., Wachter, S., and Floridi, L.
+(2016). The ethics of algorithms: Mapping the debate. <em>Big Data &amp;
+Society</em>, <em>3</em>(2). <a href="https://doi.org/10.1177/2053951716679679">https://doi.org/10.1177/2053951716679679</a>
+</div>
+<div id="ref-morelock2022" class="csl-entry" role="listitem">
+Morelock, J., and Narita, F. Z. (2022). The nexus of <span>QAnon</span>
+and <span>COVID-19</span>: Legitimation crisis and epistemic crisis.
+<em>Critical Sociology</em>, <em>48</em>(6), 1005–1024.
+</div>
+<div id="ref-moreno2018" class="csl-entry" role="listitem">
+Moreno Muñoz, M. (2018). Virtualización del espacio público y concepto
+débil de privacidad: Lecciones del caso facebook–cambridge analytica.
+<em>Ensayos de Filosofía</em>, (8). <a href="https://doi.org/10.5281/zenodo.2535703">https://doi.org/10.5281/zenodo.2535703</a>
+</div>
+<div id="ref-morrisk2025" class="csl-entry" role="listitem">
+Morris, K. (2025). Another brick in the wall: The student housing crisis
+in the <span>UK</span> and the <span>ICESCR</span>. <em>Netherlands
+Quarterly of Human Rights</em>. <a href="https://doi.org/10.1177/09240519251318141">https://doi.org/10.1177/09240519251318141</a>
+</div>
+<div id="ref-motta2024" class="csl-entry" role="listitem">
+Motta, M. (2024). <em>Anti-scientific americans: The prevalence,
+origins, and political consequences of anti-intellectualism in the
+US</em>. Oxford University Press.
+</div>
+<div id="ref-mouffe2018" class="csl-entry" role="listitem">
+Mouffe, C. (2018). <em>For a left populism</em>. Verso.
+</div>
+<div id="ref-nea2025" class="csl-entry" role="listitem">
+National Endowment for the Arts. (2025). <em>Reading on the rise?
+National survey of reading habits</em>. NEA.
+</div>
+<div id="ref-Newfield2016Great" class="csl-entry" role="listitem">
+Newfield, C. (2016). <em>The great mistake: How we wrecked public
+universities and how we can fix them</em>. Johns Hopkins University
+Press.
+</div>
+<div id="ref-nguyen2020" class="csl-entry" role="listitem">
+Nguyen, C. T. (2020). <em>Games: Agency as art</em>. Oxford University
+Press.
+</div>
+<div id="ref-nichols2017" class="csl-entry" role="listitem">
+Nichols, T. (2017). <em>The death of expertise: The campaign against
+established knowledge and why it matters</em>. Oxford University Press.
+</div>
+<div id="ref-Nissenbaum2010PrivacyContext" class="csl-entry" role="listitem">
+Nissenbaum, H. (2010). <em>Privacy in context: Technology, policy, and
+the integrity of social life</em>. Stanford University Press.
+</div>
+<div id="ref-norris-inglehart2019" class="csl-entry" role="listitem">
+Norris, P., and Inglehart, R. (2019b). <em>Cultural backlash: Trump,
+brexit, and authoritarian populism</em>. Cambridge University Press.
+</div>
+<div id="ref-NorrisInglehart2019" class="csl-entry" role="listitem">
+Norris, P., and Inglehart, R. (2019a). <em>Cultural backlash: Trump,
+brexit, and authoritarian populism</em>. Cambridge University Press. <a href="https://doi.org/10.1017/9781108595841">https://doi.org/10.1017/9781108595841</a>
+</div>
+<div id="ref-noy-zhang2023" class="csl-entry" role="listitem">
+Noy, S., and Zhang, W. (2023). Experimental evidence on the productivity
+effects of generative artificial intelligence. <em>Science</em>,
+<em>381</em>, 187–192. <a href="https://doi.org/10.1126/science.adh2586">https://doi.org/10.1126/science.adh2586</a>
+</div>
+<div id="ref-nussbaum2010" class="csl-entry" role="listitem">
+Nussbaum, M. C. (2010). <em>Not for profit: Why democracy needs the
+humanities</em>. Princeton University Press.
+</div>
+<div id="ref-oesch2018" class="csl-entry" role="listitem">
+Oesch, D., and Rennwald, L. (2018). Electoral competition on labour
+market issues and the transformation of the worker vote in
+<span>Europe</span>. <em>European Journal of Political Research</em>,
+<em>57</em>(1), 55–76. <a href="https://doi.org/10.1111/1475-6765.12220">https://doi.org/10.1111/1475-6765.12220</a>
+</div>
+<div id="ref-oreskes2010" class="csl-entry" role="listitem">
+Oreskes, N., and Conway, E. M. (2010). <em>Merchants of doubt: How a
+handful of scientists obscured the truth on issues from tobacco smoke to
+global warming</em>. Bloomsbury Press.
+</div>
+<div id="ref-ornek2020" class="csl-entry" role="listitem">
+Örnek, C. (2020). The bureaucracy and its discontents in modern
+<span>T</span>urkey: Liberalism, neo-liberalism and
+anti-intellectualism. In <em>Faces of republican turkey: Beyond the
+modernization hypothesis</em> (pp. 129–147). <a href="https://doi.org/10.26650/B/SS30.2020.004.06">https://doi.org/10.26650/B/SS30.2020.004.06</a>
+</div>
+<div id="ref-ornek2022" class="csl-entry" role="listitem">
+Örnek, C. (2022). Why does the <span>AKP</span> hate cultivated minds?
+<span>T</span>he historical background of anti-intellectualism of
+political <span>I</span>slam in <span>T</span>urkey. <em>Journal of
+Mediterranean Studies</em>, <em>31</em>(1), 37–56.
+</div>
+<div id="ref-paxton2004" class="csl-entry" role="listitem">
+Paxton, R. O. (2004). <em>The anatomy of fascism</em>. Knopf.
+</div>
+<div id="ref-pitzalis2024" class="csl-entry" role="listitem">
+Pitzalis, M., and Porcu, M. (2024). Digital capital and cultural capital
+in education: Unravelling intersections and distinctions that shape
+social differentiation. <em>British Educational Research Journal</em>,
+<em>50</em>(6), 2753–2776. <a href="https://doi.org/10.1002/berj.4050">https://doi.org/10.1002/berj.4050</a>
+</div>
+<div id="ref-post2012" class="csl-entry" role="listitem">
+Post, R. C. (2012). <em>Democracy, expertise, and academic freedom: A
+first amendment jurisprudence for the modern state</em>. Yale University
+Press.
+</div>
+<div id="ref-readingagency2024" class="csl-entry" role="listitem">
+Reading Agency. (2024). <em>Reading <span>Lives</span>: Adult reading
+trends in the <span>UK</span></em>. Survey report. <a href="https://readingagency.org.uk/news/research/">https://readingagency.org.uk/news/research/</a>
+</div>
+<div id="ref-reay2017" class="csl-entry" role="listitem">
+Reay, D. (2017). <em>Miseducation: Inequality, education and the working
+classes</em>. Policy Press.
+</div>
+<div id="ref-reichman2019" class="csl-entry" role="listitem">
+Reichman, H. (2019). <em>The future of academic freedom</em>. Johns
+Hopkins University Press.
+</div>
+<div id="ref-reilly2020" class="csl-entry" role="listitem">
+Reilly, C. (2020). <em>It’s time to scrap the student loans
+<span>“motherhood penalty”</span></em>. <span><em>The
+Conversation</em></span> (UK edition), 1 October. <a href="https://theconversation.com/its-time-to-scrap-the-student-loans-motherhood-penalty-145194">https://theconversation.com/its-time-to-scrap-the-student-loans-motherhood-penalty-145194</a>
+</div>
+<div id="ref-riveranovoa2025ext" class="csl-entry" role="listitem">
+Rivera-Novoa, A., and Duarte Arias, D. A. (2025). Generative artificial
+intelligence and extended cognition in science learning contexts.
+<em>Science &amp; Education</em>. <a href="https://doi.org/10.1007/s11191-025-00660-1">https://doi.org/10.1007/s11191-025-00660-1</a>
+</div>
+<div id="ref-rose2001" class="csl-entry" role="listitem">
+Rose, J. (2001). <em>The intellectual life of the <span>British</span>
+working classes</em> (1st ed.). Yale University Press.
+</div>
+<div id="ref-esson2026" class="csl-entry" role="listitem">
+Ross, J. (2026). <em>Use of fixed-term posts <span>“stifling more
+critical research”</span></em>. <span><em>Times Higher
+Education</em></span>, 16 February. <a href="https://www.timeshighereducation.com/news/use-fixed-term-posts-stifling-more-critical-research">https://www.timeshighereducation.com/news/use-fixed-term-posts-stifling-more-critical-research</a>
+</div>
+<div id="ref-russellgroup2025" class="csl-entry" role="listitem">
+Russell Group. (2025). <em>University tuition fees now worth just
+two-thirds of their value in real terms, new analysis shows</em>.
+Russell Group policy briefing. <a href="https://www.russellgroup.ac.uk/news/university-tuition-fees-now-worth-just-two-thirds-their-value-real-terms-new-analysis-shows">https://www.russellgroup.ac.uk/news/university-tuition-fees-now-worth-just-two-thirds-their-value-real-terms-new-analysis-shows</a>
+</div>
+<div id="ref-russomalgieri2023" class="csl-entry" role="listitem">
+Russo, F., and Malgieri, G. (2023). <em>The ethics of data protection
+impact assessments</em>. Springer.
+</div>
+<div id="ref-saint-guily2013" class="csl-entry" role="listitem">
+Saint-Guily, C. L. (2013). Henri <span>B</span>ergson and the
+<span>S</span>panish conservatives (1907–1940). <em>Cahiers de
+Civilisation Espagnole Contemporaine</em>.
+</div>
+<div id="ref-sandel2020" class="csl-entry" role="listitem">
+Sandel, M. J. (2020). <em>The tyranny of merit: What’s become of the
+common good?</em> Farrar, Straus; Giroux.
+</div>
+<div id="ref-scheppele2022" class="csl-entry" role="listitem">
+Scheppele, K. L. (2022). How viktor orbán wins. <em>Journal of
+Democracy</em>, <em>33</em>(3), 45–61.
+</div>
+<div id="ref-schrecker1998" class="csl-entry" role="listitem">
+Schrecker, E. (1998). <em>Many are the crimes: <span>McCarthyism</span>
+in <span>America</span></em>. Princeton University Press.
+</div>
+<div id="ref-schrecker2025" class="csl-entry" role="listitem">
+Schrecker, E. (2025). <em>The lost soul of higher education: Updated
+edition</em>. New Press.
+</div>
+<div id="ref-scott2019" class="csl-entry" role="listitem">
+Scott, J. W. (2019). <em>Knowledge, power, and academic freedom</em>.
+Columbia University Press.
+</div>
+<div id="ref-Segers2025Anti" class="csl-entry" role="listitem">
+Segers, I. B. (2025). <span>“The anti-woke academy”</span>: Dutch
+far-right politics of knowledge about gender. <em>Politics &amp;
+Gender</em>, <em>21</em>(2), 195–219. <a href="https://doi.org/10.1017/S1743923X24000448">https://doi.org/10.1017/S1743923X24000448</a>
+</div>
+<div id="ref-gonzalez2026" class="csl-entry" role="listitem">
+Sérvulo González, J. (2026). El inquietante manifiesto de
+<span>Palantir</span> recibe un aluvi<span>ó</span>n de
+cr<span>ı́</span>ticas: Entre el tecnofascismo y el villano de
+<span>James Bond</span>. <em>El Pa<span>ı́</span>s</em>. <a href="https://elpais.com/economia/2026-04-27/el-inquietante-manifiesto-de-palantir-recibe-un-aluvion-de-criticas-entre-el-tecnofascismo-y-el-villano-de-james-bond.html">https://elpais.com/economia/2026-04-27/el-inquietante-manifiesto-de-palantir-recibe-un-aluvion-de-criticas-entre-el-tecnofascismo-y-el-villano-de-james-bond.html</a>
+</div>
+<div id="ref-shojaee2025-illusion" class="csl-entry" role="listitem">
+Shojaee, P., Mirzadeh, I., Alizadeh, K., Horton, M., Bengio, S., and
+Farajtabar, M. (2025). The illusion of thinking: Understanding the
+strengths and limitations of reasoning models via the lens of problem
+complexity. <em>arXiv Preprint arXiv:2506.06941</em>. <a href="https://arxiv.org/abs/2506.06941">https://arxiv.org/abs/2506.06941</a>
+</div>
+<div id="ref-slobodian2025" class="csl-entry" role="listitem">
+Slobodian, Q. (2025). <em>Hayek’s bastards: Race, gold, IQ, and the
+capitalism of the far right</em>. Zone Books.
+</div>
+<div id="ref-teaching2025" class="csl-entry" role="listitem">
+Smith, A. (2025). Teaching with TikTok: Leveraging social reading
+cultures through <span>#</span>BookTok. <em>Asia-Pacific Journal of
+Teacher Education</em>. <a href="https://doi.org/10.1080/10476210.2025.2559739">https://doi.org/10.1080/10476210.2025.2559739</a>
+</div>
+<div id="ref-sparrow2011" class="csl-entry" role="listitem">
+Sparrow, B., Liu, J., and Wegner, D. M. (2011). <span>Google</span>
+effects on memory: Cognitive consequences of having information at our
+fingertips. <em>Science</em>, <em>333</em>(6043), 776–778. <a href="https://doi.org/10.1126/science.1207745">https://doi.org/10.1126/science.1207745</a>
+</div>
+<div id="ref-spitalniak2026" class="csl-entry" role="listitem">
+Spitalniak, L. (2026). <em>Trump 2.0’s impact on higher ed: The first
+year in 8 numbers</em>. <span>Higher Ed Dive</span>. <a href="https://www.highereddive.com/news/trump-20s-impact-on-higher-ed-the-first-year-in-8-numbers/809909/">https://www.highereddive.com/news/trump-20s-impact-on-higher-ed-the-first-year-in-8-numbers/809909/</a>
+</div>
+<div id="ref-squire2025" class="csl-entry" role="listitem">
+Squire, R., Esson, J., Bruun, J., Colls, R., Forman, P., Jackman, A.,
+and Joanes, J. (2025). <em>States of precarity in <span>UK</span> higher
+education geography</em> [Research report]. Royal Geographical Society
+(with IBG). <a href="https://www.rgs.org/research/higher-education-resources/states-of-precarity-in-uk-higher-education-geography">https://www.rgs.org/research/higher-education-resources/states-of-precarity-in-uk-higher-education-geography</a>
+</div>
+<div id="ref-stadler2024" class="csl-entry" role="listitem">
+Stadler, M., Bannert, M., and Sailer, M. (2024). Cognitive ease at a
+cost: <span>LLMs</span> reduce mental effort but compromise depth in
+student scientific inquiry. <em>Computers in Human Behavior</em>,
+<em>160</em>, 108386. <a href="https://doi.org/10.1016/j.chb.2024.108386">https://doi.org/10.1016/j.chb.2024.108386</a>
+</div>
+<div id="ref-stanley2018" class="csl-entry" role="listitem">
+Stanley, J. (2018). <em>How fascism works: The politics of us and
+them</em>. Random House.
+</div>
+<div id="ref-steiner2024" class="csl-entry" role="listitem">
+Steiner, A. (2024). BookTok reading practices: Intensive and extensive
+reading. <em>Participations: Journal of Audience and Reception
+Studies</em>, <em>21</em>(2).
+</div>
+<div id="ref-susskind2022-professions" class="csl-entry" role="listitem">
+Susskind, R., and Susskind, D. (2022). <em>The future of the
+professions: How technology will transform the work of human
+experts</em> (Updated). Oxford University Press.
+</div>
+<div id="ref-guardian2024self" class="csl-entry" role="listitem">
+The Guardian. (2024). <span>“Self-defeating”</span>: Senior tories warn
+sunak against clampdown on international students. <em>The
+Guardian</em>. <a href="https://www.theguardian.com/education/article/2024/may/11/self-defeating-senior-tories-warn-sunak-against-clampdown-on-international-students">https://www.theguardian.com/education/article/2024/may/11/self-defeating-senior-tories-warn-sunak-against-clampdown-on-international-students</a>
+</div>
+<div id="ref-trumpEO14179-2025" class="csl-entry" role="listitem">
+The White House. (2025a). <em>Executive order 14179: Removing barriers
+to american leadership in artificial intelligence</em>. Presidential
+Action. <a href="https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/">https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/</a>
+</div>
+<div id="ref-trumpEO2025-preemption" class="csl-entry" role="listitem">
+The White House. (2025b). <em>Executive order: Eliminating state law
+obstruction of national artificial intelligence policy</em>.
+Presidential Action. <a href="https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/">https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/</a>
+</div>
+<div id="ref-trujillo2022" class="csl-entry" role="listitem">
+Trujillo, K. L. (2022). Rural identity as a contributing factor to
+anti-intellectualism in the <span>US</span>. <em>Political
+Behavior</em>, <em>44</em>(3), 1509–1532. <a href="https://doi.org/10.1007/s11109-022-09770-w">https://doi.org/10.1007/s11109-022-09770-w</a>
+</div>
+<div id="ref-trujillo-trujillo2026" class="csl-entry" role="listitem">
+Trujillo, K. L., and Trujillo, M. (2026). What drives a contemporary
+lack of trust in government and science in the <span>U</span>nited
+<span>S</span>tates? <em>American Politics Research</em>. <a href="https://doi.org/10.1177/1532673X261443521">https://doi.org/10.1177/1532673X261443521</a>
+</div>
+<div id="ref-uk2025-ai-opportunities" class="csl-entry" role="listitem">
+UK Government, Department for Science, Innovation and Technology, and
+Clifford, M. (2025). <em><span>AI</span> opportunities action plan</em>.
+Policy paper, GOV.UK. <a href="https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan">https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan</a>
+</div>
+<div id="ref-unesco2013_creativeeconomy" class="csl-entry" role="listitem">
+UNESCO, and UNDP. (2013). <em>Creative economy report 2013: Widening
+local development pathways</em>. United Nations Development Programme.
+<a href="https://www.unesco.org/creativity/sites/creativity/files/cerc2013.pdf">https://www.unesco.org/creativity/sites/creativity/files/cerc2013.pdf</a>
+</div>
+<div id="ref-uk-funding2025" class="csl-entry" role="listitem">
+University and College Union. (2025). <em>Stop the cuts: Fund higher
+education NOW!</em> <a href="https://www.ucu.org.uk/stopthecutscampaign">https://www.ucu.org.uk/stopthecutscampaign</a>
+</div>
+<div id="ref-varoufakis2026" class="csl-entry" role="listitem">
+Varoufakis, Y. (2026). <em>Palantir and the new order: Neoliberalism is
+dead, say hello to techlordism</em>. The Point Magazine. <a href="https://thepoint.com.au/opinions/260422-palantir-and-the-new-order-neoliberalism-is-dead-say-hello-to-techlordism">https://thepoint.com.au/opinions/260422-palantir-and-the-new-order-neoliberalism-is-dead-say-hello-to-techlordism</a>
+</div>
+<div id="ref-vdem2025" class="csl-entry" role="listitem">
+V-Dem Institute. (2025). <em>Democracy report 2025</em>. V-Dem
+Institute.
+</div>
+<div id="ref-veliz2020" class="csl-entry" role="listitem">
+Véliz, C. (2020). <em>Privacy is power: Why and how you should take back
+control of your data</em>. Bantam Press.
+</div>
+<div id="ref-veliz2024oxford" class="csl-entry" role="listitem">
+Véliz, C. (Ed.). (2024). <em>The oxford handbook of digital ethics</em>
+(1st ed.). Oxford University Press.
+</div>
+<div id="ref-VerbeekZaslove2024" class="csl-entry" role="listitem">
+Verbeek, B., and Zaslove, A. (2024). Waking the sleeping populist giant:
+The 2024 european elections and populism in the netherlands. In G.
+Ivaldi and E. Zankina (Eds.), <em>2024 EP elections under the shadow of
+rising populism</em>. European Center for Populism Studies (ECPS). <a href="https://doi.org/10.55271/rp0086">https://doi.org/10.55271/rp0086</a>
+</div>
+<div id="ref-WOLA2025LosAngeles" class="csl-entry" role="listitem">
+Washington Office on Latin America. (2025, June 12). <em>The
+<span>Trump</span> administration’s unprecedented military deployment in
+<span>Los Angeles</span> echoes the overreach we’ve long opposed in
+<span>Latin America</span></em>. <a href="https://www.wola.org/analysis/military-los-angeles-protests/">https://www.wola.org/analysis/military-los-angeles-protests/</a>
+</div>
+<div id="ref-watt2016" class="csl-entry" role="listitem">
+Watt, P., and Minton, A. (2016). <span class="nocase">London’s</span>
+housing crisis and its activisms. <em>City</em>, <em>20</em>(2),
+204–221. <a href="https://doi.org/10.1080/13604813.2016.1151707">https://doi.org/10.1080/13604813.2016.1151707</a>
+</div>
+<div id="ref-whitfield2019" class="csl-entry" role="listitem">
+Whitfield, S. (2019). From <span>M</span>c<span>C</span>arthy to
+<span>T</span>rump. <em>Society</em>.
+</div>
+<div id="ref-williams2018" class="csl-entry" role="listitem">
+Williams, J. (2018). <em>Stand out of our light: Freedom and resistance
+in the attention economy</em>. Cambridge University Press.
+</div>
+<div id="ref-ft2025musk" class="csl-entry" role="listitem">
+Williams, R., and Sevastopulo, D. (2025). Elon musk backs trump’s AI
+agenda as xAI positions itself as preferred white house partner.
+<em>Financial Times</em>. <a href="https://www.ft.com">https://www.ft.com</a>
+</div>
+<div id="ref-wolf2018" class="csl-entry" role="listitem">
+Wolf, M. (2018). <em>Reader, come home: The reading brain in a digital
+world</em>. Harper.
+</div>
+<div id="ref-wu2016" class="csl-entry" role="listitem">
+Wu, T. (2016). <em>The attention merchants: The epic scramble to get
+inside our heads</em>. Knopf.
+</div>
+<div id="ref-xiang2024vocational" class="csl-entry" role="listitem">
+Xiang, N., and Chiu, S. W.-K. (2024). Senior-secondary vocational
+tracking and socio-economic inequality in student educational
+performance: Evidence from the <span>Taiwan</span>
+<span>Education</span> <span>Panel</span> <span>Survey</span>.
+<em>Oxford Review of Education</em>, <em>52</em>(1), 39–56. <a href="https://doi.org/10.1080/03054985.2024.2422100">https://doi.org/10.1080/03054985.2024.2422100</a>
+</div>
+<div id="ref-yeung2017" class="csl-entry" role="listitem">
+Yeung, K. (2017). Algorithmic regulation: A critical interrogation. In
+<em>The oxford handbook of law, regulation and technology</em>. Oxford
+University Press.
+</div>
+<div id="ref-zarifa2026structural" class="csl-entry" role="listitem">
+Zarifa, D., Pizarro Milian, R., and Davies, S. (2026). Structural
+stratification of universities in 22 <span>OECD</span> countries:
+Shapes, variations, and drivers of inequalities. <em>Comparative
+Education Review</em>, <em>70</em>(1), 137–169. <a href="https://doi.org/10.1086/739179">https://doi.org/10.1086/739179</a>
+</div>
+<div id="ref-zhang2021" class="csl-entry" role="listitem">
+Zhang, W. (2021). Politicizing fashion: Inconspicuous consumption and
+anti-intellectualism during the cultural revolution in china.
+<em>Journal of Consumer Culture</em>, <em>21</em>(4), 950–966. <a href="https://doi.org/10.1177/1469540519889989">https://doi.org/10.1177/1469540519889989</a>
+</div>
+<div id="ref-zolides2022" class="csl-entry" role="listitem">
+Zolides, A. (2022). <span>“<span class="nocase">Don’t</span>
+<span>Fauci</span> my <span>Florida</span>”</span>:
+Anti-<span>Fauci</span> memes as digital anti-intellectualism. <em>Media
+and Communication</em>, <em>10</em>(4).
+</div>
+<div id="ref-zuboff2019" class="csl-entry" role="listitem">
+Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for
+a human future at the new frontier of power</em>. PublicAffairs.
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./08-conclusion.html" class="pagination-link" aria-label="Conclusion: Leaving the Mausoleum">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion: Leaving the Mausoleum</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./A-methodology.html" class="pagination-link" aria-label="Methodological Note">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Methodological Note</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

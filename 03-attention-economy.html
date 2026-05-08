@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; The Attention Economy and the Displacement of Public Reason – Brains as Brand</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./04-performative-intellectualism.html" rel="next">
+<link href="./02-authoritarian-moment.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-aeb32cb3453d7d606b6c0a50f15f0871.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d7bb2a7abcc71ede1f4a44f14a5ae606.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+  /* Iconos CC inline: heredan color del texto, sin filter trick */
+  .cc-license-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+  .cc-license-link svg {
+    height: 1.2em;
+    width: 1.2em;
+    fill: currentColor;
+  }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+// Solo en la página principal del libro
+const path = window.location.pathname;
+const isIndex = path.endsWith("/") || 
+        path.endsWith("/index.html") || 
+        path === "/index.html";
+        if (!isIndex) return;
+        
+const meta = document.querySelector(".quarto-title-meta");
+if (!meta) return;
+
+  // ---------- 1. Bloque de autores en dos columnas ----------
+  const authors = document.querySelectorAll(".quarto-title-author");
+  if (authors.length > 0) {
+    const dateEl = document.querySelector(".quarto-title-date");
+    const dateText = dateEl ? dateEl.textContent.trim() : "";
+
+    const block = document.createElement("div");
+    block.className = "author-block";
+    const left  = document.createElement("div"); left.className  = "author-col";
+    const right = document.createElement("div"); right.className = "author-col";
+
+    authors.forEach((author, i) => {
+      const col   = (i % 2 === 0) ? left : right;
+      const entry = document.createElement("div");
+      entry.className = "author-entry";
+
+      const name = document.createElement("div");
+      name.className = "author-name";
+      name.textContent = author.textContent.trim();
+      entry.appendChild(name);
+
+      ["role", "affiliation", "note"].forEach(attr => {
+        const value = author.getAttribute("data-author-" + attr);
+        if (value) {
+          const div = document.createElement("div");
+          div.className = "author-" + attr;
+          div.textContent = value;
+          entry.appendChild(div);
+        }
+      });
+
+      if (dateText) {
+        const dateDiv = document.createElement("div");
+        dateDiv.className = "author-date";
+        dateDiv.textContent = dateText;
+        entry.appendChild(dateDiv);
+      }
+
+      col.appendChild(entry);
+    });
+
+    block.appendChild(left);
+    block.appendChild(right);
+    meta.appendChild(block);
+  }
+
+  // ---------- 2. Entrada de licencia con SVG inline ----------
+  // SVG inline con fill=currentColor → adapta a tema claro/oscuro
+  // sin filter hack y sin dependencias externas.
+  const licenseEntry = document.createElement("div");
+  licenseEntry.innerHTML = `
+    <div class="quarto-title-meta-heading">License</div>
+    <div class="quarto-title-meta-contents">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+         target="_blank" rel="license noopener"
+         class="cc-license-link"
+         aria-label="CC BY-NC-SA 4.0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">CC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">BY</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">NC</text></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="15.5" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700">SA</text></svg>
+        <span style="margin-left:0.2em;">4.0</span>
+      </a>
+    </div>
+  `;
+  meta.appendChild(licenseEntry);
+});
+</script>
+
+
+</head>
+
+<body class="nav-sidebar floating slimcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const darkModeDefault = authorPrefersDark;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-genealogy.html">Part I — The Political Crisis of Public Reason</a></li><li class="breadcrumb-item"><a href="./03-attention-economy.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Brains as Brand</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction: The Mausoleum of the Mind</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I — The Political Crisis of Public Reason</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-genealogy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Short Genealogy of Anti-Intellectualism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-authoritarian-moment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-attention-economy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II — The Cultural Recoding of Intellect</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-performative-intellectualism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Performative Intellectualism: From BookTok to the Bottega Catwalk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-cultural-capital-gender.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Cultural Capital, Gender and the Marketisation of Intellect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-ai-cognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI and the Automation of Intellectual Labour</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III — Reconstruction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-education-battleground.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Education as Battleground: Universities, Schools, and the Politics of Curiosity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Conclusion: Leaving the Mausoleum</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A-methodology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Methodological Note</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./B-corpus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Corpus of Cultural Artefacts Examined</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C-chronology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Chronology of Principal Events, 2016–2026</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-three-theses" id="toc-sec-three-theses" class="nav-link active" data-scroll-target="#sec-three-theses"><span class="header-section-number">3.1</span> Three theses on attention</a>
+  <ul class="collapse">
+  <li><a href="#thesis-1-attention-is-constitutively-scarce-and-deliberation-requires-it-in-non-fungible-quantities" id="toc-thesis-1-attention-is-constitutively-scarce-and-deliberation-requires-it-in-non-fungible-quantities" class="nav-link" data-scroll-target="#thesis-1-attention-is-constitutively-scarce-and-deliberation-requires-it-in-non-fungible-quantities">Thesis 1 — Attention is constitutively scarce, and deliberation requires it in non-fungible quantities</a></li>
+  <li><a href="#thesis-2-platform-business-models-are-structurally-engineered-to-extract-attention-as-a-commodity" id="toc-thesis-2-platform-business-models-are-structurally-engineered-to-extract-attention-as-a-commodity" class="nav-link" data-scroll-target="#thesis-2-platform-business-models-are-structurally-engineered-to-extract-attention-as-a-commodity">Thesis 2 — Platform business models are structurally engineered to extract attention as a commodity</a></li>
+  <li><a href="#thesis-3-the-result-is-not-stupidity-but-disorientation" id="toc-thesis-3-the-result-is-not-stupidity-but-disorientation" class="nav-link" data-scroll-target="#thesis-3-the-result-is-not-stupidity-but-disorientation">Thesis 3 — The result is not stupidity but disorientation</a></li>
+  </ul></li>
+  <li><a href="#sec-attention-socialisation" id="toc-sec-attention-socialisation" class="nav-link" data-scroll-target="#sec-attention-socialisation"><span class="header-section-number">3.2</span> Attention from cradle to classroom: socialisation as infrastructure</a>
+  <ul class="collapse">
+  <li><a href="#from-the-google-effect-to-cognitive-surrender" id="toc-from-the-google-effect-to-cognitive-surrender" class="nav-link" data-scroll-target="#from-the-google-effect-to-cognitive-surrender"><span class="header-section-number">3.2.1</span> From the Google effect to cognitive surrender</a></li>
+  <li><a href="#reading-as-politically-consequential-capacity" id="toc-reading-as-politically-consequential-capacity" class="nav-link" data-scroll-target="#reading-as-politically-consequential-capacity"><span class="header-section-number">3.2.2</span> Reading as politically consequential capacity</a></li>
+  <li><a href="#the-pedagogical-front" id="toc-the-pedagogical-front" class="nav-link" data-scroll-target="#the-pedagogical-front"><span class="header-section-number">3.2.3</span> The pedagogical front</a></li>
+  <li><a href="#a-pedagogical-complication" id="toc-a-pedagogical-complication" class="nav-link" data-scroll-target="#a-pedagogical-complication"><span class="header-section-number">3.2.4</span> A pedagogical complication</a></li>
+  </ul></li>
+  <li><a href="#sec-gatekeeping" id="toc-sec-gatekeeping" class="nav-link" data-scroll-target="#sec-gatekeeping"><span class="header-section-number">3.3</span> The dismantling of gatekeeping</a>
+  <ul class="collapse">
+  <li><a href="#the-collapse-of-the-institutional-middle" id="toc-the-collapse-of-the-institutional-middle" class="nav-link" data-scroll-target="#the-collapse-of-the-institutional-middle"><span class="header-section-number">3.3.1</span> The collapse of the institutional middle</a></li>
+  <li><a href="#the-2025-acceleration" id="toc-the-2025-acceleration" class="nav-link" data-scroll-target="#the-2025-acceleration"><span class="header-section-number">3.3.2</span> The 2025 acceleration</a></li>
+  </ul></li>
+  <li><a href="#sec-dual-extraction" id="toc-sec-dual-extraction" class="nav-link" data-scroll-target="#sec-dual-extraction"><span class="header-section-number">3.4</span> Privacy, surveillance and the public sphere: the dual extraction</a>
+  <ul class="collapse">
+  <li><a href="#privacy-as-democratic-infrastructure" id="toc-privacy-as-democratic-infrastructure" class="nav-link" data-scroll-target="#privacy-as-democratic-infrastructure"><span class="header-section-number">3.4.1</span> Privacy as democratic infrastructure</a></li>
+  <li><a href="#racialised-surveillance-and-the-geography-of-harm" id="toc-racialised-surveillance-and-the-geography-of-harm" class="nav-link" data-scroll-target="#racialised-surveillance-and-the-geography-of-harm"><span class="header-section-number">3.4.2</span> Racialised surveillance and the geography of harm</a></li>
+  <li><a href="#algorithmic-discourse-as-governance-the-palantir-moment" id="toc-algorithmic-discourse-as-governance-the-palantir-moment" class="nav-link" data-scroll-target="#algorithmic-discourse-as-governance-the-palantir-moment"><span class="header-section-number">3.4.3</span> Algorithmic discourse as governance: the Palantir moment</a></li>
+  </ul></li>
+  <li><a href="#sec-public-reason-conditions" id="toc-sec-public-reason-conditions" class="nav-link" data-scroll-target="#sec-public-reason-conditions"><span class="header-section-number">3.5</span> What public reason needs (and does not get)</a>
+  <ul class="collapse">
+  <li><a href="#three-requirements" id="toc-three-requirements" class="nav-link" data-scroll-target="#three-requirements"><span class="header-section-number">3.5.1</span> Three requirements</a></li>
+  <li><a href="#where-each-requirement-is-now-denied" id="toc-where-each-requirement-is-now-denied" class="nav-link" data-scroll-target="#where-each-requirement-is-now-denied"><span class="header-section-number">3.5.2</span> Where each requirement is now denied</a></li>
+  <li><a href="#what-can-be-done-that-is-compatible-with-public-reason" id="toc-what-can-be-done-that-is-compatible-with-public-reason" class="nav-link" data-scroll-target="#what-can-be-done-that-is-compatible-with-public-reason"><span class="header-section-number">3.5.3</span> What can be done that is compatible with public reason</a></li>
+  <li><a href="#the-pedagogical-complication-again" id="toc-the-pedagogical-complication-again" class="nav-link" data-scroll-target="#the-pedagogical-complication-again"><span class="header-section-number">3.5.4</span> The pedagogical complication, again</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-genealogy.html">Part I — The Political Crisis of Public Reason</a></li><li class="breadcrumb-item"><a href="./03-attention-economy.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-attention-economy" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Attention Economy and the Displacement of Public Reason</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The authoritarian assault analysed in <a href="02-authoritarian-moment.html" class="quarto-xref"><span>Chapter 2</span></a> is politically authored but technically conditioned. The attention-extractive platform economy — theorised by Zuboff, Williams, Citton, Wu and Hari <span class="citation" data-cites="zuboff2019 williams2018 citton2017 wu2016 hari2022">(<a href="references.html#ref-citton2017" role="doc-biblioref">Citton, 2017</a>; <a href="references.html#ref-hari2022" role="doc-biblioref">Hari, 2022</a>; <a href="references.html#ref-williams2018" role="doc-biblioref">Williams, 2018</a>; <a href="references.html#ref-wu2016" role="doc-biblioref">Wu, 2016</a>; <a href="references.html#ref-zuboff2019" role="doc-biblioref">Zuboff, 2019</a>)</span> but better understood, here, in the broader register of Cohen, Véliz, Nissenbaum and Coeckelbergh <span class="citation" data-cites="Cohen2019BetweenTruthPower veliz2020 Nissenbaum2010PrivacyContext coeckelbergh2022">(<a href="references.html#ref-coeckelbergh2022" role="doc-biblioref">Coeckelbergh, 2022</a>; <a href="references.html#ref-Cohen2019BetweenTruthPower" role="doc-biblioref">Cohen, 2019</a>; <a href="references.html#ref-Nissenbaum2010PrivacyContext" role="doc-biblioref">Nissenbaum, 2010</a>; <a href="references.html#ref-veliz2020" role="doc-biblioref">Véliz, 2020</a>)</span> — is not a passive backdrop to political anti-intellectualism but its <strong>constitutive technical infrastructure</strong>. Four sub-arguments:</p>
+<ol type="i">
+<li><p>The platform economy is structurally hostile to the practices — slow, error-correcting, peer-mediated, institutionally framed — that constitute public reason. That hostility begins in early socialisation, not in the adult information environment.</p></li>
+<li><p>Attention extraction and surveillance extraction are not separable business models but the two faces of the same political-economic order. The weakening of privacy and the cognitive disorientation of the public sphere are co-produced.</p></li>
+<li><p>The same economy provides the <strong>discursive vector</strong> along which authoritarian-populist mobilisation operates, <em>and</em> the <strong>commercial mechanism</strong> through which the platforms’ owners align with the regime they amplify. The recursion is well-documented and politically consequential.</p></li>
+<li><p>The same economy provides the channel through which, in Part II, intellect re-appears not as deliberative practice but as branded surface — on the only register the platforms permit to monetise.</p></li>
+</ol>
+<p>The argument is not technological-determinist. The platform economy is a political-economic order, not a fact of nature; it could have been built otherwise, and could yet be unbuilt or rebuilt. What is established here is the more limited but unavoidable claim that the attention economy is the <strong>medium</strong> in which the present crisis is metabolised — and that any account of political anti-intellectualism that brackets it is misspecified.</p>
+<hr>
+<section id="sec-three-theses" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-three-theses"><span class="header-section-number">3.1</span> Three theses on attention</h2>
+<section id="thesis-1-attention-is-constitutively-scarce-and-deliberation-requires-it-in-non-fungible-quantities" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="thesis-1-attention-is-constitutively-scarce-and-deliberation-requires-it-in-non-fungible-quantities">Thesis 1 — Attention is constitutively scarce, and deliberation requires it in non-fungible quantities</h3>
+<p>Following Citton <span class="citation" data-cites="citton2017">(<a href="references.html#ref-citton2017" role="doc-biblioref">Citton, 2017</a>)</span> and Wolf <span class="citation" data-cites="wolf2018">(<a href="references.html#ref-wolf2018" role="doc-biblioref">Wolf, 2018</a>)</span>, the cognitive operations characteristic of public reason — sustained reading, peer contestation, the slow construction of warranted belief, the revision of one’s own commitments under the pressure of better evidence — require attentional conditions that are sociologically distributed and culturally cultivated. They cannot be conjured on demand. They cannot be reproduced under conditions of constant interruption. They are, in Wolf’s phrase, <em>deep-reading capabilities</em>: not native equipment but acquired neuro-cognitive infrastructure that has to be built and then maintained.</p>
+<p>This is not a romantic claim about reading. It is a claim about the <em>temporal</em> conditions of inferential work: forming a justified belief on a politically consequential matter requires sustained contact with the relevant evidence, exposure to disconfirming arguments, time enough to revise. Each of those operations has a characteristic temporal grain, and that grain is incompatible with the millisecond-rate competitive bidding of attention markets. When the temporal substrate is removed, what remains is not a faster version of public reason but a different cognitive activity altogether — one that the rest of this chapter will characterise.</p>
+</section>
+<section id="thesis-2-platform-business-models-are-structurally-engineered-to-extract-attention-as-a-commodity" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="thesis-2-platform-business-models-are-structurally-engineered-to-extract-attention-as-a-commodity">Thesis 2 — Platform business models are structurally engineered to extract attention as a commodity</h3>
+<p>Drawing on Zuboff’s analysis of surveillance capitalism <span class="citation" data-cites="zuboff2019">(<a href="references.html#ref-zuboff2019" role="doc-biblioref">Zuboff, 2019</a>)</span>, Williams’s explicit indictment of the persuasion industry <span class="citation" data-cites="williams2018">(<a href="references.html#ref-williams2018" role="doc-biblioref">Williams, 2018</a>)</span>, and Cohen’s structural-legal account of informational capitalism <span class="citation" data-cites="Cohen2019BetweenTruthPower">(<a href="references.html#ref-Cohen2019BetweenTruthPower" role="doc-biblioref">Cohen, 2019</a>)</span>, the chapter takes as established that the dominant platform business model rewards affective intensity, novelty, in-group reinforcement and outrage at scales and rates that are constitutively incompatible with deliberative cognition. This is not a matter of the platforms <em>occasionally</em> hosting bad content. It is a matter of the optimisation function. The metric the system optimises <em>is</em> engagement; the content that maximises engagement <em>is</em> the affectively saturated, hierarchically polarised, low-deliberation material that the system therefore privileges by design <span class="citation" data-cites="gillespie2018">(<a href="references.html#ref-gillespie2018" role="doc-biblioref">Gillespie, 2018</a>)</span>.</p>
+<p>The point bears repeating because rebuttals to it routinely confuse the descriptive and the moral. To say the system is engineered to extract attention is not to say the engineers are wicked; it is to say that wickedness is unnecessary to the result. The business model produces the cognitive degradation as a by-product of its core operation. No conspiracy is required.</p>
+</section>
+<section id="thesis-3-the-result-is-not-stupidity-but-disorientation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="thesis-3-the-result-is-not-stupidity-but-disorientation">Thesis 3 — The result is not stupidity but disorientation</h3>
+<p>Picking up Harsin’s analysis of post-truth as a regime of <em>attention</em> rather than a regime of <em>truth</em> <span class="citation" data-cites="harsin2024">(<a href="references.html#ref-harsin2024" role="doc-biblioref">Harsin, 2024</a>)</span>, and Hadarics’s empirical work on authoritarianism’s biased perception of media freedom <span class="citation" data-cites="hadarics2025">(<a href="references.html#ref-hadarics2025" role="doc-biblioref">Hadarics, 2025</a>)</span>, the chapter argues that the platform-mediated public is not characterised by ignorance — it is over-informed — but by <em>epistemic disorientation</em>: the inability to coordinate justified belief across the politically relevant population. This is the political-cognitive condition under which competitive authoritarianism is electorally feasible. It is also the condition under which, as <a href="04-performative-intellectualism.html" class="quarto-xref"><span>Chapter 4</span></a> develops in detail, <em>being seen</em> to think becomes a more reliable signal of status than the thinking itself.</p>
+<p>The disorientation thesis carries important consequences for intervention. If the problem were stupidity, the remedy would be education in the older sense — more facts, better-credentialed sources, sharper fact-checks. The empirical record on fact-checking’s downstream electoral effects gives little ground for optimism in that register <span class="citation" data-cites="morelock2022">(<a href="references.html#ref-morelock2022" role="doc-biblioref">Morelock and Narita, 2022</a>)</span>. The disorientation thesis predicts what we observe: a public that is perfectly capable of identifying a falsehood when isolated, and yet unable to coordinate that capacity into stable, publicly shared, action-guiding beliefs. The damage is to the <strong>coordination function</strong> of the information ecosystem, not to individual cognitive capacity.</p>
+<hr>
+</section>
+</section>
+<section id="sec-attention-socialisation" class="level2 page-columns page-full" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-attention-socialisation"><span class="header-section-number">3.2</span> Attention from cradle to classroom: socialisation as infrastructure</h2>
+<p>A common move in attention-economy critique is to describe an adult information environment that <em>was</em> deliberative and <em>is now</em> distracted. That framing misses what is most consequential about the present moment, which is that the cohorts now entering political adulthood have never inhabited the prior environment. For them, the attention-extraction model is not a degradation of an inherited infrastructure; it is the infrastructure. This section argues that political anti-intellectualism’s deepest mechanism is not adult persuasion but the slow reshaping, across two decades of schooling-mediated socialisation, of the attentional habits on which deliberative citizenship depends.</p>
+<section id="from-the-google-effect-to-cognitive-surrender" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="from-the-google-effect-to-cognitive-surrender"><span class="header-section-number">3.2.1</span> From the Google effect to cognitive surrender</h3>
+<p>The point of departure is the well-established literature on <em>cognitive offloading</em>: the documented finding, going back to Sparrow’s so-called “Google effect” <span class="citation" data-cites="sparrow2011">(<a href="references.html#ref-sparrow2011" role="doc-biblioref">Sparrow et al., 2011</a>)</span>, that ready external retrieval of information predictably reduces intra-cranial encoding. The finding is robust, replicates, and is in itself neither surprising nor alarming. What has changed is the scope of the offloaded function. Where in 2011 the offloaded operation was recall, by the mid-2020s it is increasingly the inferential operation itself: not just “what was the date of the treaty” but “what should I think about this issue.”</p>
+<p>Recent neurophysiological work, while still under peer review, points sharply in one direction. In the MIT Media Lab study reported by Hogenboom <span class="citation" data-cites="hogenboom2026 kosmyna2025preprint">(<a href="references.html#ref-hogenboom2026" role="doc-biblioref">Hogenboom, 2026</a>; see also <a href="references.html#ref-kosmyna2025preprint" role="doc-biblioref">Kosmyna et al., 2025</a>)</span>, fifty-four students were asked to write short essays under three conditions: with ChatGPT, with search-engine access (AI summaries disabled), and without technology. The unaided group showed widespread cortical activation of the kind associated with creative and integrative work; the search-only group showed strong activity in visual-processing regions; the ChatGPT group showed up to a 55% reduction in overall brain activation. Crucially, four months later, when the ChatGPT group was asked to write again <em>without</em> the tool, their neural connectivity was lower than that of students who had been moved in the opposite direction. The effect, in other words, appears to persist beyond the immediate task.</p>
+<p>A separate study at the University of Pennsylvania, examining forecasting tasks, identified a behavioural pattern the authors labelled <em>cognitive surrender</em>: a tendency, in users of generative AI tools, to accept the system’s output with minimal scrutiny and to allow it to override their own intuition. The same broad pattern has now been documented outside the chatbot context. A multinational trial of AI-assisted colonoscopy found that endoscopists who had worked with the AI tool for three months were, after its withdrawal, measurably worse at spotting tumours unaided than they had been before <span class="citation" data-cites="hogenboom2026">(<a href="references.html#ref-hogenboom2026" role="doc-biblioref">Hogenboom, 2026</a>, citing the Lancet Gastroenterology study)</span>. Whatever one makes of the specific neural findings, the behavioural-skill finding is straightforward and corroborates the older deskilling literature: when cognitive operations are routinely delegated, the underlying capacity attenuates.</p>
+<p>The political reading of this evidence is not that AI tools “make people stupid.” The political reading is that whatever fraction of inferential work is delegated is not, during the time of delegation, being done by the human; and that capacities not exercised do not remain stable. For a population whose central political task is forming and revising warranted beliefs about contested public matters, the substitution of generative-AI inference for one’s own inference is not a private cognitive matter. It is an infrastructure-level change in the conditions of public reason.</p>
+</section>
+<section id="reading-as-politically-consequential-capacity" class="level3 page-columns page-full" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="reading-as-politically-consequential-capacity"><span class="header-section-number">3.2.2</span> Reading as politically consequential capacity</h3>
+<p>Reading is the most direct test case, because the relevant data covers a long enough period to register a trend and because reading captures, in a single bundle, the cognitive habits that deliberation draws on: sustained attention, hypothetical reasoning, perspective- taking, integration of new information into prior commitments <span class="citation" data-cites="wolf2018">(<a href="references.html#ref-wolf2018" role="doc-biblioref">Wolf, 2018</a>)</span>.</p>
+<p>The headline numbers — the long-running NEA series in the United States <span class="citation" data-cites="nea2025">(<a href="references.html#ref-nea2025" role="doc-biblioref">National Endowment for the Arts, 2025</a>)</span>, the Reading Agency UK figures <span class="citation" data-cites="readingagency2024">(<a href="references.html#ref-readingagency2024" role="doc-biblioref">Reading Agency, 2024</a>)</span>, the ENlit and Eurostat data for the European Union — show a slow, broadly consistent decline in the share of adults reading literary work for pleasure, with a marked acceleration among adolescents and young adults from the early 2010s onwards. The Cyberpsychology literature has begun to document the substitution effect at the behavioural level: not a decline in screen time but a structural reorientation of screen time away from text-extended formats and towards short-form video <span class="citation" data-cites="cyberpsychology2025">(<a href="references.html#ref-cyberpsychology2025" role="doc-biblioref">Cyberpsychology, Behavior, and Social Networking, 2025</a>)</span>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>PISA 2022 recorded across-OECD declines in reading proficiency of a magnitude not previously observed in the survey’s history. Roughly one in four fifteen-year-olds tested below the threshold the OECD considers minimal for participation in an information society. The cohort assessed had received much of its primary schooling under one-to-one device deployment.</p>
+</div></div><p>The widely-noticed 2024–2025 boom in Barnes &amp; Noble store openings, against this backdrop, is best read as a <em>nostalgia-commerce</em> phenomenon — bookshops as themed retail experience for a market that values the <em>signal</em> of reading more than its practice. The Dior tote bags emblazoned with the titles <em>Madame Bovary</em>, <em>Les Liaisons Dangereuses</em> and <em>Les Fleurs du Mal</em>, retailing in 2026 at around £2,400 <span class="citation" data-cites="cartnermorley2026">(<a href="references.html#ref-cartnermorley2026" role="doc-biblioref">Cartner-Morley, 2026</a>)</span>, are the same phenomenon legibly priced. We will return to this in Part II.</p>
+<p>What matters here is the prior question: why has the substitution happened? The answer cannot be that short-form video is more entertaining than reading, because that has always been true of short-form competitors. The answer is structural: short-form video is <em>engineered</em> to capture attention at the millisecond grain; literary text is engineered to reward attention at the multi-minute grain. In any environment in which both compete on equal terms for the same scarce resource, the millisecond-grain medium wins by design. The decline in reading is not a moral failing of the younger cohorts. It is the predictable behavioural output of a choice architecture they did not design and did not consent to.</p>
+</section>
+<section id="the-pedagogical-front" class="level3 page-columns page-full" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="the-pedagogical-front"><span class="header-section-number">3.2.3</span> The pedagogical front</h3>
+<p>This is the context for the recent multi-jurisdictional pedagogical debate over school phones, AI in classrooms, and the reduction of what curriculum reformers euphemistically call “memorisation load.”<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The substantive question — whether smartphones should be excluded from primary and secondary schooling, whether calculators-then-AI should be permitted in mathematics teaching, whether children should still learn poems by heart — is genuine. But the debate has been distorted by a misframing. Both techno-enthusiast and techno-pessimist positions tend to treat the question as whether the new tools are <em>cognitively useful</em>. That is the wrong question. The right question is whether the tools, when introduced at given developmental stages, are <em>compatible with the formation of the underlying capacities</em> on which their later intelligent use depends.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Between 2024 and 2026, Australian, EU and UK regulators independently concluded that something had gone seriously wrong with what platforms do to children. The platforms appealed, complied with the parts they could not appeal, and reported record advertising revenue.</p>
+</div></div><p>The empirical literature on cognitive offloading suggests an asymmetric pattern. Tools that offload routine retrieval <em>after</em> a domain has been mastered can free cognitive resources for higher- order operations. Tools that offload the same routine retrieval <em>before</em> the domain is mastered prevent the formation of the schemata into which higher-order operations would later be slotted. The same surface behaviour — the student looks up the answer — has opposite developmental implications depending on stage. The political consequence is that the children who are now eight or twelve years old, and whose primary cognitive tool from now on will be a generative AI assistant tuned for fluency, will be the twenty-somethings of the late 2030s. They are the cohort that democratic theorists used to call <em>the next deliberative public</em>.</p>
+<p>This is also where the imagery of <em>socialisation environment</em> matters. Children do not first form attention habits and then, separately, form political dispositions. They form both at once, in the same ecology, by participating in it. If that ecology is the algorithmic feed — the recursive loop of short video, push notification and parasocial micro-celebrity — then the political dispositions that emerge from it are not something added on top of an attention- neutral substrate. They are the dispositions appropriate to that substrate: low tolerance for sustained complexity, high responsiveness to affective intensity, and a default trust in fluent self-presentation as a marker of competence. These dispositions are not random. They are the dispositions that competitive authoritarianism’s electoral machinery, on the platforms it inhabits, can reliably mobilise <span class="citation" data-cites="hadarics2025">(<a href="references.html#ref-hadarics2025" role="doc-biblioref">Hadarics, 2025</a>)</span>.</p>
+</section>
+<section id="a-pedagogical-complication" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="a-pedagogical-complication"><span class="header-section-number">3.2.4</span> A pedagogical complication</h3>
+<p>Before this argument is taken in a direction it cannot bear, an important complication. Holt’s recent paper on academic freedom <span class="citation" data-cites="holt2025">(<a href="references.html#ref-holt2025" role="doc-biblioref">Holt, 2025</a>)</span> makes a point that the argument here accepts and that later chapters will revisit. <em>Both</em> intellectualism and anti-intellectualism, Holt argues, can act as fear-generators that narrow the space of teachable disagreement. A pedagogy that insists on its own rationalism as the signature of correctness, that signals to students which conclusions are admissible, and that treats every classroom dispute as a test of cognitive virtue, produces its own form of constriction — one that the older anti-intellectual critique, however ungenerously, was sometimes registering.</p>
+<p>The diagnostic point of this chapter is therefore narrower than a defence of <em>the</em> university or <em>the</em> classroom against distraction. It is an argument about the conditions under which <em>public reason</em> in any of its plausible forms — agonistic, deliberative, communitarian, pragmatist — can be sustained. Those conditions include sustained attention. They also include, on every plausible account, room for substantive disagreement that is not pre-resolved by procedural orthodoxy. Both can be lost: the first to the platform economy, the second to the over-policed defensive posture that the platform economy provokes in its more thoughtful adversaries.</p>
+<hr>
+</section>
+</section>
+<section id="sec-gatekeeping" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-gatekeeping"><span class="header-section-number">3.3</span> The dismantling of gatekeeping</h2>
+<p>A short historical-empirical section reconstructs the dismantling, in two decades, of the institutional gatekeeping infrastructure on which twentieth-century liberal democracies depended for their information supply. The argument acknowledges, with Fraser and Mouffe <span class="citation" data-cites="fraser2022 mouffe2018">(<a href="references.html#ref-fraser2022" role="doc-biblioref">Fraser, 2022</a>; <a href="references.html#ref-mouffe2018" role="doc-biblioref">Mouffe, 2018</a>)</span>, the legitimate critiques of that earlier infrastructure — monopolistic in ownership, gendered and racially exclusionary in staffing and editorial focus, uncritically deferential to state security narratives in ways the post-Iraq decade catalogued. The point of the section is not to romanticise the prior arrangement. It is to show that what has <em>replaced</em> it is not a more democratic alternative. It is an infrastructure of engagement extraction under private monopoly control, with substantively worse properties on every dimension that matters for public reason.</p>
+<section id="the-collapse-of-the-institutional-middle" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="the-collapse-of-the-institutional-middle"><span class="header-section-number">3.3.1</span> The collapse of the institutional middle</h3>
+<p>The empirical anchors are by now familiar but worth assembling in one place. The collapse of US local newspapers <span class="citation" data-cites="abernathy2024">(<a href="references.html#ref-abernathy2024" role="doc-biblioref">Abernathy, 2024</a>)</span>; the financialisation and gutting of the British regional press; the <em>Washington Post</em> episode of late 2024 and what it inaugurated; the documented decline in literary reading in the anglophone world. The common thread is not the disappearance of journalism as such but the disappearance of the <em>intermediate</em> institutions: those of sufficient size to fund investigative work, of sufficient independence to publish it, and of sufficient territorial proximity to know what their readers needed to know.</p>
+<p>That middle layer was where most of the actual work of the older public sphere happened. Its replacement is twofold. At the local level, the void has been filled by partisan content farms and by algorithmic content distribution that simulates the form of local journalism without its substance. At the national level, the void has been filled by what the platform economy permits to exist: a small number of high-circulation outlets owned by individuals or families with substantial commercial and political stakes elsewhere, and a long tail of personal-brand journalism on Substack and similar platforms.</p>
+</section>
+<section id="the-2025-acceleration" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="the-2025-acceleration"><span class="header-section-number">3.3.2</span> The 2025 acceleration</h3>
+<p>The standard treatment dates this transformation to the 2010s and treats the current moment as its continuation. The current moment is, on the available evidence, qualitatively different. Levitsky, Way and Ziblatt’s December 2025 analysis <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span> documents, in real time, the consolidation of US legacy media in pro-regime hands. Skydance Media’s acquisition of Paramount, with the Federal Communications Commission’s approval, gave the Ellison family control of CBS, whose subsequent rightward editorial shift was neither coincidental nor concealed. The Ellisons have moved to acquire Warner Bros.&nbsp;Discovery (which owns CNN) and a US version of TikTok. Fox News and X are already in the hands of openly pro-administration owners. CBS cancelled the late-night programme of a prominent administration critic and tightened editorial control over its flagship news programme; <em>The Washington Post</em> shifted its editorial line markedly to the right; Condé Nast gutted <em>Teen Vogue</em>’s political reporting <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span>.</p>
+<p>The pattern is recognisable from the comparative literature on competitive authoritarianism <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span>. The Hungarian template under Orbán — in which control of the country’s most-read news website <em>Origo</em> was transferred via licensing pressure and government contracts to a politically allied private company, and similar manoeuvres extended to over five hundred Hungarian outlets — is now running, mutatis mutandis, in the United States. The point is not analogy. The point is that the <em>combination</em> of platform-mediated discourse and pro-regime ownership of the legacy commanding heights is a recognised authoritarian-consolidation mechanism, with documented political consequences in multiple jurisdictions.</p>
+<p>The reflexive rebuttal — <em>but the dissident voices are still online</em> — misses how the mechanism works. Authoritarian-tilted attention infrastructures do not need to silence dissent. They need only to ensure that the dissenting message is reliably outcompeted, in the relevant attention markets, by the regime-aligned message. The phenomenon Levitsky, Way and Ziblatt document of widespread self-censorship by donors, law firms, universities, business leaders and individual journalists <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span> is downstream of this: when the costs of speaking are observably high and the rewards are observably low, people stop speaking. The Murkowski formulation quoted in their analysis — the senator’s open admission that she and her colleagues are routinely afraid to use their voices — is a data point about the cumulative effect of the infrastructure described in this chapter, not an isolated political anecdote.</p>
+<hr>
+</section>
+</section>
+<section id="sec-dual-extraction" class="level2 page-columns page-full" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-dual-extraction"><span class="header-section-number">3.4</span> Privacy, surveillance and the public sphere: the dual extraction</h2>
+<p>The literature on the attention economy and the literature on surveillance capitalism are usually treated as adjacent but distinct. Treating them separately is a mistake. They describe two moments of the same political-economic process, and the political consequences are unintelligible if either is bracketed.</p>
+<section id="privacy-as-democratic-infrastructure" class="level3 page-columns page-full" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="privacy-as-democratic-infrastructure"><span class="header-section-number">3.4.1</span> Privacy as democratic infrastructure</h3>
+<p>The argument runs as follows. Attention extraction at industrial scale requires information about the targets of the extraction: which content captures which user, at what time of day, in which emotional state, in response to which preceding stimulus. That information is <em>personal data</em>. The platform economy’s revenue model is therefore not merely an attention-extraction model; it is, as Cohen <span class="citation" data-cites="Cohen2019BetweenTruthPower">(<a href="references.html#ref-Cohen2019BetweenTruthPower" role="doc-biblioref">Cohen, 2019</a>)</span> and Véliz <span class="citation" data-cites="veliz2020">(<a href="references.html#ref-veliz2020" role="doc-biblioref">Véliz, 2020</a>)</span> have insisted, a data-extraction model in which attention is the proximate output and behavioural prediction is the deeper one. To weaken privacy is, in this register, to enable the very mechanism by which attention is captured at scale. To enable that mechanism is to cede control of the informational substrate of the public sphere. The two erosions are not adjacent; they are the same process described at different levels of abstraction.</p>
+<p>The argument I developed in the wake of the Cambridge Analytica revelations of 2017–2018 <span class="citation" data-cites="moreno2018">(<a href="references.html#ref-moreno2018" role="doc-biblioref">Moreno Muñoz, 2018</a>)</span> has, I think, aged well, and forms a direct antecedent to the case made here. The starting observation was mundane: liberal democracies face the challenge of protecting privacy in a sociotechnical context characterised by general-purpose access to information technologies and digital platforms of mediated interaction. The <em>positive</em> face of that access — new spaces for civic activism, accountability, political participation — is real and should be defended. Its <em>counter-face</em>, however, is the gradual attenuation of privacy beyond any defensible threshold: a process in which consumers nominally trade personal data for free services and small discounts, in which both unambiguously totalitarian states and security-prioritising democracies enthusiastically exploit the resulting infrastructures of hyper-surveillance, and in which the framework conditions for informed political deliberation are quietly dismantled. I argued then, and develop the case at greater length here, that the Cambridge Analytica episode should be read in this light: not as an isolated electoral scandal but as the public-relations crystallisation of an architecture that was already in place and remains in place. What that episode made visible was the <em>electoral operationalisation</em> of the dual-extraction model: targeted attention capture, calibrated by extracted behavioural data, deployed against named individuals at the moment their political deliberation was most plastic. The architecture has not been retired. It has been normalised — and the eight years since have furnished considerably more evidence for the diagnosis than against it.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Mark Zuckerberg apologised to the U.S. Senate for Cambridge Analytica in April 2018, pledging reform. The data-extraction architecture under discussion had been in operation since around 2010. By 2026 it remained, and was the industry standard.</p>
+</div></div><p>Nissenbaum’s framework of <em>contextual integrity</em> <span class="citation" data-cites="Nissenbaum2010PrivacyContext">(<a href="references.html#ref-Nissenbaum2010PrivacyContext" role="doc-biblioref">Nissenbaum, 2010</a>)</span> allows us to be more precise about what is wrong here. Privacy, on this account, is not a matter of secrecy in the abstract; it is a matter of information flowing in accordance with norms appropriate to its context. When a piece of behavioural data harvested in one context (say, a search query about a child’s medical symptoms) is re-deployed in another context (say, a political-ad-targeting inference about the user’s likely vote), what has been violated is not a private space but a <em>contextual norm</em>. The public sphere has specific contextual norms of its own — the norms of public argument, of contestable claims, of attribution and accountability — and the dual-extraction architecture systematically violates them. To defend privacy in this register is to defend the integrity of those norms, which is to say, to defend the public sphere itself.</p>
+<p>The implications for democratic theory have been worked out forcefully by Cohen <span class="citation" data-cites="Cohen2019BetweenTruthPower">(<a href="references.html#ref-Cohen2019BetweenTruthPower" role="doc-biblioref">Cohen, 2019</a>)</span> and Véliz <span class="citation" data-cites="veliz2020">(<a href="references.html#ref-veliz2020" role="doc-biblioref">Véliz, 2020</a>)</span>. Privacy is not a luxury good for the affluent and the paranoid. It is an infrastructural condition for the formation of the kind of politically agentic subject that liberal-democratic theory has always presupposed. A subject whose every behavioural trace is legible to commercial and state actors, whose political dispositions can be predicted in advance and pre-empted by tailored interventions, is not the deliberating citizen of either Habermas’s or Mouffe’s reconstructions of democratic politics. That subject is the <em>predictable consumer</em> of informational capitalism. The two theoretical lineages disagree on much else but converge on this: informational asymmetries between platform and user constitute a form of structural power, and structural power left ungoverned generates domination <span class="citation" data-cites="Cohen2019BetweenTruthPower coeckelbergh2022">(<a href="references.html#ref-coeckelbergh2022" role="doc-biblioref">Coeckelbergh, 2022</a>; <a href="references.html#ref-Cohen2019BetweenTruthPower" role="doc-biblioref">Cohen, 2019</a>)</span>.</p>
+</section>
+<section id="racialised-surveillance-and-the-geography-of-harm" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="racialised-surveillance-and-the-geography-of-harm"><span class="header-section-number">3.4.2</span> Racialised surveillance and the geography of harm</h3>
+<p>The dual-extraction model is not evenly distributed. Browne’s <em>Dark Matters</em> <span class="citation" data-cites="Browne2015DarkMatters">(<a href="references.html#ref-Browne2015DarkMatters" role="doc-biblioref">Browne, 2015</a>)</span>, Benjamin’s <em>Race After Technology</em> <span class="citation" data-cites="Benjamin2019RaceAfterTechnology">(<a href="references.html#ref-Benjamin2019RaceAfterTechnology" role="doc-biblioref">Benjamin, 2019</a>)</span> and Eubanks’s <em>Automating Inequality</em> <span class="citation" data-cites="eubanks2018">(<a href="references.html#ref-eubanks2018" role="doc-biblioref">Eubanks, 2018</a>)</span> have demonstrated, with case-level specificity, that the burden of algorithmic surveillance falls disproportionately on already marginalised populations. The pattern is consistent enough that it cannot be coded as a series of bugs. Surveillance technologies deployed in welfare administration, predictive policing, immigration enforcement and credit scoring systematically reproduce, and in many cases amplify, existing patterns of racial, class and gender subordination. The Dencik et al.&nbsp;<em>Data Justice</em> programme <span class="citation" data-cites="dencik2022">(<a href="references.html#ref-dencik2022" role="doc-biblioref">Dencik et al., 2022</a>)</span> has consolidated this work into a broader normative framework in which the question is no longer “is privacy violated?” but “are the harms of informational extraction justly distributed?”. For the argument of this chapter, the implication is that the political effects of attention-and-surveillance capitalism include a <em>differential</em> compromise of the public sphere: the populations whose participation public reason most needs are precisely those most exposed to the intimidating, sorting and predictive functions of the infrastructure.</p>
+</section>
+<section id="algorithmic-discourse-as-governance-the-palantir-moment" class="level3 page-columns page-full" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="algorithmic-discourse-as-governance-the-palantir-moment"><span class="header-section-number">3.4.3</span> Algorithmic discourse as governance: the Palantir moment</h3>
+<p>Drawing on Akbari’s <em>digital authoritarianism</em> framework <span class="citation" data-cites="akbari2025">(<a href="references.html#ref-akbari2025" role="doc-biblioref">Akbari, 2025</a>)</span> and Dean’s analysis of <em>neofeudalising</em> communicative capitalism <span class="citation" data-cites="dean2024">(<a href="references.html#ref-dean2024" role="doc-biblioref">Dean, 2024</a>)</span>, the chapter then argues that the platform economy is not merely commercial but governmental: it shapes the horizon of the politically thinkable. Two extended examples make this concrete.</p>
+<p>The first is the role of X under its current ownership as a politically aligned amplifier of the second Trump administration’s preferred narratives. The recursive loop is by now well-documented: algorithmic amplification generates electoral mandate; electoral mandate licenses regulatory withdrawal from platforms; regulatory withdrawal entrenches algorithmic amplification. The point is not that the platform owner is unusually ideological — although the ownership-change-induced moderation collapse is by this point empirically established — but that the <em>ownership-aligned platform</em> is the characteristic governance form of competitive authoritarianism in its platform-symbiotic phase. It is what differentiates the 2025-and-after period from the 2016 Cambridge Analytica moment: the platform is no longer being instrumentalised against its owner’s preferences; the platform’s owner, the regime, and the extractive business model are now openly aligned <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span>.</p>
+<p>The second is the publication, in spring 2026, of the so-called Palantir manifesto: a twenty-two-point declaration by the company’s CEO Alex Karp, drawn from the trade book co-authored with Nicholas Zamiska <span class="citation" data-cites="KarpZamiska2025Tech">(<a href="references.html#ref-KarpZamiska2025Tech" role="doc-biblioref">Karp and Zamiska, 2025</a>)</span>, which articulates more candidly than any recent corporate document the worldview of the Silicon Valley faction now openly aligned with the administration. The manifesto’s claims — that the post-war neutralisation of Germany and Japan should be reversed; that hard power must replace what it dismisses as theatrical pluralism; that the AI weapons era is the inheritor of the atomic deterrence era; that Silicon Valley owes the United States a moral debt to be repaid in defence contracts — speak for themselves <span class="citation" data-cites="gonzalez2026">(<a href="references.html#ref-gonzalez2026" role="doc-biblioref">Sérvulo González, 2026</a>)</span>. So does the response. Yanis Varoufakis’s characterisation of the document as the legitimating ideology of <em>technofeudalism</em> <span class="citation" data-cites="varoufakis2026">(<a href="references.html#ref-varoufakis2026" role="doc-biblioref">Varoufakis, 2026</a>)</span>, and Mark Coeckelbergh’s characterisation of it as <em>technofascism</em> <span class="citation" data-cites="coeckelbergh2026">(<a href="references.html#ref-coeckelbergh2026" role="doc-biblioref">Coeckelbergh, 2026b</a>)</span>, both register what is most arresting about it: that the document is a <em>manifesto</em>, not a marketing exercise, issued by a private firm deeply embedded in state surveillance and military targeting infrastructure <span class="citation" data-cites="coeckelbergh2026">(<a href="references.html#ref-coeckelbergh2026" role="doc-biblioref">Coeckelbergh, 2026b</a>)</span>. As Karpf observed, the demand underlying the rhetorical fireworks is straightforward: that the state should spend exceptional sums of money on Palantir’s products <span class="citation" data-cites="karpf2026">(<a href="references.html#ref-karpf2026" role="doc-biblioref">Karpf, 2026</a>)</span>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Palantir’s own X profile describes its mission as “software that dominates” <span class="citation" data-cites="coeckelbergh2026">(<a href="references.html#ref-coeckelbergh2026" role="doc-biblioref">Coeckelbergh, 2026b</a>)</span>. <em>What</em> it dominates is left to the customer.</p>
+</div></div><p>The reception evidence reinforces the structural reading. The longer- form book that the manifesto distils <span class="citation" data-cites="KarpZamiska2025Tech">(<a href="references.html#ref-KarpZamiska2025Tech" role="doc-biblioref">Karp and Zamiska, 2025</a>)</span> was published by Crown in early 2025 to warm reviews across the most prestigious anglophone outlets and a strikingly cohesive set of endorsements. The publisher’s promotional page, which is itself an artefact worth analysing for what it claims to constitute as consensus, presents the book as praised by the <em>Financial Times</em>, the <em>Wall Street Journal</em>, the <em>Washington Post</em>, <em>The New York Times Magazine</em>, the <em>Times Literary Supplement</em> and <em>The Times of London</em>, the last describing it as the manifesto inspiring the current British government <span class="citation" data-cites="techrepublicbook2026">(<a href="references.html#ref-techrepublicbook2026" role="doc-biblioref">Crown Currency, 2025--2026</a>)</span>. Niall Ferguson read the book as a stirring case for a new Manhattan Project for the AI age; Walter Isaacson read it as a rallying cry for renewed cooperation between the technology industry and government <span class="citation" data-cites="techrepublicbook2026">(<a href="references.html#ref-techrepublicbook2026" role="doc-biblioref">Crown Currency, 2025--2026</a>)</span>. The endorsement set extends across the recognisable defence-and-finance establishment (James Mattis, Anders Fogh Rasmussen, Jamie Dimon, Stanley Druckenmiller, Eric Schmidt), the popular-history wing of the public-intellectual class (Isaacson, Ferguson, David Ignatius), and the conservative-political-theory press (<em>Quillette</em>, <em>First Things</em>, <em>La Vanguardia</em>) <span class="citation" data-cites="techrepublicbook2026">(<a href="references.html#ref-techrepublicbook2026" role="doc-biblioref">Crown Currency, 2025--2026</a>)</span>. The pattern is recognisable enough to be diagnostic: the book was received in 2025, by reviewers credentialed in history, social theory and constitutional law in functioning liberal democracies, as a serious work of political theory.</p>
+<p>Read against the responses Coeckelbergh, Varoufakis and Karpf published a year later to the X-platform manifesto extracted from the same book by the same author, the asymmetry is striking. The underlying argument did not change in substance between the two documents; the medium and the framing did. The book’s three hundred pages of literary citation, corporate biography and Cold-War analogy were received as serious; the same worldview compressed into twenty-two declarative bullet points was identified, by less venue- prestigious readers operating outside the legacy reviewing infrastructure, as a manifesto whose lineage runs through Carl Schmitt rather than through liberal political theory <span class="citation" data-cites="coeckelbergh2026 coeckelbergh2026paper">(<a href="references.html#ref-coeckelbergh2026paper" role="doc-biblioref">Coeckelbergh, 2026a</a>, <a href="references.html#ref-coeckelbergh2026" role="doc-biblioref">2026b</a>)</span>. The competence asymmetry is not real — Coeckelbergh holds a chair in philosophy of media and technology at the University of Vienna and develops the technofascism framing in a peer-reviewed paper for <em>AI &amp; Society</em> <span class="citation" data-cites="coeckelbergh2026paper">(<a href="references.html#ref-coeckelbergh2026paper" role="doc-biblioref">Coeckelbergh, 2026a</a>)</span>; Varoufakis was Greece’s finance minister. What is real is the <em>venue and timing</em> asymmetry. The disorientation thesis (§3.1) predicts it. Prestige reviewing infrastructure now operates under the conditions this chapter has documented: financial dependence on the platform-capital ecosystems whose products it reviews, editorial compression by the contraction of slow time, optimisation for engagement-amenable framings of complex material. Under those conditions, an argument dispersed across a long-form trade book legibly tagged with the markers of <em>seriousness</em> (philosophy citations, historical analogies, cultivated self-presentation) is harder to identify than the same argument compressed into bullet-point form by the platform’s affordances. The book got the slow, prestigious, broadly favourable reading; the manifesto got the fast, marginal, accurate one. That is not a malfunction of public reason from below. It is a malfunction of public reason at the credentialing peak — and, as Coeckelbergh observes with some irony, the author at the centre of the case is one who studied critical theory under Habermas’s influence at Frankfurt and explicitly chose Schmitt’s intellectual register over Habermas’s <span class="citation" data-cites="coeckelbergh2026">(<a href="references.html#ref-coeckelbergh2026" role="doc-biblioref">Coeckelbergh, 2026b</a>)</span>. The intellectual formation of the parties most directly affected by the present condition — author and reviewers alike — did not insulate them from it. That fact is itself one of the most important data points the chapter has to offer.</p>
+<p>The wider significance of the moment, however, is not the manifesto itself. It is that it landed in the middle of an active intra-sector disagreement. In the same months, more than five hundred Google executives and employees signed an open letter to Sundar Pichai opposing the company’s expanded Pentagon work <span class="citation" data-cites="eldiario2026">(<a href="references.html#ref-eldiario2026" role="doc-biblioref">elDiario.es, 2026</a>)</span>; Anthropic refused certain categories of military application involving lethal autonomous weapons and mass surveillance and was briefly placed by the administration on a supply-chain blacklist before being quietly readmitted <span class="citation" data-cites="eldiario2026">(<a href="references.html#ref-eldiario2026" role="doc-biblioref">elDiario.es, 2026</a>)</span>; and several thousand technology workers protested Immigration and Customs Enforcement contracts. The point is not that Silicon Valley is internally fractured — it is, but that has been true for two decades. The point is that the <em>publicly visible</em> fault line now runs between firms aligned with the dual-extraction-and-hard-power model and firms attempting, on terms whose stability remains to be seen, to articulate ethical limits within it. The question of which faction wins is not a tech-industry question. It is a question about the medium in which the public sphere of the next decade will operate.</p>
+<hr>
+</section>
+</section>
+<section id="sec-public-reason-conditions" class="level2 page-columns page-full" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-public-reason-conditions"><span class="header-section-number">3.5</span> What public reason needs (and does not get)</h2>
+<p>The chapter closes by specifying, against the empirical analysis above, what <em>public reason</em> in the broadly Habermas–Rawlsian register, revised by Fraser, Mouffe and Honneth <span class="citation" data-cites="habermas2023 fraser2022 mouffe2018">(<a href="references.html#ref-fraser2022" role="doc-biblioref">Fraser, 2022</a>; <a href="references.html#ref-habermas2023" role="doc-biblioref">Habermas, 2023</a>; <a href="references.html#ref-mouffe2018" role="doc-biblioref">Mouffe, 2018</a>)</span>, would require under contemporary conditions. The specification is normative; the assessment is empirical; and the gap between them is the chapter’s diagnostic claim.</p>
+<section id="three-requirements" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="three-requirements"><span class="header-section-number">3.5.1</span> Three requirements</h3>
+<ol type="i">
+<li><p><em>Slow time.</em> Institutional spaces in which sustained, peer-reviewed, error-correcting inquiry can take place insulated from the imperatives of attention extraction. These are spaces with their own temporal grain: months for an investigative report, years for a peer-reviewed empirical claim, decades for a scientific consensus. Their epistemic productivity depends on their insulation from the millisecond markets.</p></li>
+<li><p><em>Shared epistemic ground.</em> Overlapping, even if contested, factual and methodological commitments across the politically relevant population. The standard worry — that “shared epistemic ground” smuggles in a substantive ideological consensus — is real but overdrawn. What is needed is not agreement on conclusions but agreement on the <em>kinds of moves</em> that count as inferential moves: that evidence is contestable but not arbitrary; that expertise is revisable but not interchangeable with confident assertion; that the question “how would I know if I were wrong?” is a legitimate question and not, as much of the platform-mediated discourse has re-coded it, a sign of weakness.</p></li>
+<li><p><em>Distributed access.</em> The conditions under which both producing and consuming public reason are not class privileges but publicly distributed capabilities. Concretely, this means stable, well-funded, locally embedded journalism; public-service broadcasters insulated from political-administrative pressure; accessible higher education with disciplinary autonomy; libraries and archives functioning as commons; and, increasingly, an analogous infrastructure for the digital information environment.</p></li>
+</ol>
+</section>
+<section id="where-each-requirement-is-now-denied" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="where-each-requirement-is-now-denied"><span class="header-section-number">3.5.2</span> Where each requirement is now denied</h3>
+<p>Slow time is being squeezed by a combination of three pressures: the platform-economic erosion of long-form journalism’s revenue base; the financialisation of academic publishing into engagement-style metrics <span class="citation" data-cites="diaz2021">(<a href="references.html#ref-diaz2021" role="doc-biblioref">Diaz, 2021</a>)</span>; and, most recently, the direct coercive defunding of research universities under the second Trump administration. The empirical record on the latter is now substantial. In its first year, the administration opened or cited as basis for funding-loss threats more than 150 investigations into US colleges; six universities, including Brown, Columbia, Cornell, Northwestern and Penn, have publicly settled with the administration to restore frozen funding; the Department of Justice paused multiple investigations into the University of Virginia conditional on the institution’s “completing its planned reforms prohibiting DEI” through 2028; the administration attempted to cap research overhead reimbursement rates at 15% across NIH, NSF, DoE and DoD before federal courts blocked the policies; and the proposed FY2026 budget sought a 21% cut to federal scientific research funding <span class="citation" data-cites="spitalniak2026">(<a href="references.html#ref-spitalniak2026" role="doc-biblioref">Spitalniak, 2026</a>)</span>. Whatever one’s view of the substantive policy disputes, the <em>infrastructural</em> effect is to shrink the spaces in which slow time can be insulated.</p>
+<p>Shared epistemic ground is denied by the very disorientation mechanism Thesis 3 describes. Hadarics <span class="citation" data-cites="hadarics2025">(<a href="references.html#ref-hadarics2025" role="doc-biblioref">Hadarics, 2025</a>)</span> documents, across multiple jurisdictions, that authoritarian-leaning populations consistently and systematically misperceive the freedom of their own media environment, in directions consistent with the political project they support. This is not a perceptual error to be corrected by better fact-checking. It is the epistemic-political output of the dual-extraction architecture acting on populations whose formation already proceeded through that architecture. The Zolides work on anti-Fauci memes <span class="citation" data-cites="zolides2022">(<a href="references.html#ref-zolides2022" role="doc-biblioref">Zolides, 2022</a>)</span>, and the Morelock-Narita account of the QAnon-COVID nexus as a Habermasian legitimation crisis <span class="citation" data-cites="morelock2022">(<a href="references.html#ref-morelock2022" role="doc-biblioref">Morelock and Narita, 2022</a>)</span>, document one current of this. The Hasell-Chinn finding that aspirational lifestyle social-media use predicts anti-intellectualism and inaccurate beliefs <em>even when the content is not explicitly political</em> <span class="citation" data-cites="hasell_chinn_2023">(<a href="references.html#ref-hasell_chinn_2023" role="doc-biblioref">Hasell and Chinn, 2023</a>)</span> documents the deeper one. The political effect is not localised to overtly political content; it is a property of the medium.</p>
+<p>Distributed access is denied at multiple levels: the local-news collapse, the consolidation of national legacy media in pro-regime hands <span class="citation" data-cites="levitsky-way-ziblatt2025-price">(<a href="references.html#ref-levitsky-way-ziblatt2025-price" role="doc-biblioref">Levitsky et al., 2025</a>)</span>, the algorithmic re-distribution of attention away from public-service broadcasters, the steady commodification of educational signalling <span class="citation" data-cites="cartnermorley2026">(<a href="references.html#ref-cartnermorley2026" role="doc-biblioref">Cartner-Morley, 2026</a>)</span>. The political-economic direction is consistent. The infrastructural register in which the public sphere has historically functioned — a register in which information goods were produced under non-market and quasi-market conditions and distributed broadly — is being systematically substituted by a register in which they are produced under attention-extraction conditions and distributed to whoever the algorithm selects.</p>
+</section>
+<section id="what-can-be-done-that-is-compatible-with-public-reason" class="level3 page-columns page-full" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="what-can-be-done-that-is-compatible-with-public-reason"><span class="header-section-number">3.5.3</span> What can be done that is compatible with public reason</h3>
+<p>The chapter resists offering a programme. Its argument is diagnostic, and the temptation to follow diagnosis with a fluent solution is one of the things this book is at pains to identify and avoid. But the empirical material discussed in this chapter does allow some convergent observations on the <em>shape</em> of any plausible remedy.</p>
+<p>First, structural intervention on the dual-extraction model is non-optional. Privacy regulation in the European model <span class="citation" data-cites="russomalgieri2023">(<a href="references.html#ref-russomalgieri2023" role="doc-biblioref">Russo and Malgieri, 2023</a>)</span>, algorithmic accountability requirements in the mode of Yeung’s regulation-as-governance framework <span class="citation" data-cites="yeung2017">(<a href="references.html#ref-yeung2017" role="doc-biblioref">Yeung, 2017</a>)</span> and Binns’s algorithmic accountability primer <span class="citation" data-cites="binns2022">(<a href="references.html#ref-binns2022" role="doc-biblioref">Binns, 2022</a>)</span>, and contextual-integrity-based standards in the Nissenbaum tradition <span class="citation" data-cites="Nissenbaum2010PrivacyContext">(<a href="references.html#ref-Nissenbaum2010PrivacyContext" role="doc-biblioref">Nissenbaum, 2010</a>)</span> are all candidates. None of them is sufficient on its own; collectively they constitute the regulatory minimum below which the public sphere cannot be reconstituted. The Mittelstadt et al.&nbsp;taxonomy of the ethics of algorithms <span class="citation" data-cites="mittelstadt2016">(<a href="references.html#ref-mittelstadt2016" role="doc-biblioref">Mittelstadt et al., 2016</a>)</span> and the Floridi-Cowls unified-framework synthesis <span class="citation" data-cites="floridi2019">(<a href="references.html#ref-floridi2019" role="doc-biblioref">Floridi and Cowls, 2019</a>)</span> supply the normative architecture; the work of operationalising it is political and is currently understaffed.</p>
+<p>Second, public-interest information infrastructure must be re-built on terms that the platform economy cannot capture. Gillespie’s <em>Custodians of the Internet</em> <span class="citation" data-cites="gillespie2018">(<a href="references.html#ref-gillespie2018" role="doc-biblioref">Gillespie, 2018</a>)</span> and Green’s <em>Smart Enough City</em> <span class="citation" data-cites="green2022">(<a href="references.html#ref-green2022" role="doc-biblioref">Green, 2022</a>)</span> are useful here for what they avoid: the techno-solutionist trap of replacing one platform monopoly with another, even when the second is publicly owned. The mechanism the literature converges on is plural, decentralised, accountable infrastructure: public-service media insulated from pressure; libraries and archives as digital-and-physical commons; municipal and regional information capacity not contingent on Silicon Valley hosting; professional journalism with stable funding sources that are not the patrimonial whim of one billionaire.</p>
+<p>Third — and this is the move the public-health-diplomacy literature makes most clearly — defending public reason in this environment requires <em>political literacy</em> on the part of the experts whose authority is the standing target of populist mobilisation. McKee and colleagues’ agenda for public health diplomacy in an age of populism <span class="citation" data-cites="mckee-figueras2025">(<a href="references.html#ref-mckee-figueras2025" role="doc-biblioref">McKee et al., 2025</a>)</span> is in this respect a model that travels well beyond public health. The agenda’s nine recommendations include creating diplomacy laboratories for crisis simulation, empowering non-state actors (cities, regions, NGOs) as diplomatic agents, strengthening public engagement and active listening rather than unilateral broadcast, protecting health workers and journalists who become first targets of authoritarian-populist regimes, building alternative accountability systems in partnership with investigative media, reframing health as a diplomatic priority, diversifying funding to reduce dependence on politicised national budgets, training future leaders with explicit political literacy and negotiation skills, and reinventing multilateralism rather than ceding it <span class="citation" data-cites="mckee-figueras2025">(<a href="references.html#ref-mckee-figueras2025" role="doc-biblioref">McKee et al., 2025</a>)</span>. The transposition to the broader public- sphere agenda is straightforward: substitute <em>public reason</em> for <em>public health</em>, and the structure of the recommendations is the structure of any plausible defence.</p>
+<p>Fourth, the cognitive infrastructure on which all of this rests must be rebuilt at the level of educational practice. The relevant working principle, drawing on the Hogenboom material discussed above, is what Vivienne Ming has called <em>productive friction</em> <span class="citation" data-cites="hogenboom2026">(<a href="references.html#ref-hogenboom2026" role="doc-biblioref">Hogenboom, 2026</a>)</span>: structuring AI tools so that they ask questions rather than supply answers, so that they challenge the user’s inferences rather than substitute for them. The “nemesis prompt” — the explicit instruction to a generative model to argue against the user’s own conclusions — is one specific instance. The more general principle is that cognitive tools should be designed to <em>exercise</em> the capacity they assist, not to substitute for it. This is the AI-era analogue of the older pedagogical principle that calculators are appropriate after, not instead of, mastery of the underlying operations.</p>
+
+<div class="no-row-height column-margin column-container"><div class="" style="font-size:0.9em;">
+<p>The empirical evidence underwriting this argument is striking. Kosmyna and colleagues at the MIT Media Lab, as reported in Hogenboom <span class="citation" data-cites="hogenboom2026">(<a href="references.html#ref-hogenboom2026" role="doc-biblioref">2026</a>)</span>, documented up to a <strong>55% reduction in neural activity</strong> among students composing short essays with LLM assistance (a finding from a preprint, not yet peer-reviewed at the time of writing). Ming, separately, recorded diminished gamma-band activity — a marker of cognitive effort, and one associated with later-life cognitive decline — in habitual chatbot users. Both findings converge on a single point: the friction that AI removes is not a cost to be minimised but the very mechanism by which the capacities it purports to support are consolidated.</p>
+</div></div></section>
+<section id="the-pedagogical-complication-again" class="level3" data-number="3.5.4">
+<h3 data-number="3.5.4" class="anchored" data-anchor-id="the-pedagogical-complication-again"><span class="header-section-number">3.5.4</span> The pedagogical complication, again</h3>
+<p>The Holt complication <span class="citation" data-cites="holt2025">(<a href="references.html#ref-holt2025" role="doc-biblioref">2025</a>)</span> returns at this point with sharpened relevance. A defence of public reason can become its own form of cognitive constriction if it presents itself as the only permissible epistemic posture. The diagnosis advanced in this chapter is consistent with substantial substantive disagreement between the populations it treats as deliberative agents. What it is inconsistent with is an environment that systematically deprives those populations of the conditions under which their disagreements could be productively contested. The distinction is not subtle, but it is easy to lose under polemical pressure. The intellectual formation that is in danger is not a particular set of conclusions; it is the capacity for any set of conclusions to be formed and revised in dialogue. McDonald’s recent argument that the disciplines themselves — in their differing methods, frameworks and characteristic moves — already constitute a non-trivial viewpoint diversity <span class="citation" data-cites="mcdonald2026">(<a href="references.html#ref-mcdonald2026" role="doc-biblioref">McDonald, 2026</a>)</span> is, in this register, a useful corrective to the assumption that public reason is a single homogeneous register that some external authority must impose.</p>
+<hr>
+<p>If Part I has established that the institutional and infrastructural conditions of public reason are eroding, Part II asks where, then, intellectual life appears in the 2020s — and finds that, in its publicly visible forms, it appears as performance, brand and consumer identity, on the surface where the attention economy permits it to monetise. The next chapter takes up the case materials.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-abernathy2024" class="csl-entry" role="listitem">
+Abernathy, P. M. (2024). <em>The state of local news <span>2024</span>: Expanding news deserts, growing gaps, emerging bright spots</em>. Medill School of Journalism, Northwestern University. <a href="https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2024/">https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2024/</a>
+</div>
+<div id="ref-akbari2025" class="csl-entry" role="listitem">
+Akbari, A. (2025). <em>Digital development dilemma</em>. 15–29.
+</div>
+<div id="ref-Benjamin2019RaceAfterTechnology" class="csl-entry" role="listitem">
+Benjamin, R. (2019). <em>Race after technology: Abolitionist tools for the new jim code</em>. Polity Press.
+</div>
+<div id="ref-binns2022" class="csl-entry" role="listitem">
+Binns, R. (2022). Algorithmic accountability: A primer. <em>Internet Policy Review</em>.
+</div>
+<div id="ref-Browne2015DarkMatters" class="csl-entry" role="listitem">
+Browne, S. (2015). <em>Dark matters: On the surveillance of blackness</em>. Duke University Press.
+</div>
+<div id="ref-cartnermorley2026" class="csl-entry" role="listitem">
+Cartner-Morley, J. (2026). We are living in a period of political anti-intellectualism. But in pop culture, clever is the new cool. <em>The Guardian</em>. <a href="https://www.theguardian.com/fashion/2026/mar/22/living-period-political-anti-intellectualism-pop-culture-clever-new-cool">https://www.theguardian.com/fashion/2026/mar/22/living-period-political-anti-intellectualism-pop-culture-clever-new-cool</a>
+</div>
+<div id="ref-citton2017" class="csl-entry" role="listitem">
+Citton, Y. (2017). <em>The ecology of attention</em>. Polity.
+</div>
+<div id="ref-coeckelbergh2022" class="csl-entry" role="listitem">
+Coeckelbergh, M. (2022). <em>The political philosophy of <span>AI</span>: An introduction</em>. Polity Press.
+</div>
+<div id="ref-coeckelbergh2026paper" class="csl-entry" role="listitem">
+Coeckelbergh, M. (2026a). Technofascism: <span>AI</span>, power, and the authoritarian drift. <em>AI &amp; Society</em>. <a href="https://doi.org/10.1007/s00146-026-02862-9">https://doi.org/10.1007/s00146-026-02862-9</a>
+</div>
+<div id="ref-coeckelbergh2026" class="csl-entry" role="listitem">
+Coeckelbergh, M. (2026b). <em><span class="nocase">Palantir’s</span> manifesto: Technofascism in plain sight</em>. Medium (personal blog). <a href="https://coeckelbergh.medium.com/palantirs-manifesto-technofascism-in-plain-sight-c160ca377e9a">https://coeckelbergh.medium.com/palantirs-manifesto-technofascism-in-plain-sight-c160ca377e9a</a>
+</div>
+<div id="ref-Cohen2019BetweenTruthPower" class="csl-entry" role="listitem">
+Cohen, J. E. (2019). <em>Between truth and power: The legal constructions of informational capitalism</em>. Oxford University Press.
+</div>
+<div id="ref-techrepublicbook2026" class="csl-entry" role="listitem">
+Crown Currency. (2025--2026). <em>The technological republic: Reviews and commentary</em>. Publisher promotional page, techrepublicbook.com. <a href="https://techrepublicbook.com/">https://techrepublicbook.com/</a>
+</div>
+<div id="ref-cyberpsychology2025" class="csl-entry" role="listitem">
+Cyberpsychology, Behavior, and Social Networking. (2025). BookTok as cultural infrastructure: Emotion, influence, and the future of reading. <em>Cyberpsychology, Behavior, and Social Networking</em>. <a href="https://doi.org/10.1177/21522715251408721">https://doi.org/10.1177/21522715251408721</a>
+</div>
+<div id="ref-dean2024" class="csl-entry" role="listitem">
+Dean, J. (2024). The neofeudalising tendency of communicative capitalism. <em>tripleC: Communication, Capitalism &amp; Critique</em>, <em>22</em>(1), 197–207.
+</div>
+<div id="ref-dencik2022" class="csl-entry" role="listitem">
+Dencik, L., Hintz, A., Redden, J., and Treré, E. (2022). <em>Data justice</em>. SAGE.
+</div>
+<div id="ref-diaz2021" class="csl-entry" role="listitem">
+Diaz, W. (2021). On a small glossary of academic anti-intellectualism. <em>CLCWeb: Comparative Literature and Culture</em>, <em>23</em>(2). <a href="https://fileserver-az.core.ac.uk/download/511342897.pdf">https://fileserver-az.core.ac.uk/download/511342897.pdf</a>
+</div>
+<div id="ref-eldiario2026" class="csl-entry" role="listitem">
+elDiario.es. (2026). <em><span class="nocase">¿Guerra civil en Silicon Valley?</span> <span>Anthropic</span>, <span>Palantir</span> y ejecutivos de <span>Google</span> chocan por los límites de la <span>IA</span> militar</em>. <span>elDiario.es</span>. <a href="https://www.eldiario.es/tecnologia/guerra-civil-silicon-valley-anthropic-palantir-ejecutivos-google-chocan-limites-ia-militar_1_13181195.html">https://www.eldiario.es/tecnologia/guerra-civil-silicon-valley-anthropic-palantir-ejecutivos-google-chocan-limites-ia-militar_1_13181195.html</a>
+</div>
+<div id="ref-eubanks2018" class="csl-entry" role="listitem">
+Eubanks, V. (2018). <em>Automating inequality: How high-tech tools profile, police, and punish the poor</em>. St.&nbsp;Martin’s Press.
+</div>
+<div id="ref-floridi2019" class="csl-entry" role="listitem">
+Floridi, L., and Cowls, J. (2019). A unified framework of five principles for <span>AI</span> in society. <em>Harvard Data Science Review</em>, <em>1</em>(1). <a href="https://doi.org/10.1162/99608f92.8cd550d1">https://doi.org/10.1162/99608f92.8cd550d1</a>
+</div>
+<div id="ref-fraser2022" class="csl-entry" role="listitem">
+Fraser, N. (2022). <em>Cannibal capitalism: How our system is devouring democracy, care, and the planet</em>. Verso.
+</div>
+<div id="ref-gillespie2018" class="csl-entry" role="listitem">
+Gillespie, T. (2018). <em>Custodians of the internet: Platforms, content moderation, and the hidden decisions that shape social media</em>. Yale University Press.
+</div>
+<div id="ref-green2022" class="csl-entry" role="listitem">
+Green, B. (2022). <em>The smart enough city: Putting technology in its place to reclaim our urban future</em>. MIT Press.
+</div>
+<div id="ref-habermas2023" class="csl-entry" role="listitem">
+Habermas, J. (2023). <em>A new structural transformation of the public sphere and deliberative politics</em>. Polity.
+</div>
+<div id="ref-hadarics2025" class="csl-entry" role="listitem">
+Hadarics, M. (2025). Democratic backsliding based on illusions: Authoritarians’ biased perception of media freedom contributes to their political support. <em>International Journal of Psychology</em>. <a href="https://doi.org/10.1002/ijop.70126">https://doi.org/10.1002/ijop.70126</a>
+</div>
+<div id="ref-hari2022" class="csl-entry" role="listitem">
+Hari, J. (2022). <em>Stolen focus: Why you can’t pay attention</em>. Crown.
+</div>
+<div id="ref-harsin2024" class="csl-entry" role="listitem">
+Harsin, J. (2024). Post-truth politics and epistemic populism. In <em>The palgrave handbook of communication and populism</em>. Palgrave Macmillan.
+</div>
+<div id="ref-hasell_chinn_2023" class="csl-entry" role="listitem">
+Hasell, A., and Chinn, S. (2023). The political influence of lifestyle influencers? Examining the relationship between aspirational social media use and anti-expert attitudes and beliefs. <em>Social Media + Society</em>, <em>9</em>(4), 20563051231211945. <a href="https://doi.org/10.1177/20563051231211945">https://doi.org/10.1177/20563051231211945</a>
+</div>
+<div id="ref-hogenboom2026" class="csl-entry" role="listitem">
+Hogenboom, M. (2026). <em><span>AI</span> chatbots could be making you stupider</em>. <span>BBC Future</span>. <a href="https://www.bbc.com/future/article/20260417-ai-chatbots-could-be-making-you-stupider">https://www.bbc.com/future/article/20260417-ai-chatbots-could-be-making-you-stupider</a>
+</div>
+<div id="ref-holt2025" class="csl-entry" role="listitem">
+Holt, B. J. (2025). Intellectualism and anti-intellectualism act as barriers to academic freedom. <em>International Journal of Technology and Inclusive Education</em>, <em>14</em>(2), 2099–2108. <a href="https://doi.org/10.20533/ijtie.2047.0533.2025.0261">https://doi.org/10.20533/ijtie.2047.0533.2025.0261</a>
+</div>
+<div id="ref-insidehighered2026" class="csl-entry" role="listitem">
+Inside Higher Ed Staff. (2026). <em>Faculty concerned about <span class="nocase">ASU’s</span> new <span>AI</span> course builder</em>. <span>Inside Higher Ed</span>. <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/04/29/faculty-concerned-about-asus-new-ai-course">https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/04/29/faculty-concerned-about-asus-new-ai-course</a>
+</div>
+<div id="ref-KarpZamiska2025Tech" class="csl-entry" role="listitem">
+Karp, A., and Zamiska, N. W. (2025). <em>The technological republic: Hard power, soft belief, and the future of the west</em> (First edition). Crown Currency.
+</div>
+<div id="ref-karpf2026" class="csl-entry" role="listitem">
+Karpf, D. (2026). <em>Palantir’s <span>CEO</span> is like a james bond villain, except bond villains are better dressed</em>. Beehiiv (personal newsletter). <a href="https://davekarpf.beehiiv.com/p/palantir-s-ceo-is-like-a-james-bond-villain-except-bond-villains-are-better-dressed">https://davekarpf.beehiiv.com/p/palantir-s-ceo-is-like-a-james-bond-villain-except-bond-villains-are-better-dressed</a>
+</div>
+<div id="ref-kosmyna2025preprint" class="csl-entry" role="listitem">
+Kosmyna, N. et al. (2025). <em>Your brain on <span>ChatGPT</span>: Accumulation of cognitive activity across sessions</em>. arXiv preprint. <a href="https://arxiv.org/abs/2506.08872">https://arxiv.org/abs/2506.08872</a>
+</div>
+<div id="ref-levitsky-way-ziblatt2025-price" class="csl-entry" role="listitem">
+Levitsky, S., Way, L. A., and Ziblatt, D. (2025). The price of american authoritarianism: <span>What</span> can reverse democratic decline? <em>Foreign Affairs</em>. <a href="https://www.foreignaffairs.com/united-states/price-american-authoritarianism">https://www.foreignaffairs.com/united-states/price-american-authoritarianism</a>
+</div>
+<div id="ref-mcdonald2026" class="csl-entry" role="listitem">
+McDonald, T. J. (2026). <em>Viewpoint diversity: <span class="nocase">It’s</span> the disciplines, stupid!</em> [Opinion]. <span>Inside Higher Ed</span>. <a href="https://www.insidehighered.com/opinion/views/2026/04/30/viewpoint-diversity-its-disciplines-stupid-opinion">https://www.insidehighered.com/opinion/views/2026/04/30/viewpoint-diversity-its-disciplines-stupid-opinion</a>
+</div>
+<div id="ref-mckee-figueras2025" class="csl-entry" role="listitem">
+McKee, M., Figueras, J., Kalediene, R., Joshi, A., El-Mohandes, A., Otok, R., Magaña, L., Marchandise, C., and Barros, H. (2025). An agenda for public health diplomacy in an age of populism. <em>Public Health Reviews</em>, <em>46</em>, 1609089. <a href="https://doi.org/10.3389/phrs.2025.1609089">https://doi.org/10.3389/phrs.2025.1609089</a>
+</div>
+<div id="ref-mittelstadt2016" class="csl-entry" role="listitem">
+Mittelstadt, B. D., Allo, P., Taddeo, M., Wachter, S., and Floridi, L. (2016). The ethics of algorithms: Mapping the debate. <em>Big Data &amp; Society</em>, <em>3</em>(2). <a href="https://doi.org/10.1177/2053951716679679">https://doi.org/10.1177/2053951716679679</a>
+</div>
+<div id="ref-morelock2022" class="csl-entry" role="listitem">
+Morelock, J., and Narita, F. Z. (2022). The nexus of <span>QAnon</span> and <span>COVID-19</span>: Legitimation crisis and epistemic crisis. <em>Critical Sociology</em>, <em>48</em>(6), 1005–1024.
+</div>
+<div id="ref-moreno2018" class="csl-entry" role="listitem">
+Moreno Muñoz, M. (2018). Virtualización del espacio público y concepto débil de privacidad: Lecciones del caso facebook–cambridge analytica. <em>Ensayos de Filosofía</em>, (8). <a href="https://doi.org/10.5281/zenodo.2535703">https://doi.org/10.5281/zenodo.2535703</a>
+</div>
+<div id="ref-mouffe2018" class="csl-entry" role="listitem">
+Mouffe, C. (2018). <em>For a left populism</em>. Verso.
+</div>
+<div id="ref-nea2025" class="csl-entry" role="listitem">
+National Endowment for the Arts. (2025). <em>Reading on the rise? National survey of reading habits</em>. NEA.
+</div>
+<div id="ref-Nissenbaum2010PrivacyContext" class="csl-entry" role="listitem">
+Nissenbaum, H. (2010). <em>Privacy in context: Technology, policy, and the integrity of social life</em>. Stanford University Press.
+</div>
+<div id="ref-readingagency2024" class="csl-entry" role="listitem">
+Reading Agency. (2024). <em>Reading <span>Lives</span>: Adult reading trends in the <span>UK</span></em>. Survey report. <a href="https://readingagency.org.uk/news/research/">https://readingagency.org.uk/news/research/</a>
+</div>
+<div id="ref-russomalgieri2023" class="csl-entry" role="listitem">
+Russo, F., and Malgieri, G. (2023). <em>The ethics of data protection impact assessments</em>. Springer.
+</div>
+<div id="ref-gonzalez2026" class="csl-entry" role="listitem">
+Sérvulo González, J. (2026). El inquietante manifiesto de <span>Palantir</span> recibe un aluvi<span>ó</span>n de cr<span>ı́</span>ticas: Entre el tecnofascismo y el villano de <span>James Bond</span>. <em>El Pa<span>ı́</span>s</em>. <a href="https://elpais.com/economia/2026-04-27/el-inquietante-manifiesto-de-palantir-recibe-un-aluvion-de-criticas-entre-el-tecnofascismo-y-el-villano-de-james-bond.html">https://elpais.com/economia/2026-04-27/el-inquietante-manifiesto-de-palantir-recibe-un-aluvion-de-criticas-entre-el-tecnofascismo-y-el-villano-de-james-bond.html</a>
+</div>
+<div id="ref-sparrow2011" class="csl-entry" role="listitem">
+Sparrow, B., Liu, J., and Wegner, D. M. (2011). <span>Google</span> effects on memory: Cognitive consequences of having information at our fingertips. <em>Science</em>, <em>333</em>(6043), 776–778. <a href="https://doi.org/10.1126/science.1207745">https://doi.org/10.1126/science.1207745</a>
+</div>
+<div id="ref-spitalniak2026" class="csl-entry" role="listitem">
+Spitalniak, L. (2026). <em>Trump 2.0’s impact on higher ed: The first year in 8 numbers</em>. <span>Higher Ed Dive</span>. <a href="https://www.highereddive.com/news/trump-20s-impact-on-higher-ed-the-first-year-in-8-numbers/809909/">https://www.highereddive.com/news/trump-20s-impact-on-higher-ed-the-first-year-in-8-numbers/809909/</a>
+</div>
+<div id="ref-varoufakis2026" class="csl-entry" role="listitem">
+Varoufakis, Y. (2026). <em>Palantir and the new order: Neoliberalism is dead, say hello to techlordism</em>. The Point Magazine. <a href="https://thepoint.com.au/opinions/260422-palantir-and-the-new-order-neoliberalism-is-dead-say-hello-to-techlordism">https://thepoint.com.au/opinions/260422-palantir-and-the-new-order-neoliberalism-is-dead-say-hello-to-techlordism</a>
+</div>
+<div id="ref-veliz2020" class="csl-entry" role="listitem">
+Véliz, C. (2020). <em>Privacy is power: Why and how you should take back control of your data</em>. Bantam Press.
+</div>
+<div id="ref-williams2018" class="csl-entry" role="listitem">
+Williams, J. (2018). <em>Stand out of our light: Freedom and resistance in the attention economy</em>. Cambridge University Press.
+</div>
+<div id="ref-wolf2018" class="csl-entry" role="listitem">
+Wolf, M. (2018). <em>Reader, come home: The reading brain in a digital world</em>. Harper.
+</div>
+<div id="ref-wu2016" class="csl-entry" role="listitem">
+Wu, T. (2016). <em>The attention merchants: The epic scramble to get inside our heads</em>. Knopf.
+</div>
+<div id="ref-yeung2017" class="csl-entry" role="listitem">
+Yeung, K. (2017). Algorithmic regulation: A critical interrogation. In <em>The oxford handbook of law, regulation and technology</em>. Oxford University Press.
+</div>
+<div id="ref-zolides2022" class="csl-entry" role="listitem">
+Zolides, A. (2022). <span>“<span class="nocase">Don’t</span> <span>Fauci</span> my <span>Florida</span>”</span>: Anti-<span>Fauci</span> memes as digital anti-intellectualism. <em>Media and Communication</em>, <em>10</em>(4).
+</div>
+<div id="ref-zuboff2019" class="csl-entry" role="listitem">
+Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power</em>. PublicAffairs.
+</div>
+</div>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>For the European debate, see the wave of school-phone restrictions implemented or announced in France (2018, 2024 extension), the Netherlands (2024), Spain by autonomous community (2024–2025), the United Kingdom (DfE guidance, 2024), and Sweden’s partial reversal of one-to-one digital education in primary schools (2023–). For the AI-in-curriculum debate, the Faculty Concerned About ASU’s New AI Course Builder coverage <span class="citation" data-cites="insidehighered2026">(<a href="references.html#ref-insidehighered2026" role="doc-biblioref">Inside Higher Ed Staff, 2026</a>)</span> is a representative current-state snapshot.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./02-authoritarian-moment.html" class="pagination-link" aria-label="The Competitive-Authoritarian Moment">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Competitive-Authoritarian Moment</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./04-performative-intellectualism.html" class="pagination-link" aria-label="Performative Intellectualism: From BookTok to the Bottega Catwalk">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Performative Intellectualism: From BookTok to the Bottega Catwalk</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
