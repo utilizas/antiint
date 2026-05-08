@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Brains as Brand · Miguel Moreno</title>
+<meta name="description" content="A monograph on the marketisation of public reason under platform capitalism: how performative intellectualism and political anti-intellectualism are correlative expressions of a single transformation.">
+
+<!--
+  Standalone editorial landing page for Brains as Brand.
+  Drop into the deploy root, or use as the source for index.html.
+  All paths are relative; the book chapters are expected at /01-genealogy.html etc.
+-->
+
+<!-- Open Graph -->
+<meta property="og:type" content="book">
+<meta property="og:title" content="Brains as Brand">
+<meta property="og:description" content="The Cultural Economy of Intellect under Competitive Authoritarianism. A monograph by Miguel Moreno.">
+<meta property="og:url" content="https://antiint.vercel.app/">
+<meta property="og:image" content="https://antiint.vercel.app/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brains as Brand">
+<meta name="twitter:description" content="The Cultural Economy of Intellect under Competitive Authoritarianism.">
+<meta name="twitter:image" content="https://antiint.vercel.app/social-card.png">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0a0a0c">
+
+<!-- Web fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* -------- Tokens -------- */
+  :root {
+    --bg:           #0a0a0c;
+    --bg-alt:       #14141a;
+    --bg-elev:      #1c1c24;
+    --rule:         #2a2a32;
+    --text:         #f0ebe0;
+    --text-mute:    #a8a299;
+    --text-faint:   #6e6a62;
+    --accent:       #c9a875;     /* warm amber from the oculus */
+    --accent-soft:  #d8bf94;
+    --accent-bg:    rgba(201, 168, 117, 0.08);
+    --shadow:       0 1px 0 rgba(255,255,255,0.04), 0 8px 24px rgba(0,0,0,0.4);
+    --serif:        'Crimson Pro', 'Liberation Serif', Georgia, serif;
+    --sans:         'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --maxw:         1180px;
+    --pad-side:     clamp(1.25rem, 4vw, 3rem);
+    --section-pad:  clamp(4rem, 8vw, 7rem);
+  }
+
+  /* -------- Reset -------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--accent); text-decoration: none; transition: color 0.18s; }
+  a:hover { color: var(--accent-soft); }
+  ::selection { background: var(--accent); color: var(--bg); }
+
+  /* -------- Skip link -------- */
+  .skip {
+    position: absolute; left: -9999px; top: 0;
+    padding: 0.6rem 1rem; background: var(--accent); color: var(--bg);
+    font-weight: 600; z-index: 9999;
+  }
+  .skip:focus { left: 1rem; top: 1rem; }
+
+  /* -------- Sticky nav -------- */
+  nav.top {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10, 10, 12, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  nav.top .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0.85rem var(--pad-side);
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 1rem;
+  }
+  nav.top .brand {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    color: var(--text);
+  }
+  nav.top ul {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; gap: 1.6rem;
+    font-size: 0.92rem;
+  }
+  nav.top ul a {
+    color: var(--text-mute);
+    font-weight: 500;
+  }
+  nav.top ul a:hover { color: var(--text); }
+  @media (max-width: 720px) {
+    nav.top ul { display: none; }
+  }
+
+  /* -------- Hero -------- */
+  .hero {
+    padding: clamp(3rem, 7vw, 6rem) var(--pad-side) var(--section-pad);
+    background:
+      radial-gradient(ellipse 80% 60% at 75% 40%, rgba(201, 168, 117, 0.08), transparent 70%),
+      var(--bg);
+    border-bottom: 1px solid var(--rule);
+  }
+  .hero .grid {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(280px, 380px) 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+  }
+  @media (max-width: 820px) {
+    .hero .grid {
+      grid-template-columns: 1fr;
+      max-width: 540px;
+    }
+  }
+  .hero figure {
+    margin: 0;
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6),
+                0 12px 28px -10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+  }
+  .hero figure img { width: 100%; }
+
+  .hero-eyebrow {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1.4rem;
+    display: inline-block;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--accent);
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin: 0 0 1rem;
+    color: var(--text);
+  }
+  .hero .subtitle {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+    line-height: 1.35;
+    color: var(--text-mute);
+    margin: 0 0 1.8rem;
+  }
+  .hero .author {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    color: var(--text-faint);
+    margin: 0 0 2.4rem;
+    letter-spacing: 0.02em;
+  }
+  .hero .author strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .hero .tagline {
+    font-family: var(--serif);
+    font-size: 1.18rem;
+    line-height: 1.55;
+    color: var(--text);
+    border-left: 3px solid var(--accent);
+    padding: 0.4rem 0 0.4rem 1.2rem;
+    margin: 0 0 2.4rem;
+    max-width: 560px;
+  }
+  .cta-row {
+    display: flex; gap: 0.8rem; flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.15s, background 0.18s, color 0.18s, border-color 0.18s;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--bg);
+    border: 1px solid var(--accent);
+  }
+  .btn-primary:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent-soft);
+    color: var(--bg);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--rule);
+  }
+  .btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* -------- Section base -------- */
+  section { padding: var(--section-pad) var(--pad-side); }
+  section .inner { max-width: var(--maxw); margin: 0 auto; }
+  section.alt { background: var(--bg-alt); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+
+  .section-eyebrow {
+    font-family: var(--sans);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.9rem;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2rem, 3.6vw, 2.8rem);
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+    color: var(--text);
+  }
+  h3 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.32rem;
+    line-height: 1.25;
+    margin: 0 0 0.5rem;
+    color: var(--text);
+  }
+  p { margin: 0 0 1.1rem; color: var(--text-mute); }
+  p strong { color: var(--text); font-weight: 600; }
+
+  /* -------- About -------- */
+  .about p {
+    font-size: 1.07rem;
+    line-height: 1.7;
+    max-width: 70ch;
+    color: var(--text);
+  }
+  .about .keywords {
+    margin-top: 2.4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+  .about .keywords-label {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 0.8rem;
+  }
+  .about .tags {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    list-style: none; padding: 0; margin: 0;
+  }
+  .about .tags li {
+    font-size: 0.86rem;
+    padding: 0.32rem 0.85rem;
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    color: var(--text-mute);
+    background: var(--accent-bg);
+  }
+
+  /* -------- Contents -------- */
+  .contents .parts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  .part {
+    background: var(--bg-elev);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 1.8rem 1.6rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .part:hover { border-color: var(--accent); }
+  .part-num {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--accent);
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    margin: 0 0 0.4rem;
+  }
+  .part h3 { margin-bottom: 0.4rem; }
+  .part .part-desc {
+    font-size: 0.92rem;
+    color: var(--text-faint);
+    margin: 0 0 1.2rem;
+    font-style: italic;
+  }
+  .chapter-list {
+    list-style: none; padding: 0; margin: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .chapter-list li {
+    border-bottom: 1px solid var(--rule);
+  }
+  .chapter-list a {
+    display: block;
+    padding: 0.85rem 0;
+    color: var(--text);
+    font-size: 0.96rem;
+    line-height: 1.4;
+    transition: color 0.18s, padding-left 0.18s;
+  }
+  .chapter-list a:hover {
+    color: var(--accent);
+    padding-left: 0.4rem;
+  }
+  .chapter-list .ch-num {
+    color: var(--text-faint);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.86rem;
+    margin-right: 0.5rem;
+  }
+  .contents-extras {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    display: flex; flex-wrap: wrap; gap: 1.4rem 2.4rem;
+    font-size: 0.95rem;
+  }
+  .contents-extras a { color: var(--text-mute); }
+  .contents-extras a:hover { color: var(--accent); }
+
+  /* -------- Author -------- */
+  .author-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 70ch;
+  }
+  .author-block p {
+    color: var(--text);
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  /* -------- Citation -------- */
+  pre.citation {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 1.5rem 1.6rem;
+    overflow-x: auto;
+    font-family: 'Inter', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.86rem;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 1rem 0 0;
+  }
+  pre.citation .k { color: var(--accent); }
+  pre.citation .v { color: var(--text); }
+
+  /* -------- License & Repo -------- */
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  .meta-card {
+    padding: 1.6rem 1.6rem 1.4rem;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    background: var(--bg-elev);
+  }
+  .meta-card h3 { font-size: 1.12rem; margin-bottom: 0.6rem; }
+  .meta-card p { font-size: 0.93rem; }
+  .meta-card a.go {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+  .meta-card a.go::after {
+    content: " →";
+    transition: transform 0.18s;
+    display: inline-block;
+  }
+  .meta-card a.go:hover::after { transform: translateX(3px); }
+
+  /* -------- Footer -------- */
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 2.4rem var(--pad-side);
+    text-align: center;
+    background: var(--bg);
+  }
+  footer .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    font-size: 0.86rem;
+    color: var(--text-faint);
+  }
+  footer p { margin: 0.3rem 0; color: inherit; }
+
+  /* -------- Reveal-on-scroll -------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+<style>
+  .citation-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: var(--color-surface-offset, #edeae5);
+    border: 1px solid var(--color-border, #d4d1ca);
+    border-bottom: none;
+    border-radius: var(--radius-md, 0.5rem) var(--radius-md, 0.5rem) 0 0;
+    font-size: 0.75rem;
+    color: var(--color-text-muted, #7a7974);
+    font-family: var(--font-body, sans-serif);
+  }
+
+  .citation-toolbar .bib-label {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .citation-toolbar .bib-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Shared button style */
+  .bib-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.72rem;
+    font-family: var(--font-body, sans-serif);
+    color: var(--color-text-muted, #7a7974);
+    background: transparent;
+    border: 1px solid var(--color-border, #d4d1ca);
+    border-radius: var(--radius-sm, 0.375rem);
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
+    white-space: nowrap;
+  }
+
+  .bib-btn:hover {
+    color: var(--color-text, #28251d);
+    background: var(--color-surface-dynamic, #e6e4df);
+    border-color: var(--color-text-muted, #7a7974);
+  }
+
+  /* "Copied!" feedback state */
+  .bib-btn.copied {
+    color: var(--color-success, #437a22);
+    border-color: var(--color-success, #437a22);
+  }
+
+  /* Pre block — attach to toolbar above */
+  pre.citation {
+    margin-top: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  /* Icon SVGs inline */
+  .bib-btn svg {
+    flex-shrink: 0;
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<nav class="top" aria-label="Primary">
+  <div class="inner">
+    <span class="brand"><i>Brains as Brand</i></span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contents">Contents</a></li>
+      <li><a href="#author">Author</a></li>
+      <li><a href="#cite">Citation</a></li>
+      <li><a href="00-introduction.html">Read</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="grid">
+      <figure class="reveal">
+        <img src="https://utilizas.github.io/antiint/02-cover-mausoleic.png"
+             alt="Cover of Brains as Brand: a stone column with a circular oculus opening onto a preserved library interior, set against a blurred urban plaza.">
+      </figure>
+      <div class="reveal">
+        <span class="hero-eyebrow">Social Epistemology Studies</span>
+        <h1>Brains as Brand</h1>
+        <p class="subtitle">The Cultural Economy of Intellect<br>under Competitive Authoritarianism</p>
+        <p class="author">By <strong>Miguel Moreno</strong> · 2026</p>
+        <p class="tagline">A monograph on the marketisation of public reason under platform capitalism — and why performative intellectualism and political anti-intellectualism are not opposites but correlative expressions of the same transformation.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="00-introduction.html">Read the book</a>
+          <a class="btn btn-secondary" href="#about">About this work</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="about alt">
+    <div class="inner reveal">
+      <p class="section-eyebrow">About</p>
+      <h2>A double diagnosis of the present moment</h2>
+
+      <p>Between 2016 and 2026, two phenomena that are usually read as opposed have moved in close formation. Elected governments wage open campaigns against universities, scientific agencies and the independent press — freezing research funding, proposing ideological compacts with private institutions, defunding public broadcasters, treating <em>expertise</em> itself as a slur. At exactly the same cultural moment, expensive handbags are sold with <em>Madame Bovary</em> embossed on the side, supermodels read Camus on the Métro for the cameras, and a TikTok subculture of more than three hundred billion views proclaims that being &lsquo;disgustingly educated&rsquo; is the new aesthetic.</p>
+
+      <p>The cultural commentary of the period typically reads these scenes as paradox: politics goes one way, pop culture the other; reason has been driven out of public life but takes refuge in private consumption. <strong>This book argues that the diagnosis is exactly wrong.</strong> Performative intellectualism and political anti-intellectualism are correlative expressions of a single transformation — the marketisation of public reason under platform capitalism, and the correlative erosion of the institutional infrastructures (universities, public press, mass schooling) on which deliberative liberal democracy historically depended.</p>
+
+      <p>When the practice of reason loses its institutional homes, its <em>sign</em> flourishes elsewhere, as a luxury good. The book calls this configuration <strong>mausoleum culture</strong>: a structure in which the artefacts of intellectual life are reverently preserved precisely because the practice itself has ceased to be widely sustainable.</p>
+
+      <div class="keywords">
+        <p class="keywords-label">Keywords</p>
+        <ul class="tags">
+          <li>anti-intellectualism</li>
+          <li>performative intellectualism</li>
+          <li>platform capitalism</li>
+          <li>mausoleum culture</li>
+          <li>competitive authoritarianism</li>
+          <li>deliberative democracy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENTS -->
+  <section id="contents" class="contents">
+    <div class="inner reveal">
+      <p class="section-eyebrow">Contents</p>
+      <h2>Three parts, eight chapters</h2>
+      <p style="max-width: 65ch; margin-bottom: 3rem;">Part I reconstructs the political crisis of public reason; Part II turns to its cultural correlate; Part III takes the contemporary university as the institutional test case for what reconstruction would require.</p>
+
+      <div class="parts">
+
+        <article class="part">
+          <p class="part-num">Part I</p>
+          <h3>The political crisis of public reason</h3>
+          <p class="part-desc">From the long genealogy of anti-intellectualism to its present-day instantiation in competitive authoritarianism, and to the platform-economic infrastructure that sustains it.</p>
+          <ol class="chapter-list">
+            <li><a href="01-genealogy.html"><span class="ch-num">1.</span>A Short Genealogy of Anti-Intellectualism</a></li>
+            <li><a href="02-authoritarian-moment.html"><span class="ch-num">2.</span>The Competitive-Authoritarian Moment</a></li>
+            <li><a href="03-attention-economy.html"><span class="ch-num">3.</span>The Attention Economy and the Displacement of Public Reason</a></li>
+          </ol>
+        </article>
+
+        <article class="part">
+          <p class="part-num">Part II</p>
+          <h3>The cultural recoding of intellect</h3>
+          <p class="part-desc">BookTok, Substack, the literary turn in fashion, the gendered politics of &lsquo;smart-as-sexy&rsquo;, and the new dimension introduced by generative AI.</p>
+          <ol class="chapter-list">
+            <li><a href="04-performative-intellectualism.html"><span class="ch-num">4.</span>Performative Intellectualism</a></li>
+            <li><a href="05-cultural-capital-gender.html"><span class="ch-num">5.</span>Cultural Capital, Gender and the Marketisation of Intellect</a></li>
+            <li><a href="06-ai-cognition.html"><span class="ch-num">6.</span>AI and the Automation of Intellectual Labour</a></li>
+          </ol>
+        </article>
+
+        <article class="part">
+          <p class="part-num">Part III</p>
+          <h3>What reconstruction would require</h3>
+          <p class="part-desc">The university as institutional test case; the schools and vocational training as the under-discussed base; three concluding theses on leaving the mausoleum.</p>
+          <ol class="chapter-list">
+            <li><a href="07-education-battleground.html"><span class="ch-num">7.</span>Education as Battleground</a></li>
+            <li><a href="08-conclusion.html"><span class="ch-num">8.</span>Conclusion: Leaving the Mausoleum</a></li>
+          </ol>
+        </article>
+
+      </div>
+
+      <div class="contents-extras">
+        <a href="A-methodology.html">Appendix A — Methodology</a>
+        <a href="B-corpus.html">Appendix B — Corpus</a>
+        <a href="C-chronology.html">Appendix C — Chronology</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="references.html">References</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHOR -->
+  <section id="author" class="alt">
+    <div class="inner reveal">
+      <p class="section-eyebrow">Author</p>
+      <h2>Miguel Moreno</h2>
+      <div class="author-block">
+        <p>Miguel Moreno works on the political philosophy and ethics of digital technologies, with a focus on platform capitalism, AI governance, and the institutional conditions of public reason. His current work examines the marketisation of intellectual life and its political consequences in the period 2016–2026.</p>
+        <p>For correspondence, peer-review enquiries, or to report errors in the text, please use the <a href="https://github.com/utilizas/antiint/issues">repository issue tracker</a>.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- CITATION -->
+<section id="cite">
+  <div class="inner reveal">
+    <p class="section-eyebrow">How to cite</p>
+    <h2>Citation</h2>
+    <p style="max-width: 65ch;">If you reference this work in academic writing, please use the following entry. The deployed online edition (<a href="https://antiint.vercel.app/">antiint.vercel.app</a>) is the canonical reading edition; print or PDF derivatives, where they exist, follow it.</p>
+
+    <!-- Toolbar -->
+    <div class="citation-toolbar">
+      <span class="bib-label">
+        <!-- BibTeX icon (subtle) -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="8" y1="13" x2="16" y2="13"/>
+          <line x1="8" y1="17" x2="12" y2="17"/>
+        </svg>
+        moreno2026brainsasbrand.bib
+      </span>
+      <span class="bib-actions">
+        <!-- Copy button -->
+        <button class="bib-btn" id="bib-copy-btn" aria-label="Copy BibTeX to clipboard" title="Copy BibTeX">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          Copy
+        </button>
+        <!-- Download .bib button -->
+        <button class="bib-btn" id="bib-download-btn" aria-label="Download .bib file" title="Download .bib">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          .bib
+        </button>
+      </span>
+    </div>
+
+    <pre class="citation" id="bib-block">@book{moreno2026brainsasbrand,
+  <span class="k">author</span>    = <span class="v">{Moreno, Miguel}</span>,
+  <span class="k">title</span>     = <span class="v">{Brains as Brand: The Cultural Economy of Intellect
+               under Competitive Authoritarianism}</span>,
+  <span class="k">series</span>    = <span class="v">{Social Epistemology Studies}</span>,
+  <span class="k">year</span>      = <span class="v">{2026}</span>,
+  <span class="k">url</span>       = <span class="v">{https://antiint.vercel.app/}</span>
+}</pre>
+  </div>
+</section>
+
+  <!-- LICENSE & REPO -->
+  <section id="meta" class="alt">
+    <div class="inner reveal">
+      <p class="section-eyebrow">License &amp; Repository</p>
+      <h2>Open access, source available</h2>
+      <div class="meta-grid">
+
+        <div class="meta-card">
+          <h3>License</h3>
+          <p>The text and supporting materials are released under <strong>Creative Commons BY-NC-SA 4.0</strong>. You may share and adapt the work under the terms of attribution, non-commercial use, and same-license redistribution.</p>
+          <a class="go" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Read the licence</a>
+        </div>
+
+        <div class="meta-card">
+          <h3>Source repository</h3>
+          <p>The Quarto source files, bibliography and assets are public. Issues, pull requests and corrections are welcome.</p>
+          <a class="go" href="https://github.com/utilizas/antiint">View on GitHub</a>
+        </div>
+
+        <div class="meta-card">
+          <h3>Deployment</h3>
+          <p>The reading edition is deployed via Vercel and updated continuously from the <code>main</code> branch.</p>
+          <a class="go" href="https://antiint.vercel.app/">antiint.vercel.app</a>
+        </div>
+
+        <div class="meta-card">
+           <h3>Mirrors</h3>
+           <p>To ensure long-term availability, the site is also mirrored on Netlify and Cloudflare Pages.</p>
+           <a class="go" href="https://antiint.netlify.app/">antiint.netlify.app</a><br>
+           <a class="go" href="https://antiint.pages.dev/">antiint.pages.dev</a>
+         </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <p>© 2026 Miguel Moreno · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+    <p style="margin-top: 0.6rem;"><a href="#main">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  // Reveal-on-scroll, progressive enhancement (no impact if JS disabled).
+  (function() {
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  })();
+</script>
+<!-- Script — place before </body> -->
+<script>
+(function () {
+  const RAW_BIB = `@book{moreno2026brainsasbrand,
+  author    = {Moreno, Miguel},
+  title     = {Brains as Brand: The Cultural Economy of Intellect
+               under Competitive Authoritarianism},
+  series    = {Social Epistemology Studies},
+  year      = {2026},
+  url       = {https://antiint.vercel.app/}
+}`;
+
+  // ── Copy to clipboard ──────────────────────────────────────
+  const copyBtn = document.getElementById('bib-copy-btn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(RAW_BIB).then(() => {
+        copyBtn.classList.add('copied');
+        copyBtn.innerHTML = `
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Copied!`;
+        setTimeout(() => {
+          copyBtn.classList.remove('copied');
+          copyBtn.innerHTML = `
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            Copy`;
+        }, 2000);
+      });
+    });
+  }
+
+  // ── Download .bib ──────────────────────────────────────────
+  const downloadBtn = document.getElementById('bib-download-btn');
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', () => {
+      const blob = new Blob([RAW_BIB], { type: 'text/plain;charset=utf-8' });
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href     = url;
+      a.download = 'moreno2026brainsasbrand.bib';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  }
+})();
+</script>
+</body>
+</html>
