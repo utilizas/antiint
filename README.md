@@ -2,7 +2,7 @@
 
 ### The Cultural Economy of Intellect under Competitive Authoritarianism
 
-> *Miguel Moreno* · University of Granada · [ORCID: 0000-0002-0746-9587](https://orcid.org/0000-0002-0746-9587)
+> *Miguel Moreno* · University of Granada · May 8, 2026
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Deploy – Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://antiint.vercel.app/)
